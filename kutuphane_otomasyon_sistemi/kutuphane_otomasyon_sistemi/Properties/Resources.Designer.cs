@@ -133,6 +133,16 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap personel {
+            get {
+                object obj = ResourceManager.GetObject("personel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_problem {
             get {
                 object obj = ResourceManager.GetObject("search-problem", resourceCulture);
