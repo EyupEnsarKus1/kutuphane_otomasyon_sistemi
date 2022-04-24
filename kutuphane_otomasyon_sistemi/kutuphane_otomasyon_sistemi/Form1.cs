@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace kutuphane_otomasyon_sistemi
 {
@@ -26,6 +27,11 @@ namespace kutuphane_otomasyon_sistemi
         {
             AnaSayfa_form anaSayfa = new AnaSayfa_form();
             anaSayfa.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        { 
+
         }
     }
 }

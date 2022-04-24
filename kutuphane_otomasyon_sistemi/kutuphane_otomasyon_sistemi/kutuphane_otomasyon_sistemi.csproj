@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,6 +71,7 @@
     <Compile Include="Kitap_form.Designer.cs">
       <DependentUpon>Kitap_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Method.cs" />
     <Compile Include="Personel_form.cs">
       <SubType>Form</SubType>
     </Compile>
