@@ -61,7 +61,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(360, 77);
+            this.panel1.Location = new System.Drawing.Point(367, 139);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(431, 152);
             this.panel1.TabIndex = 6;
