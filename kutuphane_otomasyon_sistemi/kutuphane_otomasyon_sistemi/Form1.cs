@@ -16,5 +16,16 @@ namespace kutuphane_otomasyon_sistemi
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AnaSayfa_form anaSayfa = new AnaSayfa_form();
+            anaSayfa.Show();
+        }
     }
 }
