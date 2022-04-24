@@ -41,7 +41,8 @@ namespace kutuphane_otomasyon_sistemi
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ekle_button = new System.Windows.Forms.Button();
+            this.iptal_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -110,15 +111,15 @@ namespace kutuphane_otomasyon_sistemi
             this.textBox1.Location = new System.Drawing.Point(136, 24);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(114, 29);
+            this.textBox1.Size = new System.Drawing.Size(173, 29);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 59);
+            this.textBox2.Location = new System.Drawing.Point(136, 61);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 29);
+            this.textBox2.Size = new System.Drawing.Size(173, 29);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
@@ -126,7 +127,7 @@ namespace kutuphane_otomasyon_sistemi
             this.textBox3.Location = new System.Drawing.Point(136, 94);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(114, 29);
+            this.textBox3.Size = new System.Drawing.Size(173, 29);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
@@ -134,7 +135,7 @@ namespace kutuphane_otomasyon_sistemi
             this.textBox4.Location = new System.Drawing.Point(136, 131);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(114, 29);
+            this.textBox4.Size = new System.Drawing.Size(173, 29);
             this.textBox4.TabIndex = 9;
             // 
             // textBox5
@@ -142,7 +143,7 @@ namespace kutuphane_otomasyon_sistemi
             this.textBox5.Location = new System.Drawing.Point(136, 166);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(114, 29);
+            this.textBox5.Size = new System.Drawing.Size(173, 29);
             this.textBox5.TabIndex = 10;
             // 
             // textBox6
@@ -150,24 +151,35 @@ namespace kutuphane_otomasyon_sistemi
             this.textBox6.Location = new System.Drawing.Point(136, 204);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(114, 29);
+            this.textBox6.Size = new System.Drawing.Size(173, 29);
             this.textBox6.TabIndex = 11;
             // 
-            // button1
+            // ekle_button
             // 
-            this.button1.Location = new System.Drawing.Point(136, 251);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 35);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Ekle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ekle_button.Location = new System.Drawing.Point(136, 251);
+            this.ekle_button.Name = "ekle_button";
+            this.ekle_button.Size = new System.Drawing.Size(75, 35);
+            this.ekle_button.TabIndex = 12;
+            this.ekle_button.Text = "Ekle";
+            this.ekle_button.UseVisualStyleBackColor = true;
+            // 
+            // iptal_button
+            // 
+            this.iptal_button.Location = new System.Drawing.Point(234, 251);
+            this.iptal_button.Name = "iptal_button";
+            this.iptal_button.Size = new System.Drawing.Size(75, 35);
+            this.iptal_button.TabIndex = 13;
+            this.iptal_button.Text = "İptal";
+            this.iptal_button.UseVisualStyleBackColor = true;
+            this.iptal_button.Click += new System.EventHandler(this.button2_Click);
             // 
             // Uye_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.iptal_button);
+            this.Controls.Add(this.ekle_button);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -201,6 +213,7 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ekle_button;
+        private System.Windows.Forms.Button iptal_button;
     }
 }
