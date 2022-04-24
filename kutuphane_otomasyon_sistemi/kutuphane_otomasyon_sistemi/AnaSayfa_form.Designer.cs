@@ -140,9 +140,11 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.clock;
             this.pictureBox7.Location = new System.Drawing.Point(307, 17);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox7.Size = new System.Drawing.Size(86, 80);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 2;
             this.pictureBox7.TabStop = false;
             // 

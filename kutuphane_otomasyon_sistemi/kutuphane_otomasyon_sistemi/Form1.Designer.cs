@@ -29,24 +29,16 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(362, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 88);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(315, 144);
+            this.textBox1.Location = new System.Drawing.Point(315, 184);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(199, 52);
@@ -54,7 +46,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(315, 202);
+            this.textBox2.Location = new System.Drawing.Point(315, 275);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(199, 52);
@@ -63,13 +55,23 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(315, 280);
+            this.button1.Location = new System.Drawing.Point(315, 355);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(199, 52);
             this.button1.TabIndex = 3;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.user;
+            this.pictureBox1.Location = new System.Drawing.Point(341, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(139, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
