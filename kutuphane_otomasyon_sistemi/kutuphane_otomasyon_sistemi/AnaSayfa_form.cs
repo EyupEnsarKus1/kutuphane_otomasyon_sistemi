@@ -42,5 +42,30 @@ namespace kutuphane_otomasyon_sistemi
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Uye_form uyeForm = new Uye_form();
+            uyeForm.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Emanet_form emanetForm = new Emanet_form();
+            emanetForm.Show();
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Kitap_form kitapForm = new Kitap_form();
+            kitapForm.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Personel_form personelForm = new Personel_form();
+            personelForm.Show();
+        }
     }
 }

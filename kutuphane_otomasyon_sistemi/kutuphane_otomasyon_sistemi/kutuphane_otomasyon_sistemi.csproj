@@ -52,6 +52,12 @@
     <Compile Include="AnaSayfa_form.Designer.cs">
       <DependentUpon>AnaSayfa_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Emanet_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emanet_form.Designer.cs">
+      <DependentUpon>Emanet_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="Kitap_form.Designer.cs">
       <DependentUpon>Kitap_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_form.Designer.cs">
+      <DependentUpon>Personel_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
