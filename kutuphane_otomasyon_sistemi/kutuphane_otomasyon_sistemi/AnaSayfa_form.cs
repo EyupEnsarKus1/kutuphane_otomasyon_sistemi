@@ -32,5 +32,10 @@ namespace kutuphane_otomasyon_sistemi
             label1.Text = DateTime.Now.ToLongTimeString();
             label2.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
