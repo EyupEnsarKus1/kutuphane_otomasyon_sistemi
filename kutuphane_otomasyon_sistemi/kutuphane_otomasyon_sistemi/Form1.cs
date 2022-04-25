@@ -29,13 +29,12 @@ namespace kutuphane_otomasyon_sistemi
         {
             if (mtt.kullaniciKontol(combo_uyeler.SelectedItem.ToString(), txt_kSifre.Text) == 1)
             {
-                MessageBox.Show("Giriş Başarılı");
                 AnaSayfa_form anaSayfa = new AnaSayfa_form();
                 anaSayfa.Show();
             }
             else
             {
-                MessageBox.Show("Giriş Yapılamadı", "Hata");
+                MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı", "Giriş Yapılamadı",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
            
@@ -57,7 +56,7 @@ namespace kutuphane_otomasyon_sistemi
                         {
                             combo_uyeler.Items.Add(dr["k_adi"]).ToString();
                         }
-                        combo_uyeler.SelectedIndex = 2;
+                        combo_uyeler.SelectedIndex = 1;
 
                     }
                     catch (Exception hata)
@@ -72,7 +71,6 @@ namespace kutuphane_otomasyon_sistemi
 
 
             #endregion
-
         }
     }
 }

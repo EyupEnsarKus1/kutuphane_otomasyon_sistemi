@@ -103,7 +103,7 @@ namespace kutuphane_otomasyon_sistemi
             // combo_uyeler
             // 
             this.combo_uyeler.FormattingEnabled = true;
-            this.combo_uyeler.Location = new System.Drawing.Point(359, 200);
+            this.combo_uyeler.Location = new System.Drawing.Point(341, 184);
             this.combo_uyeler.Name = "combo_uyeler";
             this.combo_uyeler.Size = new System.Drawing.Size(121, 24);
             this.combo_uyeler.TabIndex = 7;

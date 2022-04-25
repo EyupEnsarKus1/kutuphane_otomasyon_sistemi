@@ -17,7 +17,7 @@ namespace kutuphane_otomasyon_sistemi
             int sonuc = 0;
             using(var connection = new MySqlConnection(conStr))
             {
-                using(var command = new MySqlCommand($"SELECT k_adi,sifre FROM personel WHERE k_adi='{kAdi}' AND sifre='{kSifre}'", connection))
+                using(var command = new MySqlCommand($"SELECT k_adi,k_sifre FROM personel WHERE k_adi='{kAdi}' AND k_sifre='{kSifre}'", connection))
                 {
                     try
                     {
@@ -26,7 +26,7 @@ namespace kutuphane_otomasyon_sistemi
                         if (dtr.Read())
                         {
                             string d_k = dtr["k_adi"].ToString();
-                            string d_s = dtr["sifre"].ToString();
+                            string d_s = dtr["k_sifre"].ToString();
                             if(d_k==kAdi && d_s == kSifre)
                             {
                                 sonuc = 1;
