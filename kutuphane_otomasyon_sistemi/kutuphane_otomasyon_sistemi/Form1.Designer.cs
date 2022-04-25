@@ -29,25 +29,17 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_kAdi = new System.Windows.Forms.TextBox();
             this.txt_kSifre = new System.Windows.Forms.TextBox();
             this.login_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.combo_uyeler = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txt_kAdi
-            // 
-            this.txt_kAdi.Location = new System.Drawing.Point(315, 184);
-            this.txt_kAdi.Multiline = true;
-            this.txt_kAdi.Name = "txt_kAdi";
-            this.txt_kAdi.Size = new System.Drawing.Size(199, 52);
-            this.txt_kAdi.TabIndex = 1;
             // 
             // txt_kSifre
             // 
@@ -108,17 +100,25 @@ namespace kutuphane_otomasyon_sistemi
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // combo_uyeler
+            // 
+            this.combo_uyeler.FormattingEnabled = true;
+            this.combo_uyeler.Location = new System.Drawing.Point(359, 200);
+            this.combo_uyeler.Name = "combo_uyeler";
+            this.combo_uyeler.Size = new System.Drawing.Size(121, 24);
+            this.combo_uyeler.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.combo_uyeler);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.login_Button);
             this.Controls.Add(this.txt_kSifre);
-            this.Controls.Add(this.txt_kAdi);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -135,12 +135,12 @@ namespace kutuphane_otomasyon_sistemi
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txt_kAdi;
         private System.Windows.Forms.TextBox txt_kSifre;
         private System.Windows.Forms.Button login_Button;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox combo_uyeler;
     }
 }
 

@@ -12,7 +12,9 @@ using MySql.Data.MySqlClient;
 namespace kutuphane_otomasyon_sistemi
 {
     public partial class Form1 : Form
+
     {
+        Method mtt = new Method();
         public Form1()
         {
             InitializeComponent();
@@ -25,12 +27,51 @@ namespace kutuphane_otomasyon_sistemi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AnaSayfa_form anaSayfa = new AnaSayfa_form();
-            anaSayfa.Show();
+            if (mtt.kullaniciKontol(combo_uyeler.SelectedItem.ToString(), txt_kSifre.Text) == 1)
+            {
+                MessageBox.Show("Giriş Başarılı");
+                AnaSayfa_form anaSayfa = new AnaSayfa_form();
+                anaSayfa.Show();
+            }
+            else
+            {
+                MessageBox.Show("Giriş Yapılamadı", "Hata");
+            }
+
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        { 
+        {
+            #region ComboBox Uyelerini Cek
+            string conStr = "SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t";
+            using(var baglan = new MySqlConnection(conStr))
+            {
+                using(var komut = new MySqlCommand("SELECT k_adi FROM personel ORDER BY k_adi ASC", baglan))
+                {
+                    try
+                    {
+                        komut.Connection.Open();
+                        MySqlDataReader dr = komut.ExecuteReader();
+                        while (dr.Read())
+                        {
+                            combo_uyeler.Items.Add(dr["k_adi"]).ToString();
+                        }
+                        combo_uyeler.SelectedIndex = 2;
+
+                    }
+                    catch (Exception hata)
+                    {
+
+                        MessageBox.Show("Hatalı Veri" + hata.Message);
+                    }
+                }
+                
+            }
+
+
+
+            #endregion
 
         }
     }
