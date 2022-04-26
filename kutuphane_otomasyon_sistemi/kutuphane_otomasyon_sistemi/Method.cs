@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using MySqlConnector;
+
 namespace kutuphane_otomasyon_sistemi
 {
      public class Method
