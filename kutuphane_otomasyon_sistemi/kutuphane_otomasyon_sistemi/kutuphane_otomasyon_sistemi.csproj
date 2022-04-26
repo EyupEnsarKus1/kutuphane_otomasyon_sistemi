@@ -53,6 +53,12 @@
     <Compile Include="AnaSayfa_form.Designer.cs">
       <DependentUpon>AnaSayfa_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="deneme_amacli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deneme_amacli.Designer.cs">
+      <DependentUpon>deneme_amacli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Emanet_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="son_deneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="son_deneme.Designer.cs">
+      <DependentUpon>son_deneme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uye_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,9 @@
     </Compile>
     <EmbeddedResource Include="AnaSayfa_form.resx">
       <DependentUpon>AnaSayfa_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deneme_amacli.resx">
+      <DependentUpon>deneme_amacli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -108,6 +123,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="son_deneme.resx">
+      <DependentUpon>son_deneme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uye_form.resx">
       <DependentUpon>Uye_form.cs</DependentUpon>
     </EmbeddedResource>
