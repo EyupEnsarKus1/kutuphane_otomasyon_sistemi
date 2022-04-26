@@ -30,6 +30,8 @@ namespace kutuphane_otomasyon_sistemi
             if (mtt.kullaniciKontol(combo_uyeler.SelectedItem.ToString(), txt_kSifre.Text) == 1)
             {
                 AnaSayfa_form anaSayfa = new AnaSayfa_form();
+                anaSayfa.lblKullanici.Text = this.combo_uyeler.SelectedItem.ToString();
+                this.Hide();
                 anaSayfa.Show();
             }
             else
@@ -56,7 +58,7 @@ namespace kutuphane_otomasyon_sistemi
                         {
                             combo_uyeler.Items.Add(dr["k_adi"]).ToString();
                         }
-                        combo_uyeler.SelectedIndex = 1;
+                        combo_uyeler.SelectedIndex = 0;
 
                     }
                     catch (Exception hata)
@@ -67,9 +69,6 @@ namespace kutuphane_otomasyon_sistemi
                 }
                 
             }
-
-
-
             #endregion
         }
     }

@@ -31,8 +31,8 @@ namespace kutuphane_otomasyon_sistemi
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,6 +47,8 @@ namespace kutuphane_otomasyon_sistemi
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblKullanici = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -58,25 +60,14 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(367, 139);
+            this.panel1.Location = new System.Drawing.Point(369, 157);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(431, 152);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Saat ";
             // 
             // label2
             // 
@@ -88,6 +79,17 @@ namespace kutuphane_otomasyon_sistemi
             this.label2.Size = new System.Drawing.Size(80, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tarih";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(22, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Saat ";
             // 
             // timer1
             // 
@@ -101,7 +103,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label3.Location = new System.Drawing.Point(65, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 39);
+            this.label3.Size = new System.Drawing.Size(205, 38);
             this.label3.TabIndex = 7;
             this.label3.Text = "Üye İşlemleri";
             // 
@@ -112,7 +114,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label4.Location = new System.Drawing.Point(65, 271);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(271, 39);
+            this.label4.Size = new System.Drawing.Size(258, 38);
             this.label4.TabIndex = 8;
             this.label4.Text = "Emanet İşlemleri";
             // 
@@ -123,7 +125,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label5.Location = new System.Drawing.Point(65, 407);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(228, 39);
+            this.label5.Size = new System.Drawing.Size(218, 38);
             this.label5.TabIndex = 9;
             this.label5.Text = "Kayıp Kitaplar";
             // 
@@ -134,7 +136,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label6.Location = new System.Drawing.Point(862, 139);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(232, 39);
+            this.label6.Size = new System.Drawing.Size(220, 38);
             this.label6.TabIndex = 10;
             this.label6.Text = "Kitap İşlemleri";
             // 
@@ -145,7 +147,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label7.Location = new System.Drawing.Point(900, 271);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 39);
+            this.label7.Size = new System.Drawing.Size(146, 38);
             this.label7.TabIndex = 11;
             this.label7.Text = "Personel";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -157,7 +159,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label8.Location = new System.Drawing.Point(911, 407);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(161, 39);
+            this.label8.Size = new System.Drawing.Size(156, 38);
             this.label8.TabIndex = 12;
             this.label8.Text = "Çıkış Yap";
             // 
@@ -236,12 +238,34 @@ namespace kutuphane_otomasyon_sistemi
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(6, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(74, 20);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Merhaba";
+            // 
+            // lblKullanici
+            // 
+            this.lblKullanici.AutoSize = true;
+            this.lblKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKullanici.Location = new System.Drawing.Point(86, 9);
+            this.lblKullanici.Name = "lblKullanici";
+            this.lblKullanici.Size = new System.Drawing.Size(72, 20);
+            this.lblKullanici.TabIndex = 15;
+            this.lblKullanici.Text = "Kullanıcı";
+            // 
             // AnaSayfa_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1142, 513);
+            this.Controls.Add(this.lblKullanici);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -293,5 +317,7 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label lblKullanici;
     }
 }

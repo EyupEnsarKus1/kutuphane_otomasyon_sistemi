@@ -9,9 +9,9 @@ namespace kutuphane_otomasyon_sistemi
 {
      public class Method
     {
-        #region Kullanıcı Kontrol
         string conStr = "SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t";
 
+        #region Kullanıcı Kontrol
         public int kullaniciKontol(string kAdi,string kSifre)
         {
             int sonuc = 0;
@@ -54,9 +54,8 @@ namespace kutuphane_otomasyon_sistemi
 
             return sonuc;
         }
-
-
         #endregion
+
 
     }
 }
