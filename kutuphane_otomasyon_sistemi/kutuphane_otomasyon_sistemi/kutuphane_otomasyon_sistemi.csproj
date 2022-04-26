@@ -65,6 +65,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kayıp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıp_form.Designer.cs">
+      <DependentUpon>Kayıp_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kitap_form.cs">
       <SubType>Form</SubType>
     </Compile>
