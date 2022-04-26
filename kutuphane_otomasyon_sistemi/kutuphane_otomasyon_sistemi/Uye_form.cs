@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySqlConnector;
-
+using MySql.Data.MySqlClient;
 namespace kutuphane_otomasyon_sistemi
 {
     public partial class Uye_form : Form
