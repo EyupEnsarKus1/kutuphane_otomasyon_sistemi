@@ -36,6 +36,7 @@ namespace kutuphane_otomasyon_sistemi
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.combo_uyeler = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,18 +44,20 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // txt_kSifre
             // 
-            this.txt_kSifre.Location = new System.Drawing.Point(315, 275);
+            this.txt_kSifre.Location = new System.Drawing.Point(236, 223);
+            this.txt_kSifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_kSifre.Multiline = true;
             this.txt_kSifre.Name = "txt_kSifre";
-            this.txt_kSifre.Size = new System.Drawing.Size(199, 52);
+            this.txt_kSifre.Size = new System.Drawing.Size(150, 43);
             this.txt_kSifre.TabIndex = 2;
             this.txt_kSifre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // login_Button
             // 
-            this.login_Button.Location = new System.Drawing.Point(315, 344);
+            this.login_Button.Location = new System.Drawing.Point(236, 280);
+            this.login_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.login_Button.Name = "login_Button";
-            this.login_Button.Size = new System.Drawing.Size(199, 52);
+            this.login_Button.Size = new System.Drawing.Size(149, 42);
             this.login_Button.TabIndex = 3;
             this.login_Button.Text = "Giriş Yap";
             this.login_Button.UseVisualStyleBackColor = true;
@@ -64,18 +67,20 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(364, 411);
+            this.label1.Location = new System.Drawing.Point(273, 334);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 17);
+            this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Şifremi Unuttum?";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(254, 275);
+            this.pictureBox3.Location = new System.Drawing.Point(190, 223);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(55, 52);
+            this.pictureBox3.Size = new System.Drawing.Size(41, 42);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -83,9 +88,10 @@ namespace kutuphane_otomasyon_sistemi
             // pictureBox2
             // 
             this.pictureBox2.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.id_card;
-            this.pictureBox2.Location = new System.Drawing.Point(254, 184);
+            this.pictureBox2.Location = new System.Drawing.Point(190, 150);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 52);
+            this.pictureBox2.Size = new System.Drawing.Size(41, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -93,9 +99,10 @@ namespace kutuphane_otomasyon_sistemi
             // pictureBox1
             // 
             this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(341, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(256, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(139, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(104, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -103,16 +110,27 @@ namespace kutuphane_otomasyon_sistemi
             // combo_uyeler
             // 
             this.combo_uyeler.FormattingEnabled = true;
-            this.combo_uyeler.Location = new System.Drawing.Point(341, 184);
+            this.combo_uyeler.Location = new System.Drawing.Point(256, 150);
+            this.combo_uyeler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo_uyeler.Name = "combo_uyeler";
-            this.combo_uyeler.Size = new System.Drawing.Size(121, 24);
+            this.combo_uyeler.Size = new System.Drawing.Size(92, 21);
             this.combo_uyeler.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(525, 210);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "label2";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.combo_uyeler);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
@@ -120,6 +138,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Controls.Add(this.login_Button);
             this.Controls.Add(this.txt_kSifre);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -141,6 +160,7 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox combo_uyeler;
+        private System.Windows.Forms.Label label2;
     }
 }
 
