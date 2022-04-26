@@ -396,6 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-kutuphane_otomasyon_sistemi/kutuphane_otomasyon_sistemi/kutuphane_otomasyon_sistemi.csproj
-kutuphane_otomasyon_sistemi/kutuphane_otomasyon_sistemi/packages.config
-kutuphane_otomasyon_sistemi/kutuphane_otomasyon_sistemi/App.config
