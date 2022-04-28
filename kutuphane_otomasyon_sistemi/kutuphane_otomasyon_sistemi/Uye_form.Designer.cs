@@ -179,7 +179,7 @@ namespace kutuphane_otomasyon_sistemi
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.PowderBlue;
-            this.txtEmail.Location = new System.Drawing.Point(110, 227);
+            this.txtEmail.Location = new System.Drawing.Point(110, 228);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
