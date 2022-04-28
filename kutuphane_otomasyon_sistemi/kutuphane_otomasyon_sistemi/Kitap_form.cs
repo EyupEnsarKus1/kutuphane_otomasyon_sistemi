@@ -16,5 +16,20 @@ namespace kutuphane_otomasyon_sistemi
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Kitap_form_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtKaydet_Click(object sender, EventArgs e)
+        {
+            //MySqlCommand command = new MySqlCommand("INSERT INTO `kitap`(`ad`, `tur`, `sayfa_sayisi`, `barkod_no`, `raf`, `kategori_id`, `yazar_id`, `yayınevi_id`) VALUES (@kitapadi, @)
+        }
     }
 }
