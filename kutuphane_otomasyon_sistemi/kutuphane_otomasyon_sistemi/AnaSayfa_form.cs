@@ -67,5 +67,11 @@ namespace kutuphane_otomasyon_sistemi
             Personel_form personelForm = new Personel_form();
             personelForm.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Kayıp_form kayıpForm = new Kayıp_form();
+            kayıpForm.Show();
+        }
     }
 }

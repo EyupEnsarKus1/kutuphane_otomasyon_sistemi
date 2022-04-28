@@ -44,6 +44,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // txt_kSifre
             // 
+            this.txt_kSifre.BackColor = System.Drawing.Color.Azure;
             this.txt_kSifre.Location = new System.Drawing.Point(122, 210);
             this.txt_kSifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_kSifre.MaxLength = 10;
@@ -112,6 +113,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // combo_uyeler
             // 
+            this.combo_uyeler.BackColor = System.Drawing.Color.Azure;
             this.combo_uyeler.FormattingEnabled = true;
             this.combo_uyeler.Location = new System.Drawing.Point(122, 160);
             this.combo_uyeler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -123,7 +125,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(403, 374);
             this.Controls.Add(this.combo_uyeler);
             this.Controls.Add(this.label1);
