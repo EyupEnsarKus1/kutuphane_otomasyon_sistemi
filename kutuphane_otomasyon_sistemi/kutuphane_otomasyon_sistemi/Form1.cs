@@ -44,6 +44,9 @@ namespace kutuphane_otomasyon_sistemi
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            txt_kSifre.Text = "";
+            txt_kSifre.PasswordChar = '*';
+            txt_kSifre.MaxLength = 10;
             #region ComboBox Uyelerini Cek
             string conStr = "SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t";
             using(var baglan = new MySqlConnection(conStr))
