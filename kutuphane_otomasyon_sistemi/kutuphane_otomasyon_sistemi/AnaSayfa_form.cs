@@ -64,8 +64,8 @@ namespace kutuphane_otomasyon_sistemi
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Personel_form personelForm = new Personel_form();
-            personelForm.Show();
+            personel_Login personel_Login = new personel_Login();
+            personel_Login.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
