@@ -114,5 +114,10 @@ namespace kutuphane_otomasyon_sistemi
         {
             loadForm(new hakkinda_Form(), sender);
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            loadForm(new odunc_Form(), sender);
+        }
     }
 }

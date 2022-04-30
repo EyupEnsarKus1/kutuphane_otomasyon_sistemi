@@ -1,7 +1,7 @@
 ﻿
 namespace kutuphane_otomasyon_sistemi
 {
-    partial class Kitap_form
+    partial class odunc_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,10 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Kitap_form
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 567);
-            this.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Kitap_form";
-            this.Text = "Kitap_form";
-            this.Load += new System.EventHandler(this.Kitap_form_Load);
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "odunc_Form";
         }
 
         #endregion

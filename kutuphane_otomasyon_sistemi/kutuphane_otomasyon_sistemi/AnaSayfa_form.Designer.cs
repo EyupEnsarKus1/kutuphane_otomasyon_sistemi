@@ -41,6 +41,9 @@ namespace kutuphane_otomasyon_sistemi
             this.mainPanel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.oduncButton = new System.Windows.Forms.Button();
             this.infoButton = new System.Windows.Forms.Button();
             this.statisticButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -74,6 +77,7 @@ namespace kutuphane_otomasyon_sistemi
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.sidePanel.Controls.Add(this.oduncButton);
             this.sidePanel.Controls.Add(this.infoButton);
             this.sidePanel.Controls.Add(this.statisticButton);
             this.sidePanel.Controls.Add(this.pictureBox1);
@@ -124,28 +128,30 @@ namespace kutuphane_otomasyon_sistemi
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(590, 60);
+            this.label2.Location = new System.Drawing.Point(17, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.Size = new System.Drawing.Size(101, 41);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tarih";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(282, 60);
+            this.label1.Location = new System.Drawing.Point(17, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 20);
+            this.label1.Size = new System.Drawing.Size(106, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Saat ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.label6);
+            this.mainPanel.Controls.Add(this.label5);
             this.mainPanel.Controls.Add(this.label4);
             this.mainPanel.Controls.Add(this.headPanel);
             this.mainPanel.Controls.Add(this.label3);
@@ -161,20 +167,54 @@ namespace kutuphane_otomasyon_sistemi
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(613, 246);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(730, 217);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.Size = new System.Drawing.Size(230, 52);
             this.label4.TabIndex = 3;
             this.label4.Text = "Üye Sayısı";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 246);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(235, 217);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 17);
+            this.label3.Size = new System.Drawing.Size(251, 52);
             this.label3.TabIndex = 2;
             this.label3.Text = "Kitap Sayısı";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(340, 311);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(844, 311);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "label6";
+            // 
+            // oduncButton
+            // 
+            this.oduncButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oduncButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.oduncButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.borrow_icon;
+            this.oduncButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.oduncButton.Location = new System.Drawing.Point(3, 595);
+            this.oduncButton.Name = "oduncButton";
+            this.oduncButton.Size = new System.Drawing.Size(238, 65);
+            this.oduncButton.TabIndex = 31;
+            this.oduncButton.Text = "Ödünç Al - Ver";
+            this.oduncButton.UseVisualStyleBackColor = true;
+            this.oduncButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // infoButton
             // 
@@ -182,7 +222,7 @@ namespace kutuphane_otomasyon_sistemi
             this.infoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.infoButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_info_50;
             this.infoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infoButton.Location = new System.Drawing.Point(0, 595);
+            this.infoButton.Location = new System.Drawing.Point(0, 666);
             this.infoButton.Name = "infoButton";
             this.infoButton.Size = new System.Drawing.Size(241, 65);
             this.infoButton.TabIndex = 31;
@@ -221,7 +261,7 @@ namespace kutuphane_otomasyon_sistemi
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.exitButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_close_50;
             this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exitButton.Location = new System.Drawing.Point(0, 666);
+            this.exitButton.Location = new System.Drawing.Point(0, 737);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(241, 65);
             this.exitButton.TabIndex = 29;
@@ -345,5 +385,8 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button statisticButton;
         private System.Windows.Forms.Button infoButton;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button oduncButton;
     }
 }

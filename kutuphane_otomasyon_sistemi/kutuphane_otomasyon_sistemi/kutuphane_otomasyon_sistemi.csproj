@@ -90,6 +90,12 @@
       <DependentUpon>Kitap_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Method.cs" />
+    <Compile Include="odunc_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odunc_Form.Designer.cs">
+      <DependentUpon>odunc_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Personel_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hakkinda_Form.resx">
+      <DependentUpon>hakkinda_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="istatistik_Form.resx">
+      <DependentUpon>istatistik_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kayıp_form.resx">
       <DependentUpon>Kayıp_form.cs</DependentUpon>
