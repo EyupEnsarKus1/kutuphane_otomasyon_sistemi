@@ -73,5 +73,10 @@ namespace kutuphane_otomasyon_sistemi
             Kayıp_form kayıpForm = new Kayıp_form();
             kayıpForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
