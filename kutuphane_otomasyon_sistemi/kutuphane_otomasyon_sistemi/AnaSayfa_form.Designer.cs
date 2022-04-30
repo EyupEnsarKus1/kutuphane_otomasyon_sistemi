@@ -92,7 +92,7 @@ namespace kutuphane_otomasyon_sistemi
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel.Location = new System.Drawing.Point(0, 0);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(244, 850);
+            this.sidePanel.Size = new System.Drawing.Size(244, 900);
             this.sidePanel.TabIndex = 21;
             // 
             // lblKullanici
@@ -122,7 +122,7 @@ namespace kutuphane_otomasyon_sistemi
             this.headPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headPanel.Location = new System.Drawing.Point(0, 0);
             this.headPanel.Name = "headPanel";
-            this.headPanel.Size = new System.Drawing.Size(1256, 53);
+            this.headPanel.Size = new System.Drawing.Size(1456, 53);
             this.headPanel.TabIndex = 22;
             // 
             // label2
@@ -160,7 +160,7 @@ namespace kutuphane_otomasyon_sistemi
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(244, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1256, 850);
+            this.mainPanel.Size = new System.Drawing.Size(1456, 900);
             this.mainPanel.TabIndex = 23;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
@@ -212,7 +212,7 @@ namespace kutuphane_otomasyon_sistemi
             this.oduncButton.Name = "oduncButton";
             this.oduncButton.Size = new System.Drawing.Size(238, 65);
             this.oduncButton.TabIndex = 31;
-            this.oduncButton.Text = "Ödünç Al - Ver";
+            this.oduncButton.Text = "Emanet";
             this.oduncButton.UseVisualStyleBackColor = true;
             this.oduncButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -344,7 +344,7 @@ namespace kutuphane_otomasyon_sistemi
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(1500, 850);
+            this.ClientSize = new System.Drawing.Size(1700, 900);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.sidePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
