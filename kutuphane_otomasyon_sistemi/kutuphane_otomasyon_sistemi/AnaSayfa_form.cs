@@ -16,6 +16,18 @@ namespace kutuphane_otomasyon_sistemi
         {
             InitializeComponent();
         }
+        public void  loadForm (object Form)
+        {
+            if (this.mainPanel.Controls.Count > 0) this.mainPanel.Controls.RemoveAt(0);
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainPanel.Controls.Add(f);
+            this.mainPanel.Tag = f;
+            f.Show();
+        }
+
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -33,47 +45,12 @@ namespace kutuphane_otomasyon_sistemi
             label2.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
 
         private void label7_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Uye_form uyeForm = new Uye_form();
-            uyeForm.Show();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Emanet_form emanetForm = new Emanet_form();
-            emanetForm.Show();
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            Kitap_form kitapForm = new Kitap_form();
-            kitapForm.Show();
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            personel_Login personel_Login = new personel_Login();
-            personel_Login.Show();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            Kayıp_form kayıpForm = new Kayıp_form();
-            kayıpForm.Show();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -82,6 +59,21 @@ namespace kutuphane_otomasyon_sistemi
         private void button6_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void kitapButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new Kitap_form());
+        }
+
+        private void uyeButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new Uye_form());
+        }
+
+        private void emanetButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new Emanet_form());
         }
     }
 }
