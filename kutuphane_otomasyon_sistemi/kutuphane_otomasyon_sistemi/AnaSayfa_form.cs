@@ -12,19 +12,26 @@ namespace kutuphane_otomasyon_sistemi
 {
     public partial class AnaSayfa_form : Form
     {
+        private Form activeForm;
         public AnaSayfa_form()
         {
             InitializeComponent();
         }
-        public void  loadForm (object Form)
+        public void  loadForm (Form childForm, object btnSender)
         {
-            if (this.mainPanel.Controls.Count > 0) this.mainPanel.Controls.RemoveAt(0);
-            Form f = Form as Form;
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            this.mainPanel.Controls.Add(f);
-            this.mainPanel.Tag = f;
-            f.Show();
+           if(activeForm!= null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.mainPanel.Controls.Add(childForm);
+            this.mainPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
         }
 
 
@@ -63,27 +70,39 @@ namespace kutuphane_otomasyon_sistemi
 
         private void kitapButton_Click(object sender, EventArgs e)
         {
-            loadForm(new Kitap_form());
+            loadForm(new Kitap_form(),sender);
+           
+            
         }
 
         private void uyeButton_Click(object sender, EventArgs e)
         {
-            loadForm(new Uye_form());
+            loadForm(new Uye_form(),sender);
         }
 
         private void emanetButton_Click(object sender, EventArgs e)
         {
-            loadForm(new Emanet_form());
+            loadForm(new Emanet_form(),sender);
         }
 
         private void personelButton_Click(object sender, EventArgs e)
         {
-            loadForm(new Personel_form());
+            loadForm(new Personel_form(),sender);
         }
 
         private void kayipButton_Click(object sender, EventArgs e)
         {
-            loadForm(new Kayıp_form());
+            loadForm(new Kayıp_form(),sender);
+        }
+
+        private void mainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
