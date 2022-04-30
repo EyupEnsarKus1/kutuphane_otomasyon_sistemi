@@ -75,5 +75,15 @@ namespace kutuphane_otomasyon_sistemi
         {
             loadForm(new Emanet_form());
         }
+
+        private void personelButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new Personel_form());
+        }
+
+        private void kayipButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new Kayıp_form());
+        }
     }
 }

@@ -101,11 +101,20 @@
     <EmbeddedResource Include="AnaSayfa_form.resx">
       <DependentUpon>AnaSayfa_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Emanet_form.resx">
+      <DependentUpon>Emanet_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kayıp_form.resx">
+      <DependentUpon>Kayıp_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kitap_form.resx">
       <DependentUpon>Kitap_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_form.resx">
+      <DependentUpon>Personel_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="personel_Login.resx">
       <DependentUpon>personel_Login.cs</DependentUpon>
