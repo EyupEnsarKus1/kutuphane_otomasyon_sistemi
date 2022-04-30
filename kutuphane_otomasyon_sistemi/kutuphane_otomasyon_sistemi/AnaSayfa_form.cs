@@ -104,5 +104,15 @@ namespace kutuphane_otomasyon_sistemi
         {
 
         }
+
+        private void statisticButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new istatistik_Form(), sender);
+        }
+
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+            loadForm(new hakkinda_Form(), sender);
+        }
     }
 }

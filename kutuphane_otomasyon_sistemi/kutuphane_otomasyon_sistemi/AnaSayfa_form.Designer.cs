@@ -33,25 +33,27 @@ namespace kutuphane_otomasyon_sistemi
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label9 = new System.Windows.Forms.Label();
             this.sidePanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.exitButton = new System.Windows.Forms.Button();
-            this.kayipButton = new System.Windows.Forms.Button();
             this.lblKullanici = new System.Windows.Forms.Label();
-            this.personelButton = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.emanetButton = new System.Windows.Forms.Button();
-            this.kitapButton = new System.Windows.Forms.Button();
-            this.uyeButton = new System.Windows.Forms.Button();
             this.headPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.infoButton = new System.Windows.Forms.Button();
+            this.statisticButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.kayipButton = new System.Windows.Forms.Button();
+            this.personelButton = new System.Windows.Forms.Button();
+            this.emanetButton = new System.Windows.Forms.Button();
+            this.kitapButton = new System.Windows.Forms.Button();
+            this.uyeButton = new System.Windows.Forms.Button();
             this.sidePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.headPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -62,9 +64,8 @@ namespace kutuphane_otomasyon_sistemi
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
             this.label9.Font = new System.Drawing.Font("Verdana", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(0, 0);
+            this.label9.Location = new System.Drawing.Point(278, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(695, 47);
             this.label9.TabIndex = 13;
@@ -73,6 +74,8 @@ namespace kutuphane_otomasyon_sistemi
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.sidePanel.Controls.Add(this.infoButton);
+            this.sidePanel.Controls.Add(this.statisticButton);
             this.sidePanel.Controls.Add(this.pictureBox1);
             this.sidePanel.Controls.Add(this.exitButton);
             this.sidePanel.Controls.Add(this.kayipButton);
@@ -88,44 +91,6 @@ namespace kutuphane_otomasyon_sistemi
             this.sidePanel.Size = new System.Drawing.Size(244, 850);
             this.sidePanel.TabIndex = 21;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(37, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
-            // exitButton
-            // 
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.exitButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_close_50;
-            this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exitButton.Location = new System.Drawing.Point(0, 524);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(241, 65);
-            this.exitButton.TabIndex = 29;
-            this.exitButton.Text = "Çıkış Yap";
-            this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // kayipButton
-            // 
-            this.kayipButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.kayipButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kayipButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_404_49;
-            this.kayipButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.kayipButton.Location = new System.Drawing.Point(0, 453);
-            this.kayipButton.Name = "kayipButton";
-            this.kayipButton.Size = new System.Drawing.Size(241, 65);
-            this.kayipButton.TabIndex = 28;
-            this.kayipButton.Text = "Kayıp";
-            this.kayipButton.UseVisualStyleBackColor = true;
-            this.kayipButton.Click += new System.EventHandler(this.kayipButton_Click);
-            // 
             // lblKullanici
             // 
             this.lblKullanici.AutoSize = true;
@@ -136,20 +101,6 @@ namespace kutuphane_otomasyon_sistemi
             this.lblKullanici.TabIndex = 23;
             this.lblKullanici.Text = "Kullanıcı";
             // 
-            // personelButton
-            // 
-            this.personelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.personelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.personelButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.officcer;
-            this.personelButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.personelButton.Location = new System.Drawing.Point(0, 382);
-            this.personelButton.Name = "personelButton";
-            this.personelButton.Size = new System.Drawing.Size(241, 65);
-            this.personelButton.TabIndex = 27;
-            this.personelButton.Text = "Personel";
-            this.personelButton.UseVisualStyleBackColor = true;
-            this.personelButton.Click += new System.EventHandler(this.personelButton_Click);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -159,48 +110,6 @@ namespace kutuphane_otomasyon_sistemi
             this.label10.Size = new System.Drawing.Size(91, 23);
             this.label10.TabIndex = 22;
             this.label10.Text = "Merhaba";
-            // 
-            // emanetButton
-            // 
-            this.emanetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.emanetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.emanetButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.gift;
-            this.emanetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.emanetButton.Location = new System.Drawing.Point(0, 311);
-            this.emanetButton.Name = "emanetButton";
-            this.emanetButton.Size = new System.Drawing.Size(241, 65);
-            this.emanetButton.TabIndex = 26;
-            this.emanetButton.Text = "Emanet";
-            this.emanetButton.UseVisualStyleBackColor = true;
-            this.emanetButton.Click += new System.EventHandler(this.emanetButton_Click);
-            // 
-            // kitapButton
-            // 
-            this.kitapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.kitapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kitapButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.book1;
-            this.kitapButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.kitapButton.Location = new System.Drawing.Point(0, 169);
-            this.kitapButton.Name = "kitapButton";
-            this.kitapButton.Size = new System.Drawing.Size(241, 65);
-            this.kitapButton.TabIndex = 24;
-            this.kitapButton.Text = "Kitap";
-            this.kitapButton.UseVisualStyleBackColor = true;
-            this.kitapButton.Click += new System.EventHandler(this.kitapButton_Click);
-            // 
-            // uyeButton
-            // 
-            this.uyeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.uyeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uyeButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.user_icon;
-            this.uyeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uyeButton.Location = new System.Drawing.Point(0, 240);
-            this.uyeButton.Name = "uyeButton";
-            this.uyeButton.Size = new System.Drawing.Size(241, 65);
-            this.uyeButton.TabIndex = 25;
-            this.uyeButton.Text = "Üye";
-            this.uyeButton.UseVisualStyleBackColor = true;
-            this.uyeButton.Click += new System.EventHandler(this.uyeButton_Click);
             // 
             // headPanel
             // 
@@ -267,6 +176,129 @@ namespace kutuphane_otomasyon_sistemi
             this.label3.TabIndex = 2;
             this.label3.Text = "Kitap Sayısı";
             // 
+            // infoButton
+            // 
+            this.infoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.infoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.infoButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_info_50;
+            this.infoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.infoButton.Location = new System.Drawing.Point(0, 595);
+            this.infoButton.Name = "infoButton";
+            this.infoButton.Size = new System.Drawing.Size(241, 65);
+            this.infoButton.TabIndex = 31;
+            this.infoButton.Text = "Hakkında";
+            this.infoButton.UseVisualStyleBackColor = true;
+            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
+            // 
+            // statisticButton
+            // 
+            this.statisticButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.statisticButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.statisticButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_bar_chart_50;
+            this.statisticButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.statisticButton.Location = new System.Drawing.Point(3, 524);
+            this.statisticButton.Name = "statisticButton";
+            this.statisticButton.Size = new System.Drawing.Size(238, 65);
+            this.statisticButton.TabIndex = 30;
+            this.statisticButton.Text = "İstatistik";
+            this.statisticButton.UseVisualStyleBackColor = true;
+            this.statisticButton.Click += new System.EventHandler(this.statisticButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.inegöl_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // exitButton
+            // 
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.exitButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_close_50;
+            this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exitButton.Location = new System.Drawing.Point(0, 666);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(241, 65);
+            this.exitButton.TabIndex = 29;
+            this.exitButton.Text = "Çıkış Yap";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // kayipButton
+            // 
+            this.kayipButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kayipButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kayipButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_404_49;
+            this.kayipButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.kayipButton.Location = new System.Drawing.Point(0, 453);
+            this.kayipButton.Name = "kayipButton";
+            this.kayipButton.Size = new System.Drawing.Size(241, 65);
+            this.kayipButton.TabIndex = 28;
+            this.kayipButton.Text = "Kayıp";
+            this.kayipButton.UseVisualStyleBackColor = true;
+            this.kayipButton.Click += new System.EventHandler(this.kayipButton_Click);
+            // 
+            // personelButton
+            // 
+            this.personelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.personelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.personelButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.officcer;
+            this.personelButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.personelButton.Location = new System.Drawing.Point(0, 382);
+            this.personelButton.Name = "personelButton";
+            this.personelButton.Size = new System.Drawing.Size(241, 65);
+            this.personelButton.TabIndex = 27;
+            this.personelButton.Text = "Personel";
+            this.personelButton.UseVisualStyleBackColor = true;
+            this.personelButton.Click += new System.EventHandler(this.personelButton_Click);
+            // 
+            // emanetButton
+            // 
+            this.emanetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.emanetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.emanetButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.gift;
+            this.emanetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.emanetButton.Location = new System.Drawing.Point(0, 311);
+            this.emanetButton.Name = "emanetButton";
+            this.emanetButton.Size = new System.Drawing.Size(241, 65);
+            this.emanetButton.TabIndex = 26;
+            this.emanetButton.Text = "Emanet";
+            this.emanetButton.UseVisualStyleBackColor = true;
+            this.emanetButton.Click += new System.EventHandler(this.emanetButton_Click);
+            // 
+            // kitapButton
+            // 
+            this.kitapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kitapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kitapButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.book1;
+            this.kitapButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.kitapButton.Location = new System.Drawing.Point(0, 169);
+            this.kitapButton.Name = "kitapButton";
+            this.kitapButton.Size = new System.Drawing.Size(241, 65);
+            this.kitapButton.TabIndex = 24;
+            this.kitapButton.Text = "Kitap";
+            this.kitapButton.UseVisualStyleBackColor = true;
+            this.kitapButton.Click += new System.EventHandler(this.kitapButton_Click);
+            // 
+            // uyeButton
+            // 
+            this.uyeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uyeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.uyeButton.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.user_icon;
+            this.uyeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uyeButton.Location = new System.Drawing.Point(0, 240);
+            this.uyeButton.Name = "uyeButton";
+            this.uyeButton.Size = new System.Drawing.Size(241, 65);
+            this.uyeButton.TabIndex = 25;
+            this.uyeButton.Text = "Üye";
+            this.uyeButton.UseVisualStyleBackColor = true;
+            this.uyeButton.Click += new System.EventHandler(this.uyeButton_Click);
+            // 
             // AnaSayfa_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -283,11 +315,11 @@ namespace kutuphane_otomasyon_sistemi
             this.Load += new System.EventHandler(this.AnaSayfa_form_Load);
             this.sidePanel.ResumeLayout(false);
             this.sidePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.headPanel.ResumeLayout(false);
             this.headPanel.PerformLayout();
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -311,5 +343,7 @@ namespace kutuphane_otomasyon_sistemi
         public System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button statisticButton;
+        private System.Windows.Forms.Button infoButton;
     }
 }

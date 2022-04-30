@@ -65,6 +65,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="hakkinda_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hakkinda_Form.Designer.cs">
+      <DependentUpon>hakkinda_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="istatistik_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="istatistik_Form.Designer.cs">
+      <DependentUpon>istatistik_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kayıp_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +204,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-close-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bar-chart-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inegöl_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

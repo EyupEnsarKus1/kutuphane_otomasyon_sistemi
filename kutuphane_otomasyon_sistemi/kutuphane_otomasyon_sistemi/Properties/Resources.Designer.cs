@@ -153,6 +153,16 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bar_chart_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bar-chart-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-close-50", resourceCulture);
@@ -163,9 +173,29 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_info_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-info-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap id_card {
             get {
                 object obj = ResourceManager.GetObject("id-card", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inegöl_logo {
+            get {
+                object obj = ResourceManager.GetObject("inegöl_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
