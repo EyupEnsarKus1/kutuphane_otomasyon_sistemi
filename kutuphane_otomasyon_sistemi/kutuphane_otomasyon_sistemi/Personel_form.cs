@@ -16,5 +16,10 @@ namespace kutuphane_otomasyon_sistemi
         {
             InitializeComponent();
         }
+
+        private void Personel_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
