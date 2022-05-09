@@ -31,5 +31,10 @@ namespace kutuphane_otomasyon_sistemi
         {
             //MySqlCommand command = new MySqlCommand("INSERT INTO `kitap`(`ad`, `tur`, `sayfa_sayisi`, `barkod_no`, `raf`, `kategori_id`, `yazar_id`, `yayınevi_id`) VALUES (@kitapadi, @)
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
