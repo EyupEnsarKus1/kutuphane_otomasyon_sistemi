@@ -40,12 +40,15 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnKydt = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtAraK_Adi = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,33 +98,29 @@ namespace kutuphane_otomasyon_sistemi
             // txtAd
             // 
             this.txtAd.Location = new System.Drawing.Point(176, 34);
-            this.txtAd.Multiline = true;
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(207, 30);
+            this.txtAd.Size = new System.Drawing.Size(207, 34);
             this.txtAd.TabIndex = 4;
             // 
             // txtSoyad
             // 
             this.txtSoyad.Location = new System.Drawing.Point(176, 85);
-            this.txtSoyad.Multiline = true;
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(207, 30);
+            this.txtSoyad.Size = new System.Drawing.Size(207, 34);
             this.txtSoyad.TabIndex = 5;
             // 
             // txtKadi
             // 
             this.txtKadi.Location = new System.Drawing.Point(176, 135);
-            this.txtKadi.Multiline = true;
             this.txtKadi.Name = "txtKadi";
-            this.txtKadi.Size = new System.Drawing.Size(207, 30);
+            this.txtKadi.Size = new System.Drawing.Size(207, 34);
             this.txtKadi.TabIndex = 6;
             // 
             // txtSifre
             // 
             this.txtSifre.Location = new System.Drawing.Point(176, 179);
-            this.txtSifre.Multiline = true;
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(207, 32);
+            this.txtSifre.Size = new System.Drawing.Size(207, 34);
             this.txtSifre.TabIndex = 7;
             // 
             // groupBox1
@@ -138,7 +137,7 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.groupBox1.Location = new System.Drawing.Point(12, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(429, 338);
+            this.groupBox1.Size = new System.Drawing.Size(423, 231);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PERSONEL";
@@ -146,15 +145,14 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.btnKydt);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox2.Location = new System.Drawing.Point(485, 24);
+            this.groupBox2.Location = new System.Drawing.Point(512, 24);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(452, 338);
+            this.groupBox2.Size = new System.Drawing.Size(423, 231);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "İŞLEMLER";
@@ -162,22 +160,12 @@ namespace kutuphane_otomasyon_sistemi
             // button5
             // 
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(133, 199);
+            this.button5.Location = new System.Drawing.Point(231, 122);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(182, 61);
             this.button5.TabIndex = 4;
             this.button5.Text = "Listele";
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(231, 118);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 58);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Temizle";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -210,12 +198,43 @@ namespace kutuphane_otomasyon_sistemi
             this.btnKydt.UseVisualStyleBackColor = true;
             this.btnKydt.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 284);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(796, 311);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(826, 284);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 25);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Kullanıcı Adı:";
+            // 
+            // txtAraK_Adi
+            // 
+            this.txtAraK_Adi.Location = new System.Drawing.Point(971, 277);
+            this.txtAraK_Adi.Multiline = true;
+            this.txtAraK_Adi.Name = "txtAraK_Adi";
+            this.txtAraK_Adi.Size = new System.Drawing.Size(165, 32);
+            this.txtAraK_Adi.TabIndex = 12;
+            // 
             // Personel_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1037, 586);
+            this.ClientSize = new System.Drawing.Size(1243, 789);
+            this.Controls.Add(this.txtAraK_Adi);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -225,7 +244,9 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -242,9 +263,11 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnKydt;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtAraK_Adi;
     }
 }
