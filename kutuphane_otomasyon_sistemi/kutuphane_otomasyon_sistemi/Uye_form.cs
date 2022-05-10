@@ -51,5 +51,20 @@ namespace kutuphane_otomasyon_sistemi
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            MySqlCommand command = new MySqlCommand("INSERT INTO `uye`(`okul_numara`, `ad`, `soyad`, `cinsiyet`, `telefon`, `email`) VALUES (@okul_numara,@ad,@soyad,@cinsiyet,@telefon,@email)", connection);
+            command.Parameters.AddWithValue("@okul_numara", txtNumara.Text);
+            command.Parameters.AddWithValue("@ad", txtAd.Text);
+            command.Parameters.AddWithValue("@soyad", txtSoyad.Text);
+            command.Parameters.AddWithValue("@cinsiyet", comboCinsiyet.Text);
+            command.Parameters.AddWithValue("@telefon", txtTelefon.Text);
+            command.Parameters.AddWithValue("@email", txtEmail.Text);
+            command.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("Yeni Üye Eklendi");
+        }
     }
 }

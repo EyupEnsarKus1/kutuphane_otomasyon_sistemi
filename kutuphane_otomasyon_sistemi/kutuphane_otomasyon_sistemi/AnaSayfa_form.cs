@@ -119,5 +119,10 @@ namespace kutuphane_otomasyon_sistemi
         {
             loadForm(new odunc_Form(), sender);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

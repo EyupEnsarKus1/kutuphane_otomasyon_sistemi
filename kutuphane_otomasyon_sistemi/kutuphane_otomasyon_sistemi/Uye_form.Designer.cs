@@ -35,13 +35,13 @@ namespace kutuphane_otomasyon_sistemi
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtAdı = new System.Windows.Forms.TextBox();
-            this.txtSoyadı = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.txtTcKimlikNo = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.comboCinsiyet = new System.Windows.Forms.ComboBox();
+            this.txtNumara = new System.Windows.Forms.TextBox();
             this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.txteMail = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.ekle_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -53,7 +53,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(31, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 16);
+            this.label1.Size = new System.Drawing.Size(34, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ADI:";
             // 
@@ -62,7 +62,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(34, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 16);
+            this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "SOYADI:";
             // 
@@ -71,7 +71,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(34, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 16);
+            this.label3.Size = new System.Drawing.Size(73, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "CİNSİYET:";
             // 
@@ -80,16 +80,16 @@ namespace kutuphane_otomasyon_sistemi
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(34, 185);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 16);
+            this.label4.Size = new System.Drawing.Size(91, 17);
             this.label4.TabIndex = 3;
-            this.label4.Text = "TC KİMLİK NO:";
+            this.label4.Text = "Okul Numara";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(34, 237);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 16);
+            this.label5.Size = new System.Drawing.Size(76, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "TELEFON:";
             // 
@@ -98,41 +98,41 @@ namespace kutuphane_otomasyon_sistemi
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(41, 285);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 16);
+            this.label6.Size = new System.Drawing.Size(57, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "E-MAİL:";
             // 
-            // txtAdı
+            // txtAd
             // 
-            this.txtAdı.Location = new System.Drawing.Point(156, 34);
-            this.txtAdı.Name = "txtAdı";
-            this.txtAdı.Size = new System.Drawing.Size(100, 22);
-            this.txtAdı.TabIndex = 6;
+            this.txtAd.Location = new System.Drawing.Point(159, 37);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(100, 22);
+            this.txtAd.TabIndex = 6;
             // 
-            // txtSoyadı
+            // txtSoyad
             // 
-            this.txtSoyadı.Location = new System.Drawing.Point(159, 80);
-            this.txtSoyadı.Name = "txtSoyadı";
-            this.txtSoyadı.Size = new System.Drawing.Size(100, 22);
-            this.txtSoyadı.TabIndex = 7;
+            this.txtSoyad.Location = new System.Drawing.Point(159, 80);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(100, 22);
+            this.txtSoyad.TabIndex = 7;
             // 
-            // comboBox1
+            // comboCinsiyet
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboCinsiyet.FormattingEnabled = true;
+            this.comboCinsiyet.Items.AddRange(new object[] {
             "KADIN",
             "ERKEK"});
-            this.comboBox1.Location = new System.Drawing.Point(159, 129);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 8;
+            this.comboCinsiyet.Location = new System.Drawing.Point(159, 129);
+            this.comboCinsiyet.Name = "comboCinsiyet";
+            this.comboCinsiyet.Size = new System.Drawing.Size(100, 24);
+            this.comboCinsiyet.TabIndex = 8;
             // 
-            // txtTcKimlikNo
+            // txtNumara
             // 
-            this.txtTcKimlikNo.Location = new System.Drawing.Point(159, 179);
-            this.txtTcKimlikNo.Name = "txtTcKimlikNo";
-            this.txtTcKimlikNo.Size = new System.Drawing.Size(100, 22);
-            this.txtTcKimlikNo.TabIndex = 9;
+            this.txtNumara.Location = new System.Drawing.Point(159, 179);
+            this.txtNumara.Name = "txtNumara";
+            this.txtNumara.Size = new System.Drawing.Size(100, 22);
+            this.txtNumara.TabIndex = 9;
             // 
             // txtTelefon
             // 
@@ -141,21 +141,22 @@ namespace kutuphane_otomasyon_sistemi
             this.txtTelefon.Size = new System.Drawing.Size(100, 22);
             this.txtTelefon.TabIndex = 10;
             // 
-            // txteMail
+            // txtEmail
             // 
-            this.txteMail.Location = new System.Drawing.Point(159, 279);
-            this.txteMail.Name = "txteMail";
-            this.txteMail.Size = new System.Drawing.Size(100, 22);
-            this.txteMail.TabIndex = 11;
+            this.txtEmail.Location = new System.Drawing.Point(159, 279);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 22);
+            this.txtEmail.TabIndex = 11;
             // 
-            // button1
+            // ekle_btn
             // 
-            this.button1.Location = new System.Drawing.Point(139, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 45);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "ÜYE EKLE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ekle_btn.Location = new System.Drawing.Point(139, 360);
+            this.ekle_btn.Name = "ekle_btn";
+            this.ekle_btn.Size = new System.Drawing.Size(120, 45);
+            this.ekle_btn.TabIndex = 12;
+            this.ekle_btn.Text = "ÜYE EKLE";
+            this.ekle_btn.UseVisualStyleBackColor = true;
+            this.ekle_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -177,21 +178,21 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtAdı);
+            this.groupBox1.Controls.Add(this.txtAd);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.ekle_btn);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txteMail);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtTelefon);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtTcKimlikNo);
+            this.groupBox1.Controls.Add(this.txtNumara);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboCinsiyet);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtSoyadı);
+            this.groupBox1.Controls.Add(this.txtSoyad);
             this.groupBox1.Location = new System.Drawing.Point(45, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(394, 576);
@@ -225,13 +226,13 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtAdı;
-        private System.Windows.Forms.TextBox txtSoyadı;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox txtTcKimlikNo;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.ComboBox comboCinsiyet;
+        private System.Windows.Forms.TextBox txtNumara;
         private System.Windows.Forms.TextBox txtTelefon;
-        private System.Windows.Forms.TextBox txteMail;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Button ekle_btn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
