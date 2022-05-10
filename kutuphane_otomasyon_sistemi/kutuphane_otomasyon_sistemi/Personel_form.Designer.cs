@@ -221,7 +221,6 @@ namespace kutuphane_otomasyon_sistemi
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Personel_form";
-            this.Text = "Personel_form";
             this.Load += new System.EventHandler(this.Personel_form_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
