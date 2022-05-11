@@ -45,10 +45,5 @@ namespace kutuphane_otomasyon_sistemi
 
 
         }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }
