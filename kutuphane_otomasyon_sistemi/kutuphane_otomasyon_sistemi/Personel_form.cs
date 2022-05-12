@@ -18,10 +18,12 @@ namespace kutuphane_otomasyon_sistemi
 {
     public partial class Personel_form : Form
     {
+        Database method = new Database();
         public Personel_form()
         {
             InitializeComponent();
         }
+        
         MySqlConnection connection = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
 
         private void Personel_form_Load(object sender, EventArgs e)
@@ -33,6 +35,8 @@ namespace kutuphane_otomasyon_sistemi
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*
+            #region
             connection.Open();
             MySqlCommand command = new MySqlCommand("INSERT INTO `personel`( `personel_ad`, `personel_soyad`, `k_adi`, `k_sifre`) VALUES (@personel_ad,@personel_soyad,@k_adi,@k_sifre)",connection);
             command.Parameters.AddWithValue("@personel_ad",txtAd.Text);
@@ -42,6 +46,10 @@ namespace kutuphane_otomasyon_sistemi
             command.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("YENİ PERSONEL EKLENDİ");
+            #endregion*/
+            Database.addPersonel(txtAd.Text, txtSoyad.Text, txtKadi.Text, txtSifre.Text);
+
+
 
 
         }

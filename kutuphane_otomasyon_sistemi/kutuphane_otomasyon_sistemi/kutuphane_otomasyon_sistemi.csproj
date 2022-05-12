@@ -53,6 +53,7 @@
     <Compile Include="AnaSayfa_form.Designer.cs">
       <DependentUpon>AnaSayfa_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="Emanet_form.cs">
       <SubType>Form</SubType>
     </Compile>
