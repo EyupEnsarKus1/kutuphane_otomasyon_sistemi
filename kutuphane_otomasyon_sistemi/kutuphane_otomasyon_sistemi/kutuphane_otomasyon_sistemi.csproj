@@ -84,11 +84,18 @@
     <Compile Include="Kayıp_form.Designer.cs">
       <DependentUpon>Kayıp_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kitap.cs" />
     <Compile Include="Kitap_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Kitap_form.Designer.cs">
       <DependentUpon>Kitap_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap_Kayıt_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap_Kayıt_Form.Designer.cs">
+      <DependentUpon>Kitap_Kayıt_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Method.cs" />
     <Compile Include="odunc_Form.cs">
