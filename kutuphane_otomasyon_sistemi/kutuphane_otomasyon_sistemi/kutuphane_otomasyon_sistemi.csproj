@@ -97,11 +97,18 @@
     <Compile Include="odunc_Form.Designer.cs">
       <DependentUpon>odunc_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personel.cs" />
     <Compile Include="Personel_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Personel_form.Designer.cs">
       <DependentUpon>Personel_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personel_Kayıt_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personel_Kayıt_Form.Designer.cs">
+      <DependentUpon>personel_Kayıt_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="personel_Login.cs">
       <SubType>Form</SubType>
@@ -140,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Personel_form.resx">
       <DependentUpon>Personel_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personel_Kayıt_Form.resx">
+      <DependentUpon>personel_Kayıt_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="personel_Login.resx">
       <DependentUpon>personel_Login.cs</DependentUpon>
