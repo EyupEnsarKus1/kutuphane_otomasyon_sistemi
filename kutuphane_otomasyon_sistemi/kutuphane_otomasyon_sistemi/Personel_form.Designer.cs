@@ -29,8 +29,8 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnEkle = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,22 +41,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.txtAd = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtSoyad = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtKadi = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSifre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnKydt = new System.Windows.Forms.Button();
-            this.btnSil = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEkle
@@ -138,12 +123,12 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // Column5
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column5.HeaderText = "";
             this.Column5.MinimumWidth = 6;
@@ -154,12 +139,12 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // Column6
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column6.HeaderText = "";
             this.Column6.MinimumWidth = 6;
@@ -186,147 +171,6 @@ namespace kutuphane_otomasyon_sistemi
             this.txtSearch.TabIndex = 12;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // txtAd
-            // 
-            this.txtAd.Location = new System.Drawing.Point(176, 34);
-            this.txtAd.Multiline = true;
-            this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(218, 40);
-            this.txtAd.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(6, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 25);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "ŞİFRE:";
-            // 
-            // txtSoyad
-            // 
-            this.txtSoyad.Location = new System.Drawing.Point(176, 85);
-            this.txtSoyad.Multiline = true;
-            this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(218, 40);
-            this.txtSoyad.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "KULLANICI ADI:";
-            // 
-            // txtKadi
-            // 
-            this.txtKadi.Location = new System.Drawing.Point(176, 135);
-            this.txtKadi.Multiline = true;
-            this.txtKadi.Name = "txtKadi";
-            this.txtKadi.Size = new System.Drawing.Size(218, 40);
-            this.txtKadi.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "SOYAD:";
-            // 
-            // txtSifre
-            // 
-            this.txtSifre.Location = new System.Drawing.Point(176, 179);
-            this.txtSifre.Multiline = true;
-            this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(218, 42);
-            this.txtSifre.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(6, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AD:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtSifre);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtKadi);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtSoyad);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtAd);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox1.Location = new System.Drawing.Point(12, 24);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(429, 256);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "PERSONEL";
-            // 
-            // btnKydt
-            // 
-            this.btnKydt.ForeColor = System.Drawing.Color.Black;
-            this.btnKydt.Location = new System.Drawing.Point(18, 38);
-            this.btnKydt.Name = "btnKydt";
-            this.btnKydt.Size = new System.Drawing.Size(179, 60);
-            this.btnKydt.TabIndex = 0;
-            this.btnKydt.Text = "Kaydet";
-            this.btnKydt.UseVisualStyleBackColor = true;
-            this.btnKydt.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnSil
-            // 
-            this.btnSil.ForeColor = System.Drawing.Color.Black;
-            this.btnSil.Location = new System.Drawing.Point(18, 118);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(179, 61);
-            this.btnSil.TabIndex = 1;
-            this.btnSil.Text = "Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
-            // 
-            // button3
-            // 
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(231, 40);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 61);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Güncelle";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.btnSil);
-            this.groupBox2.Controls.Add(this.btnKydt);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox2.Location = new System.Drawing.Point(485, 24);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(452, 256);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "İŞLEMLER";
-            // 
             // Personel_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,17 +181,12 @@ namespace kutuphane_otomasyon_sistemi
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Personel_form";
             this.Load += new System.EventHandler(this.Personel_form_Load);
             this.Shown += new System.EventHandler(this.Personel_form_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,18 +203,5 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewButtonColumn Column5;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.TextBox txtAd;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtSoyad;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtKadi;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSifre;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnKydt;
-        private System.Windows.Forms.Button btnSil;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

@@ -31,17 +31,9 @@ namespace kutuphane_otomasyon_sistemi
         MySqlConnection connection = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
 
         private void Personel_form_Load(object sender, EventArgs e)
-        {
-           
-            txtSifre.Text = "";
-            txtSifre.PasswordChar = '*';
-            txtSifre.MaxLength = 10;
-        }   
+        {}   
 
-        public void clear()
-        {
-            txtAd.Text = txtSoyad.Text = txtKadi.Text = txtSifre.Text = String.Empty;
-        }
+       
 
         public void display()
         {
