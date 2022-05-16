@@ -78,6 +78,28 @@ namespace kutuphane_otomasyon_sistemi
                 MessageBox.Show("Üye Güncelleme Başarısız" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             con.Close();
+
+        }
+        public static void deleteMember(string id)
+        {
+            string sql = "DELETE FROM uye WHERE uye_numara=@uye_numara";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@uye_numara", MySqlDbType.VarChar).Value = id;
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Üye Silindi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Üye Silinirken Hata" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
         }
     }
 }
