@@ -85,6 +85,7 @@
       <DependentUpon>Kayıp_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Kitap.cs" />
+    <Compile Include="KitapDatabase.cs" />
     <Compile Include="Kitap_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kitap_form.resx">
       <DependentUpon>Kitap_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap_Kayıt_Form.resx">
+      <DependentUpon>Kitap_Kayıt_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Personel_form.resx">
       <DependentUpon>Personel_form.cs</DependentUpon>
@@ -246,6 +250,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\borrow_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

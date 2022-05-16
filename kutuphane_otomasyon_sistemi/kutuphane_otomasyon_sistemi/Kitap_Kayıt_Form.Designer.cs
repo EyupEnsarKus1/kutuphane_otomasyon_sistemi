@@ -85,6 +85,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Barkod No:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 

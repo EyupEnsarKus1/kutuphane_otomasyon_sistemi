@@ -36,5 +36,11 @@ namespace kutuphane_otomasyon_sistemi
         {
 
         }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            Kitap_Kayıt_Form form = new Kitap_Kayıt_Form();
+            form.ShowDialog();
+        }
     }
 }
