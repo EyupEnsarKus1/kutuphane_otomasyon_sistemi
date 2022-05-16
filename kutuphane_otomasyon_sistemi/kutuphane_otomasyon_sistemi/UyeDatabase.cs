@@ -25,6 +25,9 @@ namespace kutuphane_otomasyon_sistemi
             }
             return con;
         }
+        public static void addMember(Uye uye)
+        {
 
+        }
     }
 }
