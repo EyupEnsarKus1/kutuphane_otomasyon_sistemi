@@ -8,7 +8,6 @@ namespace kutuphane_otomasyon_sistemi
 {
     public class Uye
     {
-       
         public string uye_numara { get; set; }
         public string ad { get; set; }
         public string soyad { get; set; }
@@ -24,9 +23,11 @@ namespace kutuphane_otomasyon_sistemi
             this.cinsiyet = cinsiyet;
             this.telefon = telefon;
             this.email = email;
-        }
-      
-        
+
+
+
+
+
     }
 }
 
