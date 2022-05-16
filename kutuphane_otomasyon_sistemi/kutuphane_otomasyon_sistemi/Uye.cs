@@ -24,7 +24,7 @@ namespace kutuphane_otomasyon_sistemi
             this.telefon = telefon;
             this.email = email;
 
-
+        }
 
 
 
