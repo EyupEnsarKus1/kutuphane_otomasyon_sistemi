@@ -52,5 +52,32 @@ namespace kutuphane_otomasyon_sistemi
             }
             con.Close();
         }
+        public static void updateMember(Uye uye, string id)
+        {
+            string sql = "UPDATE uye SET ad=@ad, soyad=@soyad,cinsiyet=@cinsiyet,telefon=@telefon, email=@email WHERE uye_numara=@uye_numara";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@uye_numara", MySqlDbType.VarChar).Value = id;
+            cmd.Parameters.Add("@ad", MySqlDbType.VarChar).Value = uye.ad;
+            cmd.Parameters.Add("@soyad", MySqlDbType.VarChar).Value = uye.soyad;
+            cmd.Parameters.Add("@cinsiyet", MySqlDbType.VarChar).Value = uye.cinsiyet;
+            cmd.Parameters.Add("telefon", MySqlDbType.VarChar).Value = uye.telefon;
+            cmd.Parameters.Add("email", MySqlDbType.VarChar).Value = uye.email;
+
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Üye Bilgileri Güncellendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Üye Güncelleme Başarısız" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
     }
 }
