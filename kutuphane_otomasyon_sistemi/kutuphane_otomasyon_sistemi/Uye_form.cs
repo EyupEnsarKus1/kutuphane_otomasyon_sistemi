@@ -55,5 +55,13 @@ namespace kutuphane_otomasyon_sistemi
         {
           
         }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            Uye_Kayıt_Form form = new Uye_Kayıt_Form();
+            form.ShowDialog();
+
+
+        }
     }
 }

@@ -19,7 +19,17 @@ namespace kutuphane_otomasyon_sistemi
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
+        }
 
+        private void Uye_Kayıt_Form_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

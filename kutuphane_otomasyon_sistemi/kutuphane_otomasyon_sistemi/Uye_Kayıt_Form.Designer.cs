@@ -146,12 +146,13 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(197, 366);
+            this.btnEkle.Location = new System.Drawing.Point(200, 356);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(115, 52);
             this.btnEkle.TabIndex = 12;
             this.btnEkle.Text = "ÜYE EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // Uye_Kayıt_Form
             // 
@@ -173,6 +174,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Controls.Add(this.label1);
             this.Name = "Uye_Kayıt_Form";
             this.Text = "Uye_Kayıt_Form";
+            this.Load += new System.EventHandler(this.Uye_Kayıt_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

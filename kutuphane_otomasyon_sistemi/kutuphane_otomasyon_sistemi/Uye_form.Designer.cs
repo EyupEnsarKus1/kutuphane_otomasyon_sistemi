@@ -30,12 +30,12 @@ namespace kutuphane_otomasyon_sistemi
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +47,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,22 +56,8 @@ namespace kutuphane_otomasyon_sistemi
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1190, 194);
+            this.panel1.Size = new System.Drawing.Size(1185, 194);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.txtSearch);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(1, 213);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1190, 441);
-            this.panel2.TabIndex = 0;
             // 
             // label1
             // 
@@ -83,37 +69,26 @@ namespace kutuphane_otomasyon_sistemi
             this.label1.TabIndex = 0;
             this.label1.Text = "ÜYE BİLGİSİ";
             // 
-            // dataGridView1
+            // panel2
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 98);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1191, 308);
-            this.dataGridView1.TabIndex = 1;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.txtSearch);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.btnEkle);
+            this.panel2.Controls.Add(this.dataGridView);
+            this.panel2.Location = new System.Drawing.Point(1, 213);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1184, 458);
+            this.panel2.TabIndex = 0;
             // 
-            // button1
+            // txtSearch
             // 
-            this.button1.Location = new System.Drawing.Point(87, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 62);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "ÜYE EKLE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtSearch.Location = new System.Drawing.Point(447, 51);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(154, 22);
+            this.txtSearch.TabIndex = 4;
             // 
             // label2
             // 
@@ -125,12 +100,43 @@ namespace kutuphane_otomasyon_sistemi
             this.label2.TabIndex = 3;
             this.label2.Text = "ÜYE ARA";
             // 
-            // txtSearch
+            // btnEkle
             // 
-            this.txtSearch.Location = new System.Drawing.Point(447, 51);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(154, 22);
-            this.txtSearch.TabIndex = 4;
+            this.btnEkle.Location = new System.Drawing.Point(87, 16);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(154, 62);
+            this.btnEkle.TabIndex = 2;
+            this.btnEkle.Text = "ÜYE EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.AllowUserToResizeColumns = false;
+            this.dataGridView.AllowUserToResizeRows = false;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9});
+            this.dataGridView.Location = new System.Drawing.Point(0, 118);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView.RowTemplate.Height = 24;
+            this.dataGridView.ShowEditingIcon = false;
+            this.dataGridView.Size = new System.Drawing.Size(1184, 308);
+            this.dataGridView.TabIndex = 1;
             // 
             // Column1
             // 
@@ -208,7 +214,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 697);
+            this.ClientSize = new System.Drawing.Size(1197, 714);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -221,7 +227,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,10 +237,10 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

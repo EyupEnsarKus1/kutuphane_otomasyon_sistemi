@@ -132,6 +132,12 @@
     <Compile Include="Uye_form.Designer.cs">
       <DependentUpon>Uye_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uye_Kayıt_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye_Kayıt_Form.Designer.cs">
+      <DependentUpon>Uye_Kayıt_Form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnaSayfa_form.resx">
       <DependentUpon>AnaSayfa_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +183,9 @@
     </Compile>
     <EmbeddedResource Include="Uye_form.resx">
       <DependentUpon>Uye_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye_Kayıt_Form.resx">
+      <DependentUpon>Uye_Kayıt_Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
