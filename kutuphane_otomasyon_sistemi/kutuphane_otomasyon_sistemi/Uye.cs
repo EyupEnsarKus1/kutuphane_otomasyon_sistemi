@@ -16,15 +16,17 @@ namespace kutuphane_otomasyon_sistemi
         public string telefon { get; set; }
         public string email { get; set; }
 
-        public Uye(string uye_numara, string ad, string soyad, string cinsiyet, string telefon, string email);
+        public Uye(string uye_numara, string ad, string soyad, string cinsiyet, string telefon, string email)
         {
-          this.uye_numara = uye_numara;
-          this.ad = ad;
-          this.soyad = soyad;
-          this.cinsiyet = cinsiyet;
-          this.telefon = telefon;
-          this.email = email;
-    
+            this.uye_numara = uye_numara;
+            this.ad = ad;
+            this.soyad = soyad;
+            this.cinsiyet = cinsiyet;
+            this.telefon = telefon;
+            this.email = email;
         }
+      
+        
     }
 }
+
