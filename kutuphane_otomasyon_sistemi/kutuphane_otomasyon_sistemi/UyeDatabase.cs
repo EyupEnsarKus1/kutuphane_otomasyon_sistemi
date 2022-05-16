@@ -101,5 +101,18 @@ namespace kutuphane_otomasyon_sistemi
             }
             con.Close();
         }
+        public static void displayAndSearch(string query, DataGridView dgv)
+        {
+            string sql = query;
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+            DataTable tbl = new DataTable();
+            adp.Fill(tbl);
+            dgv.DataSource = tbl;
+            con.Close();
+
+
+        }
     }
 }
