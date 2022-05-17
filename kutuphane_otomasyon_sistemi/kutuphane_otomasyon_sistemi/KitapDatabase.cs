@@ -54,6 +54,34 @@ namespace kutuphane_otomasyon_sistemi
             }
             con.Close();
         }
+        public static void updateKitap(Kitap ktp, string id)
+        {
+            string sql = "UPDATE kitap SET ad=@ad, tur=@tur, sayfa_sayisi=@sayfa_sayisi, barkod_no=@barkod_no, raf=@raf, kategori_id=@kategori_id, yazar_id=@yazar_id, yayınevi_id=@yayınevi_id";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@kitap_id", MySqlDbType.VarChar).Value = id;
+            cmd.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.ad;
+            cmd.Parameters.Add("@tur", MySqlDbType.VarChar).Value = ktp.tur;
+            cmd.Parameters.Add("@sayfa_sayisi", MySqlDbType.VarChar).Value = ktp.sayfa_sayisi;
+            cmd.Parameters.Add("@barkod_no", MySqlDbType.VarChar).Value = ktp.barkod_no;
+            cmd.Parameters.Add("@raf", MySqlDbType.VarChar).Value = ktp.raf;
+            cmd.Parameters.Add("@kategori_id", MySqlDbType.VarChar).Value = ktp.kategori_id;
+            cmd.Parameters.Add("@yazar_id", MySqlDbType.VarChar).Value = ktp.yazar_id;
+            cmd.Parameters.Add("@yayınevi_id", MySqlDbType.VarChar).Value = ktp.yayınevi_id;
+            try
+            {
 
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kitap Bilgileri Güncellendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Kitap Güncelleme Başarısız" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
     }  
 }
