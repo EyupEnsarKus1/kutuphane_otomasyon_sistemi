@@ -12,9 +12,11 @@ namespace kutuphane_otomasyon_sistemi
 {
     public partial class Uye_Kayıt_Form : Form
     {
-        public Uye_Kayıt_Form()
+        private readonly Uye_form _parent; 
+        public Uye_Kayıt_Form(Uye_form parent )
         {
             InitializeComponent();
+            _parent = parent;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -29,7 +31,42 @@ namespace kutuphane_otomasyon_sistemi
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-           
+        
+            if (txtUyeNumara.Text.Trim().Length< 10)
+            {
+                MessageBox.Show("Uye Numara 10 haneden buyuk olmaldır");
+                return;
+            }
+           if(txtAd.Text.Trim().Length < 1)
+            {
+                MessageBox.Show("Ad 1 haften kucuk olamaz");
+                return;
+            }
+            if (txtSoyad.Text.Trim().Length < 1)
+            {
+                MessageBox.Show("SoyadAd 1 haften kucuk olamaz");
+                return;
+            }
+            if(comboCinsiyet.Text == "")
+            {
+                MessageBox.Show("Lütfen Cinsiyet Seçiniz");
+                return;
+            }
+            if (txtTelefon.Text.Trim().Length <= 11)
+            {
+                MessageBox.Show("Telefon Numarasını Doğru Girdiginden Emin Ol");
+                return;
+            }
+            if (txtEMail.Text.Trim().Length < 5)
+            {
+                MessageBox.Show("Email Doğru Girdiginden Emin Ol");
+                return;
+            }
+            if (btnEkle.Text == "Ekle")
+            {
+                Uye uye = new Uye(txtUyeNumara.Text.Trim(), txtAd.Text.Trim(), txtSoyad.Text.Trim(), comboCinsiyet.Text, txtTelefon.Text.Trim(), txtEMail.Text.Trim());   
+               
+            }
         }
     }
 }
