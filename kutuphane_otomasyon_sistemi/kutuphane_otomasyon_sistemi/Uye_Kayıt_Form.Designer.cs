@@ -42,6 +42,7 @@ namespace kutuphane_otomasyon_sistemi
             this.txtTelefon = new System.Windows.Forms.TextBox();
             this.txtEMail = new System.Windows.Forms.TextBox();
             this.btnEkle = new System.Windows.Forms.Button();
+            this.lblHead = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -150,15 +151,25 @@ namespace kutuphane_otomasyon_sistemi
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(115, 52);
             this.btnEkle.TabIndex = 12;
-            this.btnEkle.Text = "ÜYE EKLE";
+            this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            // 
+            // lblHead
+            // 
+            this.lblHead.AutoSize = true;
+            this.lblHead.Location = new System.Drawing.Point(262, 13);
+            this.lblHead.Name = "lblHead";
+            this.lblHead.Size = new System.Drawing.Size(35, 17);
+            this.lblHead.TabIndex = 13;
+            this.lblHead.Text = "Ekle";
             // 
             // Uye_Kayıt_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 671);
+            this.Controls.Add(this.lblHead);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.txtEMail);
             this.Controls.Add(this.txtTelefon);
@@ -195,5 +206,6 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.TextBox txtEMail;
         private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.Label lblHead;
     }
 }

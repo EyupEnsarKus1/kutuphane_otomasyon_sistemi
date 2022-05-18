@@ -28,6 +28,12 @@ namespace kutuphane_otomasyon_sistemi
         }
         public static void addBook(Kitap ktp)
         {
+            // ilk önce yayın evi kaydedicez 
+            // daha sonra ıd gelicez daha sonra yayınevi idsini alıcaz 
+            // yayınevi id kısmında buradan gelen id yi pass leyecegiz
+
+
+
             string sql = "INSERT INTO kitap VALUES (NULL,@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@kategori_id,@yazar_id,@yayınevi_id)";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);

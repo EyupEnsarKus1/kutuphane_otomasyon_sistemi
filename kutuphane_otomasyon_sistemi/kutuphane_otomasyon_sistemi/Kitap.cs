@@ -14,6 +14,7 @@ namespace kutuphane_otomasyon_sistemi
         public string barkod_no { get; set; }
         public string raf { get; set; }
         public int kategori_id { get; set; }
+        
         public int yazar_id { get; set; }
         public int yayınevi_id { get; set; }
 

@@ -12,11 +12,34 @@ namespace kutuphane_otomasyon_sistemi
 {
     public partial class Uye_Kayıt_Form : Form
     {
-        private readonly Uye_form _parent; 
+        private readonly Uye_form _parent;
+
+        public string uye_numara, ad, soyad,cinsiyet, telefon, email;
         public Uye_Kayıt_Form(Uye_form parent )
         {
             InitializeComponent();
             _parent = parent;
+        }
+        public void updateInfo()
+        {
+            lblHead.Text = "Güncelle";
+            btnEkle.Text = "Güncelle";
+            txtUyeNumara.Text = uye_numara;
+            txtAd.Text = ad;
+            txtSoyad.Text = soyad;
+            comboCinsiyet.Text = cinsiyet;
+            txtTelefon.Text = telefon;
+            txtEMail.Text = email;
+
+        }
+        public void saveInfo()
+        {
+            lblHead.Text = "Ekle";
+            btnEkle.Text = "Ekle";
+        }
+        public void clear()
+        {
+            txtAd.Text = txtSoyad.Text = txtTelefon.Text = txtEMail.Text  = txtUyeNumara.Text = comboCinsiyet.Text = string.Empty;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -32,7 +55,7 @@ namespace kutuphane_otomasyon_sistemi
         private void btnEkle_Click(object sender, EventArgs e)
         {
         
-            if (txtUyeNumara.Text.Trim().Length< 10)
+            if (txtUyeNumara.Text.Trim().Length< 9)
             {
                 MessageBox.Show("Uye Numara 10 haneden buyuk olmaldır");
                 return;
@@ -52,7 +75,7 @@ namespace kutuphane_otomasyon_sistemi
                 MessageBox.Show("Lütfen Cinsiyet Seçiniz");
                 return;
             }
-            if (txtTelefon.Text.Trim().Length <= 11)
+            if (txtTelefon.Text.Trim().Length < 10)
             {
                 MessageBox.Show("Telefon Numarasını Doğru Girdiginden Emin Ol");
                 return;
@@ -64,9 +87,16 @@ namespace kutuphane_otomasyon_sistemi
             }
             if (btnEkle.Text == "Ekle")
             {
-                Uye uye = new Uye(txtUyeNumara.Text.Trim(), txtAd.Text.Trim(), txtSoyad.Text.Trim(), comboCinsiyet.Text, txtTelefon.Text.Trim(), txtEMail.Text.Trim());   
-               
+                Uye uye = new Uye(txtUyeNumara.Text.Trim(), txtAd.Text.Trim(), txtSoyad.Text.Trim(), comboCinsiyet.Text.Trim(), txtTelefon.Text.Trim(), txtEMail.Text.Trim());
+                UyeDatabase.addMember(uye);
+                clear();
             }
+            if(btnEkle.Text == "Güncelle")
+            {
+                Uye uye = new Uye(txtUyeNumara.Text.Trim(), txtAd.Text.Trim(), txtSoyad.Text.Trim(), comboCinsiyet.Text.Trim(), txtTelefon.Text.Trim(), txtEMail.Text.Trim());
+                UyeDatabase.updateMember(uye,uye_numara);
+            }
+            _parent.display();
         }
     }
 }
