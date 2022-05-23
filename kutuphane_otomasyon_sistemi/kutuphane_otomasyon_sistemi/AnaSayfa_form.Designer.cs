@@ -53,7 +53,6 @@ namespace kutuphane_otomasyon_sistemi
             this.emanetButton = new System.Windows.Forms.Button();
             this.kitapButton = new System.Windows.Forms.Button();
             this.uyeButton = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.sidePanel.SuspendLayout();
             this.headPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -155,7 +154,6 @@ namespace kutuphane_otomasyon_sistemi
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
-            this.mainPanel.Controls.Add(this.label7);
             this.mainPanel.Controls.Add(this.label6);
             this.mainPanel.Controls.Add(this.label5);
             this.mainPanel.Controls.Add(this.label4);
@@ -357,15 +355,6 @@ namespace kutuphane_otomasyon_sistemi
             this.uyeButton.UseVisualStyleBackColor = false;
             this.uyeButton.Click += new System.EventHandler(this.uyeButton_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(247, 262);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "label7";
-            // 
             // AnaSayfa_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -415,6 +404,5 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button oduncButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label7;
     }
 }
