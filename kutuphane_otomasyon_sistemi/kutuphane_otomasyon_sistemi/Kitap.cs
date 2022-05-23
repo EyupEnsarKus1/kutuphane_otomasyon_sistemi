@@ -10,24 +10,24 @@ namespace kutuphane_otomasyon_sistemi
     {
         public string ad { get; set; }
         public string tur { get; set; }
-        public int sayfa_sayisi { get; set; }
+        public string sayfa_sayisi { get; set; }
         public string barkod_no { get; set; }
         public string raf { get; set; }
-        public int kategori_id { get; set; }
+        public string kategori_ad{ get; set; }
         
-        public int yazar_id { get; set; }
-        public int yayınevi_id { get; set; }
+        public string yazar_ad{ get; set; }
+        public string yayinevi_ad { get; set; }
 
-        public Kitap(string ad, string tur, int sayfa_sayisi, string barkod_no, string raf, int kategori_id, int yazar_id, int yayınevi_id)
+        public Kitap(string ad, string tur, int sayfa_sayisi, string barkod_no, string raf, int kategori_ad, int yazar_ad, int yayinevi_ad)
         {
             this.ad = ad;
             this.tur = tur;
             this.sayfa_sayisi = sayfa_sayisi;
             this.barkod_no = barkod_no;
             this.raf = raf;
-            this.kategori_id = kategori_id;
-            this.yazar_id = yazar_id;
-            this.yayınevi_id = yayınevi_id;
+            this.kategori_ad = kategori_ad;
+            this.yazar_ad = yazar_ad;
+            this.yayinevi_ad = yayinevi_ad;
         }
 
     }
