@@ -18,7 +18,7 @@ namespace kutuphane_otomasyon_sistemi
         public string yazar_ad{ get; set; }
         public string yayinevi_ad { get; set; }
 
-        public Kitap(string ad, string tur, int sayfa_sayisi, string barkod_no, string raf, int kategori_ad, int yazar_ad, int yayinevi_ad)
+        public Kitap(string ad, string tur, string sayfa_sayisi, string barkod_no, string raf, string kategori_ad, string yazar_ad, string yayinevi_ad)
         {
             this.ad = ad;
             this.tur = tur;
@@ -27,7 +27,7 @@ namespace kutuphane_otomasyon_sistemi
             this.raf = raf;
             this.kategori_ad = kategori_ad;
             this.yazar_ad = yazar_ad;
-            this.yayinevi_ad = yayinevi_ad;
+            this.yayinevi_ad = yayisnevi_ad;
         }
 
     }
