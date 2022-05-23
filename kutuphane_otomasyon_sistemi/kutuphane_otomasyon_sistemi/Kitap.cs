@@ -27,7 +27,7 @@ namespace kutuphane_otomasyon_sistemi
             this.raf = raf;
             this.kategori_ad = kategori_ad;
             this.yazar_ad = yazar_ad;
-            this.yayinevi_ad = yayisnevi_ad;
+            this.yayinevi_ad = yayinevi_ad;
         }
 
     }
