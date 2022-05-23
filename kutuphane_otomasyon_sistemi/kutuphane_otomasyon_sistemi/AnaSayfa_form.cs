@@ -124,5 +124,10 @@ namespace kutuphane_otomasyon_sistemi
         {
           
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
