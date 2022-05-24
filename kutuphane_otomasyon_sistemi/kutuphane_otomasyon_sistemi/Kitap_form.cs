@@ -18,7 +18,7 @@ namespace kutuphane_otomasyon_sistemi
         public Kitap_form()
         {
             InitializeComponent();
-            form = new kitap_Kayıt_Form(this);
+            form = new Kitap_Kayıt_Form(this);
         }
         public void display()
         {
@@ -46,8 +46,8 @@ namespace kutuphane_otomasyon_sistemi
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            form.Clear();
-            form.SaveInfo();
+            form.clear();
+            form.saveInfo();
             form.ShowDialog();
 
         }
