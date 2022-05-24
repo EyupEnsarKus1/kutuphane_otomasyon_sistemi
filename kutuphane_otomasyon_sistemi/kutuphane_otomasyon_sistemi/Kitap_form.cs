@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace kutuphane_otomasyon_sistemi
 {
@@ -24,19 +26,53 @@ namespace kutuphane_otomasyon_sistemi
         {
             KitapDatabase.displayAndSearch("SELECT `id`, `ad`, `tur`, `sayfa_sayisi`, `barkod_no`, `raf`, `kategori_id`, `yazar_id`, `yayinevi_id` FROM `kitap` ", dataGridView);
         }
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Kitap_form_Load(object sender, EventArgs e)
         {
+
+            #region yazarekle
+            MySqlConnection con = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
+            con.Open();
+            MySqlCommand yzrCommand = new MySqlCommand("SELECT * FROM yazar ORDER BY ad ASC", con);
+            MySqlDataAdapter cYazar = new MySqlDataAdapter(yzrCommand);
+            DataSet dYazar = new DataSet();
+            cYazar.Fill(dYazar);
+            yzrCommand.ExecuteNonQuery();
+            con.Close();
+            comboYazar.DataSource = dYazar.Tables[0];
+            comboYazar.DisplayMember = "ad";
+            comboYazar.ValueMember = "id";
+            #endregion
+            #region  kategoriEkle
+            con.Open();
+            MySqlCommand ktgrCommand = new MySqlCommand("SELECT * FROM kategori ORDER BY ad ASC", con);
+            MySqlDataAdapter cKtgr = new MySqlDataAdapter(ktgrCommand);
+            DataSet dKtgr = new DataSet();
+            cKtgr.Fill(dKtgr);
+            ktgrCommand.ExecuteNonQuery();
+            con.Close();
+            comboKategori.DataSource = dKtgr.Tables[0];
+            comboKategori.DisplayMember = "ad";
+            comboKategori.ValueMember = "id";
+            #endregion
+            #region yayineviEkle
+            con.Open();
+            MySqlCommand yayineviCommand = new MySqlCommand("SELECT * FROM yayinevi ORDER BY ad ASC", con);
+            MySqlDataAdapter cYyn = new MySqlDataAdapter(yayineviCommand);
+            DataSet dYyn = new DataSet();
+            cYyn.Fill(dYyn);
+            yayineviCommand.ExecuteNonQuery();
+            con.Close();
+            comboYayinevi.DataSource = dYyn.Tables[0];
+            comboYayinevi.DisplayMember = "ad";
+            comboYayinevi.ValueMember = "id";
+            #endregion
 
         }
 
         private void txtKaydet_Click(object sender, EventArgs e)
         {
-            //MySqlCommand command = new MySqlCommand("INSERT INTO `kitap`(`ad`, `tur`, `sayfa_sayisi`, `barkod_no`, `raf`, `kategori_id`, `yazar_id`, `yayınevi_id`) VALUES (@kitapadi, @)
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -90,6 +126,37 @@ namespace kutuphane_otomasyon_sistemi
                 }
                 return;
             }
+        }
+
+        private void btnKitapEkle_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
+            con.Open();
+            string sql = "INSERT INTO kitap (ad,tur,sayfa_sayisi,barkod_no,raf,kategori_id,yazar_id,yayinevi_id) VALUES (@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@kategori_id,@yazar_id,@yayinevi_id)";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@kategori_id", comboKategori.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@yayinevi_id", comboYayinevi.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@yazar_id", comboYazar.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@ad", txtKitapAd.Text);
+            cmd.Parameters.AddWithValue("@tur", txtKitapTur.Text);
+            cmd.Parameters.AddWithValue("@sayfa_sayisi", txtSayfaSayisi.Text);
+            cmd.Parameters.AddWithValue("@barkod_no", txtBarkodNo.Text);
+            cmd.Parameters.AddWithValue("@raf", txtBarkod.Text);
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Yeni Kitap Eklendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Kitap Ekleme Başarısız" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+            display();
         }
     }
 }

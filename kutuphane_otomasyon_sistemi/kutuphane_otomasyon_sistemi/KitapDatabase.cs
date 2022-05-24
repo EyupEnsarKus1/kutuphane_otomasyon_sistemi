@@ -35,35 +35,17 @@ namespace kutuphane_otomasyon_sistemi
 
         }
 
-        public static void addBook(Kitap ktp)
+        public static void addBook(Kitap ktp,ComboBox comboYazar,ComboBox comboYayinevi,ComboBox comboKategori)
         {
-
-
+           
             MySqlConnection con = GetConnection();
-
-            MySqlCommand yazar = new MySqlCommand("INSERT INTO yazar (ad) values (@ad)", con);
-            yazar.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.yazar_ad;
-            yazar.ExecuteNonQuery();
-            int lastInsertedYazarIdValue = getLastInsertedId(con);
-
-
-            MySqlCommand kategori = new MySqlCommand("insert into kategori (ad) values (@ad)", con);
-            kategori.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.kategori_ad;
-            kategori.ExecuteNonQuery();
-            int lastInsertedKategoriId = getLastInsertedId(con);
-
-            MySqlCommand yayin = new MySqlCommand("insert into yayinevi (ad) values (@ad)", con);
-            yayin.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.yayinevi_ad;
-            yayin.ExecuteNonQuery();
-            int lastInsertedYayinEviId = getLastInsertedId(con);
-
-
-            string sql = "INSERT INTO kitap VALUES (NULL,@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@kategori_id,@yazar_id,@yayinevi_id)";
+           
+            string sql = "INSERT INTO kitap (ad,tur,sayfa_sayisi,barkod_no,raf,kategori_id,yazar_id,yayinevi_id) VALUES (@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@kategori_id,@yazar_id,@yayinevi_id)";
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@kategori_id", lastInsertedKategoriId);
-            cmd.Parameters.AddWithValue("@yayinevi_id", lastInsertedYayinEviId);
-            cmd.Parameters.AddWithValue("@yazar_id", lastInsertedYazarIdValue);
+            cmd.Parameters.AddWithValue("@kategori_id", comboKategori.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@yayinevi_id", comboYayinevi.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@yazar_id", comboYazar.SelectedValue.ToString());
             cmd.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.ad;
             cmd.Parameters.Add("@tur", MySqlDbType.VarChar).Value = ktp.tur;
             cmd.Parameters.Add("@sayfa_sayisi", MySqlDbType.VarChar).Value = ktp.sayfa_sayisi;
@@ -95,9 +77,9 @@ namespace kutuphane_otomasyon_sistemi
             cmd.Parameters.Add("@sayfa_sayisi", MySqlDbType.Int32).Value = ktp.sayfa_sayisi;
             cmd.Parameters.Add("@barkod_no", MySqlDbType.VarChar).Value = ktp.barkod_no;
             cmd.Parameters.Add("@raf", MySqlDbType.VarChar).Value = ktp.raf;
-            cmd.Parameters.Add("@kategori_id", MySqlDbType.VarChar).Value = ktp.kategori_ad;
-            cmd.Parameters.Add("@yazar_id", MySqlDbType.VarChar).Value = ktp.yazar_ad;
-            cmd.Parameters.Add("@yayınevi_id", MySqlDbType.VarChar).Value = ktp.yayinevi_ad;
+           // cmd.Parameters.Add("@kategori_id", MySqlDbType.VarChar).Value = ktp.kategori_ad;
+           // cmd.Parameters.Add("@yazar_id", MySqlDbType.VarChar).Value = ktp.yazar_ad;
+           // cmd.Parameters.Add("@yayınevi_id", MySqlDbType.VarChar).Value = ktp.yayinevi_ad;
             try
             {
 
@@ -146,3 +128,4 @@ namespace kutuphane_otomasyon_sistemi
         }
     }
 }
+
