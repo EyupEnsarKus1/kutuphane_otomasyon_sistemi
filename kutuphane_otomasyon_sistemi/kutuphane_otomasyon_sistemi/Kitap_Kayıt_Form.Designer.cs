@@ -46,14 +46,13 @@ namespace kutuphane_otomasyon_sistemi
             this.txtYazar = new System.Windows.Forms.TextBox();
             this.txtYayinevi = new System.Windows.Forms.TextBox();
             this.btnKitapEkle = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
+            this.lblHead = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 36);
+            this.label1.Location = new System.Drawing.Point(418, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 0;
@@ -62,7 +61,7 @@ namespace kutuphane_otomasyon_sistemi
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 65);
+            this.label2.Location = new System.Drawing.Point(418, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
@@ -71,7 +70,7 @@ namespace kutuphane_otomasyon_sistemi
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 91);
+            this.label3.Location = new System.Drawing.Point(418, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 2;
@@ -80,7 +79,7 @@ namespace kutuphane_otomasyon_sistemi
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 117);
+            this.label4.Location = new System.Drawing.Point(418, 196);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 3;
@@ -90,7 +89,7 @@ namespace kutuphane_otomasyon_sistemi
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 143);
+            this.label5.Location = new System.Drawing.Point(418, 222);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 4;
@@ -99,7 +98,7 @@ namespace kutuphane_otomasyon_sistemi
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(38, 169);
+            this.label6.Location = new System.Drawing.Point(416, 248);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 5;
@@ -108,7 +107,7 @@ namespace kutuphane_otomasyon_sistemi
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(38, 195);
+            this.label7.Location = new System.Drawing.Point(416, 274);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 6;
@@ -117,7 +116,7 @@ namespace kutuphane_otomasyon_sistemi
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(38, 221);
+            this.label8.Location = new System.Drawing.Point(416, 300);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 7;
@@ -125,106 +124,106 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // txtKitapAd
             // 
-            this.txtKitapAd.Location = new System.Drawing.Point(107, 33);
+            this.txtKitapAd.Location = new System.Drawing.Point(485, 112);
             this.txtKitapAd.Name = "txtKitapAd";
             this.txtKitapAd.Size = new System.Drawing.Size(100, 20);
             this.txtKitapAd.TabIndex = 8;
             // 
             // txtKitapTur
             // 
-            this.txtKitapTur.Location = new System.Drawing.Point(107, 62);
+            this.txtKitapTur.Location = new System.Drawing.Point(485, 141);
             this.txtKitapTur.Name = "txtKitapTur";
             this.txtKitapTur.Size = new System.Drawing.Size(100, 20);
             this.txtKitapTur.TabIndex = 9;
             // 
             // txtSayfaSayisi
             // 
-            this.txtSayfaSayisi.Location = new System.Drawing.Point(107, 88);
+            this.txtSayfaSayisi.Location = new System.Drawing.Point(485, 167);
             this.txtSayfaSayisi.Name = "txtSayfaSayisi";
             this.txtSayfaSayisi.Size = new System.Drawing.Size(100, 20);
             this.txtSayfaSayisi.TabIndex = 10;
             // 
             // txtBarkodNo
             // 
-            this.txtBarkodNo.Location = new System.Drawing.Point(107, 114);
+            this.txtBarkodNo.Location = new System.Drawing.Point(485, 193);
             this.txtBarkodNo.Name = "txtBarkodNo";
             this.txtBarkodNo.Size = new System.Drawing.Size(100, 20);
             this.txtBarkodNo.TabIndex = 11;
             // 
             // txtNumara
             // 
-            this.txtNumara.Location = new System.Drawing.Point(107, 140);
+            this.txtNumara.Location = new System.Drawing.Point(485, 219);
             this.txtNumara.Name = "txtNumara";
             this.txtNumara.Size = new System.Drawing.Size(100, 20);
             this.txtNumara.TabIndex = 12;
             // 
             // txtKategori
             // 
-            this.txtKategori.Location = new System.Drawing.Point(107, 166);
+            this.txtKategori.Location = new System.Drawing.Point(485, 245);
             this.txtKategori.Name = "txtKategori";
             this.txtKategori.Size = new System.Drawing.Size(100, 20);
             this.txtKategori.TabIndex = 13;
             // 
             // txtYazar
             // 
-            this.txtYazar.Location = new System.Drawing.Point(107, 192);
+            this.txtYazar.Location = new System.Drawing.Point(485, 271);
             this.txtYazar.Name = "txtYazar";
             this.txtYazar.Size = new System.Drawing.Size(100, 20);
             this.txtYazar.TabIndex = 14;
             // 
             // txtYayinevi
             // 
-            this.txtYayinevi.Location = new System.Drawing.Point(107, 218);
+            this.txtYayinevi.Location = new System.Drawing.Point(485, 297);
             this.txtYayinevi.Name = "txtYayinevi";
             this.txtYayinevi.Size = new System.Drawing.Size(100, 20);
             this.txtYayinevi.TabIndex = 15;
             // 
             // btnKitapEkle
             // 
-            this.btnKitapEkle.Location = new System.Drawing.Point(81, 244);
+            this.btnKitapEkle.Location = new System.Drawing.Point(459, 323);
             this.btnKitapEkle.Name = "btnKitapEkle";
             this.btnKitapEkle.Size = new System.Drawing.Size(75, 23);
             this.btnKitapEkle.TabIndex = 16;
             this.btnKitapEkle.Text = "Kitap Ekle";
             this.btnKitapEkle.UseVisualStyleBackColor = true;
+            this.btnKitapEkle.Click += new System.EventHandler(this.btnKitapEkle_Click);
             // 
-            // groupBox1
+            // lblHead
             // 
-            this.groupBox1.Controls.Add(this.txtKitapTur);
-            this.groupBox1.Controls.Add(this.btnKitapEkle);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtYayinevi);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtYazar);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtKategori);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtNumara);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtBarkodNo);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtSayfaSayisi);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.txtKitapAd);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(254, 291);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kitap Kayıt";
+            this.lblHead.AutoSize = true;
+            this.lblHead.Location = new System.Drawing.Point(109, 23);
+            this.lblHead.Name = "lblHead";
+            this.lblHead.Size = new System.Drawing.Size(35, 13);
+            this.lblHead.TabIndex = 17;
+            this.lblHead.Text = "label9";
             // 
             // Kitap_Kayıt_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lblHead);
+            this.Controls.Add(this.txtKitapTur);
+            this.Controls.Add(this.btnKitapEkle);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtKitapAd);
+            this.Controls.Add(this.txtYayinevi);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtYazar);
+            this.Controls.Add(this.txtSayfaSayisi);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtKategori);
+            this.Controls.Add(this.txtBarkodNo);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtNumara);
             this.Name = "Kitap_Kayıt_Form";
             this.Text = "Kitap_Kayıt_Form";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -247,6 +246,6 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.TextBox txtYazar;
         private System.Windows.Forms.TextBox txtYayinevi;
         private System.Windows.Forms.Button btnKitapEkle;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblHead;
     }
 }
