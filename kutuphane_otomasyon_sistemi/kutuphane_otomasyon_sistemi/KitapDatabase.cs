@@ -26,26 +26,49 @@ namespace kutuphane_otomasyon_sistemi
             }
             return con;
         }
+        private static int getLastInsertedId(MySqlConnection baglanti)
+        {
+
+            MySqlCommand lastInsertedIdCmd = new MySqlCommand("SELECT LAST_INSERT_ID();", baglanti);
+            var lastInsertedIdValue = lastInsertedIdCmd.ExecuteScalar().ToString();
+            return int.Parse(lastInsertedIdValue);
+
+        }
+
         public static void addBook(Kitap ktp)
         {
-            // ilk önce yayın evi kaydedicez 
-            // daha sonra ıd gelicez daha sonra yayınevi idsini alıcaz 
-            // yayınevi id kısmında buradan gelen id yi pass leyecegiz
 
 
-
-            string sql = "INSERT INTO kitap VALUES (NULL,@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@kategori_id,@yazar_id,@yayınevi_id)";
             MySqlConnection con = GetConnection();
+
+            MySqlCommand yazar = new MySqlCommand("INSERT INTO yazar (ad) values (@ad)", con);
+            yazar.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.yazar_ad;
+            yazar.ExecuteNonQuery();
+            int lastInsertedYazarIdValue = getLastInsertedId(con);
+
+
+            MySqlCommand kategori = new MySqlCommand("insert into kategori (ad) values (@ad)", con);
+            kategori.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.kategori_ad;
+            kategori.ExecuteNonQuery();
+            int lastInsertedKategoriId = getLastInsertedId(con);
+
+            MySqlCommand yayin = new MySqlCommand("insert into yayinevi (ad) values (@ad)", con);
+            yayin.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.yayinevi_ad;
+            yayin.ExecuteNonQuery();
+            int lastInsertedYayinEviId = getLastInsertedId(con);
+
+
+            string sql = "INSERT INTO kitap VALUES (NULL,@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@kategori_id,@yazar_id,@yayinevi_id)";
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@kategori_id", lastInsertedKategoriId);
+            cmd.Parameters.AddWithValue("@yayinevi_id", lastInsertedYayinEviId);
+            cmd.Parameters.AddWithValue("@yazar_id", lastInsertedYazarIdValue);
             cmd.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.ad;
             cmd.Parameters.Add("@tur", MySqlDbType.VarChar).Value = ktp.tur;
-            cmd.Parameters.Add("@sayfa_sayisi", MySqlDbType.Int32).Value = ktp.sayfa_sayisi;
+            cmd.Parameters.Add("@sayfa_sayisi", MySqlDbType.VarChar).Value = ktp.sayfa_sayisi;
             cmd.Parameters.Add("@barkod_no", MySqlDbType.VarChar).Value = ktp.barkod_no;
             cmd.Parameters.Add("@raf", MySqlDbType.VarChar).Value = ktp.raf;
-            cmd.Parameters.Add("@kategori_id", MySqlDbType.Int32).Value = ktp.kategori_id;
-            cmd.Parameters.Add("@yazar_id", MySqlDbType.Int32).Value = ktp.yazar_id;
-            cmd.Parameters.Add("@yayınevi_id", MySqlDbType.Int32).Value = ktp.yayınevi_id;
             try
             {
 
@@ -62,19 +85,19 @@ namespace kutuphane_otomasyon_sistemi
         }
         public static void updateBook(Kitap ktp, string id)
         {
-            string sql = "UPDATE kitap SET ad=@ad, tur=@tur, sayfa_sayisi=@sayfa_sayisi, barkod_no=@barkod_no, raf=@raf, kategori_id=@kategori_id, yazar_id=@yazar_id, yayınevi_id=@yayınevi_id";
+            string sql = "UPDATE kitap SET ad=@ad, tur=@tur, sayfa_sayisi=@sayfa_sayisi, barkod_no=@barkod_no, raf=@raf, kategori_id=@kategori_id, yazar_id=@yazar_id, yayinevi_id=@yayınevi_id";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@kitap_id", MySqlDbType.VarChar).Value = id;
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
             cmd.Parameters.Add("@ad", MySqlDbType.VarChar).Value = ktp.ad;
             cmd.Parameters.Add("@tur", MySqlDbType.VarChar).Value = ktp.tur;
             cmd.Parameters.Add("@sayfa_sayisi", MySqlDbType.Int32).Value = ktp.sayfa_sayisi;
             cmd.Parameters.Add("@barkod_no", MySqlDbType.VarChar).Value = ktp.barkod_no;
             cmd.Parameters.Add("@raf", MySqlDbType.VarChar).Value = ktp.raf;
-            cmd.Parameters.Add("@kategori_id", MySqlDbType.Int32).Value = ktp.kategori_id;
-            cmd.Parameters.Add("@yazar_id", MySqlDbType.Int32).Value = ktp.yazar_id;
-            cmd.Parameters.Add("@yayınevi_id", MySqlDbType.Int32).Value = ktp.yayınevi_id;
+            cmd.Parameters.Add("@kategori_id", MySqlDbType.VarChar).Value = ktp.kategori_ad;
+            cmd.Parameters.Add("@yazar_id", MySqlDbType.VarChar).Value = ktp.yazar_ad;
+            cmd.Parameters.Add("@yayınevi_id", MySqlDbType.VarChar).Value = ktp.yayinevi_ad;
             try
             {
 
@@ -91,11 +114,11 @@ namespace kutuphane_otomasyon_sistemi
         }
         public static void deleteBook(string id)
         {
-            string sql = "DELETE FROM kitap WHERE kitap_id =@kitap_id";
+            string sql = "DELETE FROM kitap WHERE id =@id";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@kitap_id", MySqlDbType.VarChar).Value = id;
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
             try
             {
 
