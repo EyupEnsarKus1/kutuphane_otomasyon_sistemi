@@ -265,5 +265,56 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login icon7.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
