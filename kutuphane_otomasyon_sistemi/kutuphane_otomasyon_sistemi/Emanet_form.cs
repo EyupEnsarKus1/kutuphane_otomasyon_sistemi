@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace kutuphane_otomasyon_sistemi
 {
@@ -15,6 +16,21 @@ namespace kutuphane_otomasyon_sistemi
         public Emanet_form()
         {
             InitializeComponent();
+        }
+        public static MySqlConnection GetConnection()
+        {
+            string sql = "SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t";
+            MySqlConnection con = new MySqlConnection(sql);
+            try
+            {
+                con.Open();
+
+            }
+            catch (MySqlException excep)
+            {
+                MessageBox.Show("MySqlConnection!! \n" + excep.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return con;
         }
 
         public void uyeGoster()
@@ -90,10 +106,20 @@ namespace kutuphane_otomasyon_sistemi
 
             }
         }
-
+        
+       
+        
         private void button1_Click(object sender, EventArgs e)
         {
+           
 
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `odunc_alma`(`odunc_tarih`, `teslim_tarih`, `kitap_id`, `uye_numara`) VALUES ( @odunc_tarih,@teslim_tarih,@kitap_id,@uye_numara)",con);
+            cmd.Parameters.AddWithValue("@odunc_tarih",oduncDate.Text);
+            cmd.Parameters.AddWithValue("@teslim_tarih", teslimTarih.Text);
+            cmd.Parameters.AddWithValue("@kitap_id",cellBook);
+            cmd.Parameters.AddWithValue("@uye_numara",cellMember);
+            
         }
     }
 }
