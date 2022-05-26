@@ -107,7 +107,7 @@ namespace kutuphane_otomasyon_sistemi
             this.oduncButton.Name = "oduncButton";
             this.oduncButton.Size = new System.Drawing.Size(241, 65);
             this.oduncButton.TabIndex = 31;
-            this.oduncButton.Text = "Emanet";
+            this.oduncButton.Text = "Teslim";
             this.oduncButton.UseVisualStyleBackColor = false;
             this.oduncButton.Click += new System.EventHandler(this.button1_Click_1);
             // 

@@ -61,6 +61,11 @@ namespace kutuphane_otomasyon_sistemi
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -87,7 +92,7 @@ namespace kutuphane_otomasyon_sistemi
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(73, 240);
+            this.label9.Location = new System.Drawing.Point(20, 240);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 17);
             this.label9.TabIndex = 5;
@@ -95,7 +100,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // txtOkuyucuAra
             // 
-            this.txtOkuyucuAra.Location = new System.Drawing.Point(76, 260);
+            this.txtOkuyucuAra.Location = new System.Drawing.Point(23, 260);
             this.txtOkuyucuAra.Name = "txtOkuyucuAra";
             this.txtOkuyucuAra.Size = new System.Drawing.Size(100, 22);
             this.txtOkuyucuAra.TabIndex = 2;
@@ -226,7 +231,7 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox2.Controls.Add(this.lblYazar);
             this.groupBox2.Controls.Add(this.lblKitapAd);
             this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Location = new System.Drawing.Point(30, 390);
+            this.groupBox2.Location = new System.Drawing.Point(30, 364);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1257, 330);
             this.groupBox2.TabIndex = 1;
@@ -404,11 +409,58 @@ namespace kutuphane_otomasyon_sistemi
             this.Column15.ReadOnly = true;
             this.Column15.Width = 125;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(978, 707);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 36);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Emanet Et";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(234, 721);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(193, 22);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(738, 716);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 725);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(201, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Kitabın Emanet Edileceği Tarih";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(457, 721);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(248, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Kitabın Geri Getirilmesi Gereken Tarih";
+            // 
             // Emanet_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 781);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -423,6 +475,7 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -460,5 +513,10 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.Label lblSayfaSayisi;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
