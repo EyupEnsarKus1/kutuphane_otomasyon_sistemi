@@ -41,7 +41,7 @@ namespace kutuphane_otomasyon_sistemi
         }
         public void kitapGoster()
         {
-            KitapDatabase.displayAndSearch("SELECT `id`, `ad`, `tur`, `sayfa_sayisi`, `barkod_no`, `raf`, `kategori_id`, `yazar_id`, `yayinevi_id` FROM `kitap` ", dataGridView2);
+            KitapDatabase.displayAndSearch("SELECT kitap.id,kitap.ad,kitap.tur,kitap.sayfa_sayisi,kitap.barkod_no,kitap.raf,kategori.ad,yazar.ad,yayinevi.ad FROM kitap INNER JOİN  kategori ON kitap.kategori_id=kategori.id INNER JOİN yazar ON kitap.yazar_id = yazar.id INNER JOİN yayinevi ON kitap.yayinevi_id = yayinevi.id", dataGridView2);
 
         }
         private void Emanet_form_Load(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace kutuphane_otomasyon_sistemi
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if(e.RowIndex>0)
+            if(e.RowIndex >=-1)
             {
                 DataGridViewRow dgvRow = dataGridView1.Rows[e.RowIndex];
                 lblUyeNumara.Text = dgvRow.Cells[0].Value.ToString();
@@ -95,7 +95,7 @@ namespace kutuphane_otomasyon_sistemi
 
         private void dataGridView2_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if(e.RowIndex > 0)
+            if(e.RowIndex >=-1  )
             {
                 DataGridViewRow dgvRow = dataGridView2.Rows[e.RowIndex];
                 lblKitapAd.Text = dgvRow.Cells[1].Value.ToString();
