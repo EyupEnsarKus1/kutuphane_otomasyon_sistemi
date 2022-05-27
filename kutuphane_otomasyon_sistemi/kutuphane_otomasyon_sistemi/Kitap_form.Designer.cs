@@ -64,6 +64,12 @@ namespace kutuphane_otomasyon_sistemi
             this.txtBarkod = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnYazarEkle = new System.Windows.Forms.Button();
+            this.btnKategoriEkle = new System.Windows.Forms.Button();
+            this.btnYayineviEkle = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -233,6 +239,7 @@ namespace kutuphane_otomasyon_sistemi
             // btnEkle
             // 
             this.btnEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.btnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.Black;
             this.btnEkle.Location = new System.Drawing.Point(4, 16);
@@ -282,6 +289,7 @@ namespace kutuphane_otomasyon_sistemi
             // btnKitapEkle
             // 
             this.btnKitapEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.btnKitapEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKitapEkle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnKitapEkle.Location = new System.Drawing.Point(865, 279);
             this.btnKitapEkle.Margin = new System.Windows.Forms.Padding(4);
@@ -415,11 +423,17 @@ namespace kutuphane_otomasyon_sistemi
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.btnYayineviEkle);
+            this.panel1.Controls.Add(this.btnKategoriEkle);
+            this.panel1.Controls.Add(this.btnYazarEkle);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(87, 27);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(573, 208);
+            this.panel1.Size = new System.Drawing.Size(605, 277);
             this.panel1.TabIndex = 41;
             // 
             // label1
@@ -433,6 +447,55 @@ namespace kutuphane_otomasyon_sistemi
             this.label1.Size = new System.Drawing.Size(157, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "KİTAP BİLGİSİ";
+            // 
+            // btnYazarEkle
+            // 
+            this.btnYazarEkle.Location = new System.Drawing.Point(94, 111);
+            this.btnYazarEkle.Name = "btnYazarEkle";
+            this.btnYazarEkle.Size = new System.Drawing.Size(100, 35);
+            this.btnYazarEkle.TabIndex = 1;
+            this.btnYazarEkle.Text = "Yazar Ekle";
+            this.btnYazarEkle.UseVisualStyleBackColor = true;
+            // 
+            // btnKategoriEkle
+            // 
+            this.btnKategoriEkle.Location = new System.Drawing.Point(222, 110);
+            this.btnKategoriEkle.Name = "btnKategoriEkle";
+            this.btnKategoriEkle.Size = new System.Drawing.Size(100, 34);
+            this.btnKategoriEkle.TabIndex = 2;
+            this.btnKategoriEkle.Text = "Kategori Ekle";
+            this.btnKategoriEkle.UseVisualStyleBackColor = true;
+            // 
+            // btnYayineviEkle
+            // 
+            this.btnYayineviEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnYayineviEkle.Location = new System.Drawing.Point(351, 110);
+            this.btnYayineviEkle.Name = "btnYayineviEkle";
+            this.btnYayineviEkle.Size = new System.Drawing.Size(100, 34);
+            this.btnYayineviEkle.TabIndex = 3;
+            this.btnYayineviEkle.Text = "Yayınevi Ekle";
+            this.btnYayineviEkle.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(94, 84);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(222, 82);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 5;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(351, 82);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 6;
             // 
             // Kitap_form
             // 
@@ -512,5 +575,11 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnYayineviEkle;
+        private System.Windows.Forms.Button btnKategoriEkle;
+        private System.Windows.Forms.Button btnYazarEkle;
     }
 }
