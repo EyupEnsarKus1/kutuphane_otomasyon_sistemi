@@ -29,6 +29,12 @@ namespace kutuphane_otomasyon_sistemi
             txtKadi.Text = kullaniciAdi;
             txtSifre.Text = sifre;
         }
+
+        private void lblHead_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void saveInfo()
         {
             lblHead.Text = "Personel Ekle";
