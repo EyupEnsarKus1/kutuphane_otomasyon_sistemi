@@ -117,8 +117,8 @@ namespace kutuphane_otomasyon_sistemi
             MySqlCommand cmd = new MySqlCommand("INSERT INTO `odunc_alma`(`odunc_tarih`, `teslim_tarih`, `kitap_id`, `uye_numara`) VALUES ( @odunc_tarih,@teslim_tarih,@kitap_id,@uye_numara)",con);
             cmd.Parameters.AddWithValue("@odunc_tarih",oduncDate.Text);
             cmd.Parameters.AddWithValue("@teslim_tarih", teslimTarih.Text);
-            cmd.Parameters.AddWithValue("@kitap_id",cellBook);
-            cmd.Parameters.AddWithValue("@uye_numara",cellMember);
+            //cmd.Parameters.AddWithValue("@kitap_id",cellBook);
+           // cmd.Parameters.AddWithValue("@uye_numara",cellMember);
             
         }
     }
