@@ -98,62 +98,68 @@ namespace kutuphane_otomasyon_sistemi
             this.comboOkuyucu.FormattingEnabled = true;
             this.comboOkuyucu.Location = new System.Drawing.Point(22, 288);
             this.comboOkuyucu.Name = "comboOkuyucu";
-            this.comboOkuyucu.Size = new System.Drawing.Size(121, 24);
+            this.comboOkuyucu.Size = new System.Drawing.Size(152, 24);
             this.comboOkuyucu.TabIndex = 6;
             this.comboOkuyucu.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 240);
+            this.label9.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(23, 200);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 17);
+            this.label9.Size = new System.Drawing.Size(63, 21);
             this.label9.TabIndex = 5;
             this.label9.Text = "Filtrele";
             // 
             // txtOkuyucuAra
             // 
-            this.txtOkuyucuAra.Location = new System.Drawing.Point(23, 260);
+            this.txtOkuyucuAra.Location = new System.Drawing.Point(22, 243);
+            this.txtOkuyucuAra.Multiline = true;
             this.txtOkuyucuAra.Name = "txtOkuyucuAra";
-            this.txtOkuyucuAra.Size = new System.Drawing.Size(100, 22);
+            this.txtOkuyucuAra.Size = new System.Drawing.Size(152, 25);
             this.txtOkuyucuAra.TabIndex = 2;
             this.txtOkuyucuAra.TextChanged += new System.EventHandler(this.txtOkuyucuAra_TextChanged);
             // 
             // lblUyeTelefon
             // 
             this.lblUyeTelefon.AutoSize = true;
+            this.lblUyeTelefon.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblUyeTelefon.Location = new System.Drawing.Point(19, 140);
             this.lblUyeTelefon.Name = "lblUyeTelefon";
-            this.lblUyeTelefon.Size = new System.Drawing.Size(46, 17);
+            this.lblUyeTelefon.Size = new System.Drawing.Size(80, 24);
             this.lblUyeTelefon.TabIndex = 4;
-            this.lblUyeTelefon.Text = "label4";
+            this.lblUyeTelefon.Text = "Telefon:";
             // 
             // lblUyeSoyad
             // 
             this.lblUyeSoyad.AutoSize = true;
+            this.lblUyeSoyad.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblUyeSoyad.Location = new System.Drawing.Point(19, 111);
             this.lblUyeSoyad.Name = "lblUyeSoyad";
-            this.lblUyeSoyad.Size = new System.Drawing.Size(46, 17);
+            this.lblUyeSoyad.Size = new System.Drawing.Size(67, 24);
             this.lblUyeSoyad.TabIndex = 3;
-            this.lblUyeSoyad.Text = "label3";
+            this.lblUyeSoyad.Text = "Soyad:";
             // 
             // lblUyeAd
             // 
             this.lblUyeAd.AutoSize = true;
+            this.lblUyeAd.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblUyeAd.Location = new System.Drawing.Point(19, 83);
             this.lblUyeAd.Name = "lblUyeAd";
-            this.lblUyeAd.Size = new System.Drawing.Size(46, 17);
+            this.lblUyeAd.Size = new System.Drawing.Size(39, 24);
             this.lblUyeAd.TabIndex = 2;
-            this.lblUyeAd.Text = "label2";
+            this.lblUyeAd.Text = "Ad:";
             // 
             // lblUyeNumara
             // 
             this.lblUyeNumara.AutoSize = true;
+            this.lblUyeNumara.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblUyeNumara.Location = new System.Drawing.Point(19, 52);
             this.lblUyeNumara.Name = "lblUyeNumara";
-            this.lblUyeNumara.Size = new System.Drawing.Size(46, 17);
+            this.lblUyeNumara.Size = new System.Drawing.Size(126, 24);
             this.lblUyeNumara.TabIndex = 1;
-            this.lblUyeNumara.Text = "label1";
+            this.lblUyeNumara.Text = "Üye Numara:";
             // 
             // dataGridView1
             // 
@@ -256,72 +262,79 @@ namespace kutuphane_otomasyon_sistemi
             // comboKitap
             // 
             this.comboKitap.FormattingEnabled = true;
-            this.comboKitap.Location = new System.Drawing.Point(23, 276);
+            this.comboKitap.Location = new System.Drawing.Point(23, 286);
             this.comboKitap.Name = "comboKitap";
-            this.comboKitap.Size = new System.Drawing.Size(121, 24);
+            this.comboKitap.Size = new System.Drawing.Size(152, 24);
             this.comboKitap.TabIndex = 8;
             // 
             // lblSayfaSayisi
             // 
             this.lblSayfaSayisi.AutoSize = true;
+            this.lblSayfaSayisi.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSayfaSayisi.Location = new System.Drawing.Point(19, 159);
             this.lblSayfaSayisi.Name = "lblSayfaSayisi";
-            this.lblSayfaSayisi.Size = new System.Drawing.Size(46, 17);
+            this.lblSayfaSayisi.Size = new System.Drawing.Size(116, 24);
             this.lblSayfaSayisi.TabIndex = 7;
-            this.lblSayfaSayisi.Text = "label1";
+            this.lblSayfaSayisi.Text = "Sayfa Sayısı:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(19, 228);
+            this.label10.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(24, 203);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 17);
+            this.label10.Size = new System.Drawing.Size(63, 21);
             this.label10.TabIndex = 6;
             this.label10.Text = "Filtrele";
             // 
             // txtKitapAra
             // 
             this.txtKitapAra.Location = new System.Drawing.Point(22, 248);
+            this.txtKitapAra.Multiline = true;
             this.txtKitapAra.Name = "txtKitapAra";
-            this.txtKitapAra.Size = new System.Drawing.Size(100, 22);
+            this.txtKitapAra.Size = new System.Drawing.Size(152, 25);
             this.txtKitapAra.TabIndex = 5;
             this.txtKitapAra.TextChanged += new System.EventHandler(this.txtKitapAra_TextChanged);
             // 
             // lblKategori
             // 
             this.lblKategori.AutoSize = true;
+            this.lblKategori.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblKategori.Location = new System.Drawing.Point(19, 129);
             this.lblKategori.Name = "lblKategori";
-            this.lblKategori.Size = new System.Drawing.Size(46, 17);
+            this.lblKategori.Size = new System.Drawing.Size(90, 24);
             this.lblKategori.TabIndex = 4;
-            this.lblKategori.Text = "label8";
+            this.lblKategori.Text = "Kategori:";
             // 
             // lblYayinevi
             // 
             this.lblYayinevi.AutoSize = true;
+            this.lblYayinevi.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYayinevi.Location = new System.Drawing.Point(19, 102);
             this.lblYayinevi.Name = "lblYayinevi";
-            this.lblYayinevi.Size = new System.Drawing.Size(46, 17);
+            this.lblYayinevi.Size = new System.Drawing.Size(90, 24);
             this.lblYayinevi.TabIndex = 3;
-            this.lblYayinevi.Text = "label7";
+            this.lblYayinevi.Text = "Yayınevi:";
             // 
             // lblYazar
             // 
             this.lblYazar.AutoSize = true;
+            this.lblYazar.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYazar.Location = new System.Drawing.Point(19, 74);
             this.lblYazar.Name = "lblYazar";
-            this.lblYazar.Size = new System.Drawing.Size(46, 17);
+            this.lblYazar.Size = new System.Drawing.Size(64, 24);
             this.lblYazar.TabIndex = 2;
-            this.lblYazar.Text = "label6";
+            this.lblYazar.Text = "Yazar:";
             // 
             // lblKitapAd
             // 
             this.lblKitapAd.AutoSize = true;
+            this.lblKitapAd.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblKitapAd.Location = new System.Drawing.Point(19, 48);
             this.lblKitapAd.Name = "lblKitapAd";
-            this.lblKitapAd.Size = new System.Drawing.Size(46, 17);
+            this.lblKitapAd.Size = new System.Drawing.Size(97, 24);
             this.lblKitapAd.TabIndex = 1;
-            this.lblKitapAd.Text = "label5";
+            this.lblKitapAd.Text = "Kitap Adı:";
             // 
             // dataGridView2
             // 
@@ -433,29 +446,34 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // btnEmanetEt
             // 
-            this.btnEmanetEt.Location = new System.Drawing.Point(1024, 706);
+            this.btnEmanetEt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.btnEmanetEt.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEmanetEt.ForeColor = System.Drawing.Color.Black;
+            this.btnEmanetEt.Location = new System.Drawing.Point(1085, 702);
             this.btnEmanetEt.Name = "btnEmanetEt";
-            this.btnEmanetEt.Size = new System.Drawing.Size(146, 36);
+            this.btnEmanetEt.Size = new System.Drawing.Size(175, 47);
             this.btnEmanetEt.TabIndex = 2;
             this.btnEmanetEt.Text = "Emanet Et";
-            this.btnEmanetEt.UseVisualStyleBackColor = true;
+            this.btnEmanetEt.UseVisualStyleBackColor = false;
             this.btnEmanetEt.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(27, 725);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 17);
+            this.label1.Size = new System.Drawing.Size(285, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Kitabın Emanet Edileceği Tarih";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(472, 721);
+            this.label2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(475, 725);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 17);
+            this.label2.Size = new System.Drawing.Size(353, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Kitabın Geri Getirilmesi Gereken Tarih";
             // 
@@ -463,7 +481,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.dateTimePicker1.CustomFormat = "dd.MM.yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(271, 725);
+            this.dateTimePicker1.Location = new System.Drawing.Point(330, 727);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(116, 22);
             this.dateTimePicker1.TabIndex = 7;
@@ -472,7 +490,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.dateTimePicker2.CustomFormat = "dd.MM.yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(742, 716);
+            this.dateTimePicker2.Location = new System.Drawing.Point(856, 727);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(118, 22);
             this.dateTimePicker2.TabIndex = 8;
@@ -481,6 +499,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1377, 781);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
