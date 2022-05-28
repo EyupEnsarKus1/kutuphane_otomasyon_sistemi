@@ -158,5 +158,66 @@ namespace kutuphane_otomasyon_sistemi
             con.Close();
             display();
         }
+
+        private void btnYazarEkle_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
+            con.Open();
+            string sql = "INSERT INTO `yazar`(`ad`) VALUES (@ad)";
+            MySqlCommand cmd = new MySqlCommand(sql,con);
+            cmd.Parameters.AddWithValue("@ad", txtYazarEkle.Text);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Yazar Eklenedi");
+
+            }
+            catch (Exception msj)
+            {
+
+                MessageBox.Show("Yazar Ekleme Başarısız"+msj.Message);
+            }
+        }
+
+        private void btnKategoriEkle_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
+            con.Open();
+            string sql = "INSERT INTO `kategori`(`ad`) VALUES (@ad)";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ad", txtKategoriEkle.Text);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kategori Eklenedi");
+
+            }
+            catch (Exception msj)
+            {
+
+                MessageBox.Show("Kategori Ekleme Başarısız" + msj.Message);
+            }
+
+        }
+
+        private void btnYayineviEkle_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
+            con.Open();
+            string sql = "INSERT INTO `yayinevi`(`ad`) VALUES (@ad)";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ad", txtYayineviEkle.Text);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Yayınevi Eklenedi");
+
+            }
+            catch (Exception msj)
+            {
+
+                MessageBox.Show("Yayınevi Ekleme Başarısız" + msj.Message);
+            }
+        }
     }
 }

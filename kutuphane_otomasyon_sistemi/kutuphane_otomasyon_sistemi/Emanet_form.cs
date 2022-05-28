@@ -141,19 +141,19 @@ namespace kutuphane_otomasyon_sistemi
 
             }
         }
-        
-       
-        
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
 
             MySqlConnection con = GetConnection();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO `odunc_alma`(`odunc_tarih`, `teslim_tarih`, `kitap_id`, `uye_numara`) VALUES (@odunc_tarih,@teslim_tarih,@kitap_id,@uye_numara)",con);
-            cmd.Parameters.AddWithValue("@odunc_tarih",dateTimePicker1.Text);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `odunc_alma`(`odunc_tarih`, `teslim_tarih`, `kitap_id`, `uye_numara`) VALUES (@odunc_tarih,@teslim_tarih,@kitap_id,@uye_numara)", con);
+            cmd.Parameters.AddWithValue("@odunc_tarih", dateTimePicker1.Text);
             cmd.Parameters.AddWithValue("@teslim_tarih", dateTimePicker2.Text);
-            cmd.Parameters.AddWithValue("@kitap_id",comboKitap.SelectedValue.ToString());
-            cmd.Parameters.AddWithValue("@uye_numara",comboOkuyucu.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@kitap_id", dataGridView2.CurrentRow.Cells[0].Value);
+            cmd.Parameters.AddWithValue("@uye_numara",dataGridView1.CurrentRow.Cells[0].Value);
             try
             {
                 cmd.ExecuteNonQuery();
