@@ -46,9 +46,43 @@ namespace kutuphane_otomasyon_sistemi
         }
         private void Emanet_form_Load(object sender, EventArgs e)
         {
+            MySqlConnection con = GetConnection();
+            string sqlQueryUye = "SELECT uye_numara  FROM uye ORDER BY uye_numara ASC";
+            MySqlCommand sqlComamndUye = new MySqlCommand(sqlQueryUye,con);
+            MySqlDataAdapter sdrUye = new MySqlDataAdapter(sqlComamndUye);
+            DataTable dt = new DataTable();
+            sdrUye.Fill(dt);
+            comboOkuyucu.DisplayMember = "uye_numara";
+            comboOkuyucu.ValueMember = "uye_numara";
+            comboOkuyucu.DataSource = dt;
+            dataGridView1.DataSource = dt;
+            comboOkuyucu.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboOkuyucu.AutoCompleteSource = AutoCompleteSource.ListItems;
+            con.Close();
+
+            con.Open();
+            string sqlquery = "SELECT * FROM kitap ORDER BY id ASC";
+            MySqlCommand sqlComamndKitap = new MySqlCommand(sqlquery, con);
+            MySqlDataAdapter sdrKitap = new MySqlDataAdapter(sqlComamndKitap);
+            DataTable dtKitap = new DataTable();
+            sdrKitap.Fill(dtKitap);
+            comboKitap.DisplayMember = "ad";
+            comboKitap.ValueMember = "id";
+            comboKitap.DataSource = dtKitap;
+            dataGridView2.DataSource = dtKitap;
+            comboKitap.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboKitap.AutoCompleteSource = AutoCompleteSource.ListItems;
+            con.Close();
 
 
-          
+
+
+
+
+
+
+
+
         }
 
         private void Emanet_form_Shown(object sender, EventArgs e)
@@ -89,6 +123,7 @@ namespace kutuphane_otomasyon_sistemi
                 lblUyeSoyad.Text = dgvRow.Cells[2].Value.ToString();
                 lblUyeTelefon.Text = dgvRow.Cells[4].Value.ToString();
 
+
             }
             
         }
@@ -114,12 +149,30 @@ namespace kutuphane_otomasyon_sistemi
            
 
             MySqlConnection con = GetConnection();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO `odunc_alma`(`odunc_tarih`, `teslim_tarih`, `kitap_id`, `uye_numara`) VALUES ( @odunc_tarih,@teslim_tarih,@kitap_id,@uye_numara)",con);
-            cmd.Parameters.AddWithValue("@odunc_tarih",oduncDate.Text);
-            cmd.Parameters.AddWithValue("@teslim_tarih", teslimTarih.Text);
-            //cmd.Parameters.AddWithValue("@kitap_id",cellBook);
-           // cmd.Parameters.AddWithValue("@uye_numara",cellMember);
-            
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `odunc_alma`(`odunc_tarih`, `teslim_tarih`, `kitap_id`, `uye_numara`) VALUES (@odunc_tarih,@teslim_tarih,@kitap_id,@uye_numara)",con);
+            cmd.Parameters.AddWithValue("@odunc_tarih",dateTimePicker1.Text);
+            cmd.Parameters.AddWithValue("@teslim_tarih", dateTimePicker2.Text);
+            cmd.Parameters.AddWithValue("@kitap_id",comboKitap.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@uye_numara",comboOkuyucu.SelectedValue.ToString());
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Emanet Verme İşelmi Başarılı", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            }
+            catch (Exception msg )
+            {
+
+                MessageBox.Show("Emanet Verme İşlemi Başarısız\n"+ msg.Message);
+            }
+
+            con.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

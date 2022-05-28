@@ -30,6 +30,7 @@ namespace kutuphane_otomasyon_sistemi
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboOkuyucu = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtOkuyucuAra = new System.Windows.Forms.TextBox();
             this.lblUyeTelefon = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboKitap = new System.Windows.Forms.ComboBox();
             this.lblSayfaSayisi = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtKitapAra = new System.Windows.Forms.TextBox();
@@ -52,11 +54,6 @@ namespace kutuphane_otomasyon_sistemi
             this.lblYazar = new System.Windows.Forms.Label();
             this.lblKitapAd = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.btnEmanetEt = new System.Windows.Forms.Button();
-            this.oduncDate = new System.Windows.Forms.DateTimePicker();
-            this.teslimTarih = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +63,11 @@ namespace kutuphane_otomasyon_sistemi
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEmanetEt = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -74,6 +76,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboOkuyucu);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtOkuyucuAra);
             this.groupBox1.Controls.Add(this.lblUyeTelefon);
@@ -88,6 +91,16 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Okuyucu Seç";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // comboOkuyucu
+            // 
+            this.comboOkuyucu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboOkuyucu.FormattingEnabled = true;
+            this.comboOkuyucu.Location = new System.Drawing.Point(22, 288);
+            this.comboOkuyucu.Name = "comboOkuyucu";
+            this.comboOkuyucu.Size = new System.Drawing.Size(121, 24);
+            this.comboOkuyucu.TabIndex = 6;
+            this.comboOkuyucu.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -223,6 +236,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.comboKitap);
             this.groupBox2.Controls.Add(this.lblSayfaSayisi);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txtKitapAra);
@@ -238,6 +252,14 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kitap Seç";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // comboKitap
+            // 
+            this.comboKitap.FormattingEnabled = true;
+            this.comboKitap.Location = new System.Drawing.Point(23, 276);
+            this.comboKitap.Name = "comboKitap";
+            this.comboKitap.Size = new System.Drawing.Size(121, 24);
+            this.comboKitap.TabIndex = 8;
             // 
             // lblSayfaSayisi
             // 
@@ -328,48 +350,6 @@ namespace kutuphane_otomasyon_sistemi
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_CellMouseClick);
             // 
-            // btnEmanetEt
-            // 
-            this.btnEmanetEt.Location = new System.Drawing.Point(1024, 706);
-            this.btnEmanetEt.Name = "btnEmanetEt";
-            this.btnEmanetEt.Size = new System.Drawing.Size(146, 36);
-            this.btnEmanetEt.TabIndex = 2;
-            this.btnEmanetEt.Text = "Emanet Et";
-            this.btnEmanetEt.UseVisualStyleBackColor = true;
-            this.btnEmanetEt.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // oduncDate
-            // 
-            this.oduncDate.Location = new System.Drawing.Point(234, 721);
-            this.oduncDate.Name = "oduncDate";
-            this.oduncDate.Size = new System.Drawing.Size(217, 22);
-            this.oduncDate.TabIndex = 3;
-            // 
-            // teslimTarih
-            // 
-            this.teslimTarih.Location = new System.Drawing.Point(738, 716);
-            this.teslimTarih.Name = "teslimTarih";
-            this.teslimTarih.Size = new System.Drawing.Size(234, 22);
-            this.teslimTarih.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 725);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 17);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Kitabın Emanet Edileceği Tarih";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(472, 721);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Kitabın Geri Getirilmesi Gereken Tarih";
-            // 
             // Column7
             // 
             this.Column7.DataPropertyName = "id";
@@ -451,15 +431,61 @@ namespace kutuphane_otomasyon_sistemi
             this.Column15.ReadOnly = true;
             this.Column15.Width = 125;
             // 
+            // btnEmanetEt
+            // 
+            this.btnEmanetEt.Location = new System.Drawing.Point(1024, 706);
+            this.btnEmanetEt.Name = "btnEmanetEt";
+            this.btnEmanetEt.Size = new System.Drawing.Size(146, 36);
+            this.btnEmanetEt.TabIndex = 2;
+            this.btnEmanetEt.Text = "Emanet Et";
+            this.btnEmanetEt.UseVisualStyleBackColor = true;
+            this.btnEmanetEt.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 725);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(201, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Kitabın Emanet Edileceği Tarih";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(472, 721);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(248, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Kitabın Geri Getirilmesi Gereken Tarih";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd.MM.yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(271, 725);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(116, 22);
+            this.dateTimePicker1.TabIndex = 7;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "dd.MM.yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(742, 716);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(118, 22);
+            this.dateTimePicker2.TabIndex = 8;
+            // 
             // Emanet_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 781);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.teslimTarih);
-            this.Controls.Add(this.oduncDate);
             this.Controls.Add(this.btnEmanetEt);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -505,8 +531,6 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label lblSayfaSayisi;
         private System.Windows.Forms.Button btnEmanetEt;
-        private System.Windows.Forms.DateTimePicker oduncDate;
-        private System.Windows.Forms.DateTimePicker teslimTarih;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
@@ -518,5 +542,9 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.ComboBox comboOkuyucu;
+        private System.Windows.Forms.ComboBox comboKitap;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
