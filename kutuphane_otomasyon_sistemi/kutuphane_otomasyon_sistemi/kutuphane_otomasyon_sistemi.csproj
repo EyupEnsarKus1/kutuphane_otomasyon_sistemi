@@ -164,6 +164,9 @@
     <EmbeddedResource Include="Kitap_Kayıt_Form.resx">
       <DependentUpon>Kitap_Kayıt_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="odunc_Form.resx">
+      <DependentUpon>odunc_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Personel_form.resx">
       <DependentUpon>Personel_form.cs</DependentUpon>
     </EmbeddedResource>

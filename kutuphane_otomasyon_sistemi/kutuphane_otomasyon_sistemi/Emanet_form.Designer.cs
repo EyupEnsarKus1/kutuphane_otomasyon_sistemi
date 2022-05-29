@@ -447,6 +447,7 @@ namespace kutuphane_otomasyon_sistemi
             // btnEmanetEt
             // 
             this.btnEmanetEt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.btnEmanetEt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmanetEt.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEmanetEt.ForeColor = System.Drawing.Color.Black;
             this.btnEmanetEt.Location = new System.Drawing.Point(1085, 702);
@@ -479,21 +480,23 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CustomFormat = "dd.MM.yyyy";
+            this.dateTimePicker1.CustomFormat = "yyyy.MM.dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(330, 727);
+            this.dateTimePicker1.Location = new System.Drawing.Point(318, 725);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(116, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(125, 22);
             this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 5, 29, 0, 0, 0, 0);
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.CustomFormat = "dd.MM.yyyy";
+            this.dateTimePicker2.CustomFormat = "yyyy.MM.dd";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(856, 727);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(118, 22);
             this.dateTimePicker2.TabIndex = 8;
+            this.dateTimePicker2.Value = new System.DateTime(2022, 5, 29, 0, 0, 0, 0);
             // 
             // Emanet_form
             // 

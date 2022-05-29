@@ -33,13 +33,13 @@ namespace kutuphane_otomasyon_sistemi
             return con;
         }
 
-        public void uyeGoster()
+        private void uyeGoster()
         {
             UyeDatabase.displayAndSearch("SELECT uye_numara,ad,soyad,cinsiyet,telefon,email FROM uye", dataGridView1);
 
 
         }
-        public void kitapGoster()
+        private void kitapGoster()
         {
             KitapDatabase.displayAndSearch("SELECT kitap.id,kitap.ad,kitap.tur,kitap.sayfa_sayisi,kitap.barkod_no,kitap.raf,kategori.ad,yazar.ad,yayinevi.ad FROM kitap INNER JOİN  kategori ON kitap.kategori_id=kategori.id INNER JOİN yazar ON kitap.yazar_id = yazar.id INNER JOİN yayinevi ON kitap.yayinevi_id = yayinevi.id", dataGridView2);
 
