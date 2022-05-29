@@ -511,8 +511,9 @@ namespace kutuphane_otomasyon_sistemi
             this.Controls.Add(this.btnEmanetEt);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Emanet_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emanet_form";
             this.Load += new System.EventHandler(this.Emanet_form_Load);
             this.Shown += new System.EventHandler(this.Emanet_form_Shown);
