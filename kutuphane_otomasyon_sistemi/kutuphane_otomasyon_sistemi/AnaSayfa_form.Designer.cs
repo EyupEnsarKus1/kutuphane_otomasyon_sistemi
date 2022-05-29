@@ -100,7 +100,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(302, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(671, 59);
+            this.label1.Size = new System.Drawing.Size(659, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kütüphane Otomasyon Sistemi";
             // 
@@ -110,9 +110,9 @@ namespace kutuphane_otomasyon_sistemi
             this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label2.Font = new System.Drawing.Font("Constantia", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(0, 954);
+            this.label2.Location = new System.Drawing.Point(0, 955);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 46);
+            this.label2.Size = new System.Drawing.Size(115, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
@@ -122,9 +122,9 @@ namespace kutuphane_otomasyon_sistemi
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Constantia", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(0, 908);
+            this.label3.Location = new System.Drawing.Point(0, 910);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 46);
+            this.label3.Size = new System.Drawing.Size(114, 45);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
@@ -172,7 +172,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(126, 85);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 68);
+            this.label8.Size = new System.Drawing.Size(88, 64);
             this.label8.TabIndex = 11;
             this.label8.Text = "Üye Ekle\r\nÜye Sil\r\nÜye Güncelle\r\nÜye Listele";
             // 
@@ -218,7 +218,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(117, 85);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 17);
+            this.label10.Size = new System.Drawing.Size(86, 16);
             this.label10.TabIndex = 11;
             this.label10.Text = "Kitap Emanet";
             // 
@@ -265,7 +265,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(119, 85);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 17);
+            this.label11.Size = new System.Drawing.Size(81, 16);
             this.label11.TabIndex = 11;
             this.label11.Text = "Kitap Teslim";
             // 
@@ -322,7 +322,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(120, 85);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(125, 68);
+            this.label21.Size = new System.Drawing.Size(116, 64);
             this.label21.TabIndex = 11;
             this.label21.Text = "Kayıp Kitap Ekle\r\nKayıp Kitap Durum\r\nKayıp Kitap Listele\r\n\r\n";
             // 
@@ -368,7 +368,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(117, 85);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(140, 17);
+            this.label22.Size = new System.Drawing.Size(131, 16);
             this.label22.TabIndex = 11;
             this.label22.Text = "Kütüphane Hakkında";
             // 
@@ -403,7 +403,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(117, 85);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(159, 85);
+            this.label23.Size = new System.Drawing.Size(150, 80);
             this.label23.TabIndex = 11;
             this.label23.Text = "Kitap Sayısı\r\nÜye Sayısı\r\nYazar,Kategori,Yayınevi\r\nEn Çok Kitap Okuyan\r\n....\r\n";
             // 
@@ -459,7 +459,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(121, 85);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 68);
+            this.label12.Size = new System.Drawing.Size(117, 64);
             this.label12.TabIndex = 11;
             this.label12.Text = "Persnel Ekle\r\nPersonel Sil\r\nPersonel Güncelle\r\nPersonel Listele\r\n";
             // 
@@ -495,7 +495,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.book1;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 74);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -519,7 +519,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(125, 85);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 68);
+            this.label6.Size = new System.Drawing.Size(93, 64);
             this.label6.TabIndex = 10;
             this.label6.Text = "Kitap Ekle\r\nKitap Sil\r\nKitap Güncelle\r\nKitap Listele";
             // 

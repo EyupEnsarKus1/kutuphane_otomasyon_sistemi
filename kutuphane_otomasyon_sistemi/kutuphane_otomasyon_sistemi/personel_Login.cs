@@ -26,5 +26,10 @@ namespace kutuphane_otomasyon_sistemi
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
