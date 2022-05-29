@@ -58,11 +58,11 @@ namespace kutuphane_otomasyon_sistemi
             // login_Button
             // 
             this.login_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
-            this.login_Button.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.login_Button.Location = new System.Drawing.Point(155, 327);
+            this.login_Button.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.login_Button.Location = new System.Drawing.Point(155, 338);
             this.login_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_Button.Name = "login_Button";
-            this.login_Button.Size = new System.Drawing.Size(199, 43);
+            this.login_Button.Size = new System.Drawing.Size(189, 43);
             this.login_Button.TabIndex = 3;
             this.login_Button.Text = "Giriş Yap";
             this.login_Button.UseVisualStyleBackColor = false;
@@ -71,10 +71,10 @@ namespace kutuphane_otomasyon_sistemi
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(185, 385);
+            this.label1.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(198, 383);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 18);
+            this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Şifremi Unuttum?";
             // 
