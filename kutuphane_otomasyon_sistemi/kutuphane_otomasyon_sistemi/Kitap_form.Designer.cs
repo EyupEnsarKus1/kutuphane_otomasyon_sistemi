@@ -84,7 +84,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnEkle);
             this.panel2.Location = new System.Drawing.Point(16, 324);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1201, 426);
             this.panel2.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column10,
             this.Column11});
             this.dataGridView.Location = new System.Drawing.Point(4, 65);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
@@ -220,7 +220,7 @@ namespace kutuphane_otomasyon_sistemi
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(380, 27);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(152, 22);
             this.txtSearch.TabIndex = 2;
@@ -246,7 +246,7 @@ namespace kutuphane_otomasyon_sistemi
             this.btnEkle.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.Black;
             this.btnEkle.Location = new System.Drawing.Point(21, 15);
-            this.btnEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(147, 37);
             this.btnEkle.TabIndex = 0;
@@ -284,7 +284,7 @@ namespace kutuphane_otomasyon_sistemi
             // txtKitapTur
             // 
             this.txtKitapTur.Location = new System.Drawing.Point(155, 65);
-            this.txtKitapTur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKitapTur.Margin = new System.Windows.Forms.Padding(4);
             this.txtKitapTur.Multiline = true;
             this.txtKitapTur.Name = "txtKitapTur";
             this.txtKitapTur.Size = new System.Drawing.Size(152, 25);
@@ -297,7 +297,7 @@ namespace kutuphane_otomasyon_sistemi
             this.btnKitapEkle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKitapEkle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnKitapEkle.Location = new System.Drawing.Point(276, 218);
-            this.btnKitapEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKitapEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnKitapEkle.Name = "btnKitapEkle";
             this.btnKitapEkle.Size = new System.Drawing.Size(160, 37);
             this.btnKitapEkle.TabIndex = 37;
@@ -320,7 +320,7 @@ namespace kutuphane_otomasyon_sistemi
             // txtKitapAd
             // 
             this.txtKitapAd.Location = new System.Drawing.Point(155, 11);
-            this.txtKitapAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKitapAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtKitapAd.Multiline = true;
             this.txtKitapAd.Name = "txtKitapAd";
             this.txtKitapAd.Size = new System.Drawing.Size(152, 25);
@@ -365,7 +365,7 @@ namespace kutuphane_otomasyon_sistemi
             // txtSayfaSayisi
             // 
             this.txtSayfaSayisi.Location = new System.Drawing.Point(155, 113);
-            this.txtSayfaSayisi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSayfaSayisi.Margin = new System.Windows.Forms.Padding(4);
             this.txtSayfaSayisi.Multiline = true;
             this.txtSayfaSayisi.Name = "txtSayfaSayisi";
             this.txtSayfaSayisi.Size = new System.Drawing.Size(152, 25);
@@ -398,7 +398,7 @@ namespace kutuphane_otomasyon_sistemi
             // txtBarkodNo
             // 
             this.txtBarkodNo.Location = new System.Drawing.Point(155, 165);
-            this.txtBarkodNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBarkodNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtBarkodNo.Multiline = true;
             this.txtBarkodNo.Name = "txtBarkodNo";
             this.txtBarkodNo.Size = new System.Drawing.Size(152, 25);
@@ -431,7 +431,7 @@ namespace kutuphane_otomasyon_sistemi
             // txtBarkod
             // 
             this.txtBarkod.Location = new System.Drawing.Point(468, 11);
-            this.txtBarkod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBarkod.Margin = new System.Windows.Forms.Padding(4);
             this.txtBarkod.Multiline = true;
             this.txtBarkod.Name = "txtBarkod";
             this.txtBarkod.Size = new System.Drawing.Size(152, 25);
@@ -448,7 +448,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel1.Controls.Add(this.btnYazarEkle);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(16, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(533, 277);
             this.panel1.TabIndex = 41;
@@ -484,14 +484,14 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.btnYayineviEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.btnYayineviEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYayineviEkle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYayineviEkle.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnYayineviEkle.ForeColor = System.Drawing.Color.Black;
             this.btnYayineviEkle.Location = new System.Drawing.Point(352, 145);
             this.btnYayineviEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnYayineviEkle.Name = "btnYayineviEkle";
             this.btnYayineviEkle.Size = new System.Drawing.Size(152, 58);
             this.btnYayineviEkle.TabIndex = 3;
-            this.btnYayineviEkle.Text = "Yayınevi\r\nEkle";
+            this.btnYayineviEkle.Text = "Yayınevi Ekle";
             this.btnYayineviEkle.UseVisualStyleBackColor = false;
             this.btnYayineviEkle.Click += new System.EventHandler(this.btnYayineviEkle_Click);
             // 
@@ -499,14 +499,14 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.btnKategoriEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.btnKategoriEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKategoriEkle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKategoriEkle.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKategoriEkle.ForeColor = System.Drawing.Color.Black;
             this.btnKategoriEkle.Location = new System.Drawing.Point(187, 145);
             this.btnKategoriEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKategoriEkle.Name = "btnKategoriEkle";
             this.btnKategoriEkle.Size = new System.Drawing.Size(153, 58);
             this.btnKategoriEkle.TabIndex = 2;
-            this.btnKategoriEkle.Text = "Kategori\r\nEkle";
+            this.btnKategoriEkle.Text = "Kategori Ekle";
             this.btnKategoriEkle.UseVisualStyleBackColor = false;
             this.btnKategoriEkle.Click += new System.EventHandler(this.btnKategoriEkle_Click);
             // 
@@ -514,14 +514,14 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.btnYazarEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.btnYazarEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYazarEkle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYazarEkle.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnYazarEkle.ForeColor = System.Drawing.Color.Black;
             this.btnYazarEkle.Location = new System.Drawing.Point(21, 145);
             this.btnYazarEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnYazarEkle.Name = "btnYazarEkle";
             this.btnYazarEkle.Size = new System.Drawing.Size(152, 58);
             this.btnYazarEkle.TabIndex = 1;
-            this.btnYazarEkle.Text = "Yazar\r\nEkle";
+            this.btnYazarEkle.Text = "Yazar Ekle";
             this.btnYazarEkle.UseVisualStyleBackColor = false;
             this.btnYazarEkle.Click += new System.EventHandler(this.btnYazarEkle_Click);
             // 
@@ -557,7 +557,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel3.Controls.Add(this.txtBarkod);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Location = new System.Drawing.Point(564, 15);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(653, 277);
             this.panel3.TabIndex = 42;
@@ -572,9 +572,10 @@ namespace kutuphane_otomasyon_sistemi
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Kitap_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kitap_form";
             this.Load += new System.EventHandler(this.Kitap_form_Load);
             this.Shown += new System.EventHandler(this.Kitap_form_Shown);
