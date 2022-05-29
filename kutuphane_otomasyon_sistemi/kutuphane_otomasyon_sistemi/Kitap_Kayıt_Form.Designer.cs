@@ -42,9 +42,6 @@ namespace kutuphane_otomasyon_sistemi
             this.txtSayfaSayisi = new System.Windows.Forms.TextBox();
             this.txtBarkodNo = new System.Windows.Forms.TextBox();
             this.txtNumara = new System.Windows.Forms.TextBox();
-            this.txtKategori = new System.Windows.Forms.TextBox();
-            this.txtYazar = new System.Windows.Forms.TextBox();
-            this.txtYayinevi = new System.Windows.Forms.TextBox();
             this.btnKitapEkle = new System.Windows.Forms.Button();
             this.lblHead = new System.Windows.Forms.Label();
             this.comboYazar = new System.Windows.Forms.ComboBox();
@@ -173,30 +170,6 @@ namespace kutuphane_otomasyon_sistemi
             this.txtNumara.Size = new System.Drawing.Size(132, 22);
             this.txtNumara.TabIndex = 12;
             // 
-            // txtKategori
-            // 
-            this.txtKategori.Location = new System.Drawing.Point(194, 267);
-            this.txtKategori.Margin = new System.Windows.Forms.Padding(4);
-            this.txtKategori.Name = "txtKategori";
-            this.txtKategori.Size = new System.Drawing.Size(132, 22);
-            this.txtKategori.TabIndex = 13;
-            // 
-            // txtYazar
-            // 
-            this.txtYazar.Location = new System.Drawing.Point(194, 299);
-            this.txtYazar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtYazar.Name = "txtYazar";
-            this.txtYazar.Size = new System.Drawing.Size(132, 22);
-            this.txtYazar.TabIndex = 14;
-            // 
-            // txtYayinevi
-            // 
-            this.txtYayinevi.Location = new System.Drawing.Point(194, 331);
-            this.txtYayinevi.Margin = new System.Windows.Forms.Padding(4);
-            this.txtYayinevi.Name = "txtYayinevi";
-            this.txtYayinevi.Size = new System.Drawing.Size(132, 22);
-            this.txtYayinevi.TabIndex = 15;
-            // 
             // btnKitapEkle
             // 
             this.btnKitapEkle.Location = new System.Drawing.Point(159, 363);
@@ -221,7 +194,7 @@ namespace kutuphane_otomasyon_sistemi
             // comboYazar
             // 
             this.comboYazar.FormattingEnabled = true;
-            this.comboYazar.Location = new System.Drawing.Point(333, 295);
+            this.comboYazar.Location = new System.Drawing.Point(194, 293);
             this.comboYazar.Name = "comboYazar";
             this.comboYazar.Size = new System.Drawing.Size(121, 24);
             this.comboYazar.TabIndex = 18;
@@ -229,7 +202,7 @@ namespace kutuphane_otomasyon_sistemi
             // comboYayinevi
             // 
             this.comboYayinevi.FormattingEnabled = true;
-            this.comboYayinevi.Location = new System.Drawing.Point(333, 334);
+            this.comboYayinevi.Location = new System.Drawing.Point(194, 332);
             this.comboYayinevi.Name = "comboYayinevi";
             this.comboYayinevi.Size = new System.Drawing.Size(121, 24);
             this.comboYayinevi.TabIndex = 19;
@@ -237,7 +210,7 @@ namespace kutuphane_otomasyon_sistemi
             // comboKategori
             // 
             this.comboKategori.FormattingEnabled = true;
-            this.comboKategori.Location = new System.Drawing.Point(333, 265);
+            this.comboKategori.Location = new System.Drawing.Point(194, 263);
             this.comboKategori.Name = "comboKategori";
             this.comboKategori.Size = new System.Drawing.Size(121, 24);
             this.comboKategori.TabIndex = 20;
@@ -246,7 +219,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 554);
+            this.ClientSize = new System.Drawing.Size(539, 554);
             this.Controls.Add(this.comboKategori);
             this.Controls.Add(this.comboYayinevi);
             this.Controls.Add(this.comboYazar);
@@ -255,15 +228,12 @@ namespace kutuphane_otomasyon_sistemi
             this.Controls.Add(this.btnKitapEkle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtKitapAd);
-            this.Controls.Add(this.txtYayinevi);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtYazar);
             this.Controls.Add(this.txtSayfaSayisi);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtKategori);
             this.Controls.Add(this.txtBarkodNo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -292,9 +262,6 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.TextBox txtSayfaSayisi;
         private System.Windows.Forms.TextBox txtBarkodNo;
         private System.Windows.Forms.TextBox txtNumara;
-        private System.Windows.Forms.TextBox txtKategori;
-        private System.Windows.Forms.TextBox txtYazar;
-        private System.Windows.Forms.TextBox txtYayinevi;
         private System.Windows.Forms.Button btnKitapEkle;
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.ComboBox comboYazar;

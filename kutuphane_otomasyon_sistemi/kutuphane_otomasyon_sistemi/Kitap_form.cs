@@ -142,7 +142,7 @@ namespace kutuphane_otomasyon_sistemi
             cmd.Parameters.AddWithValue("@tur", txtKitapTur.Text);
             cmd.Parameters.AddWithValue("@sayfa_sayisi", txtSayfaSayisi.Text);
             cmd.Parameters.AddWithValue("@barkod_no", txtBarkodNo.Text);
-            cmd.Parameters.AddWithValue("@raf", txtBarkod.Text);
+            cmd.Parameters.AddWithValue("@raf", txtRaf.Text);
             try
             {
 
@@ -168,8 +168,16 @@ namespace kutuphane_otomasyon_sistemi
             cmd.Parameters.AddWithValue("@ad", txtYazarEkle.Text);
             try
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Yazar Eklenedi");
+                if (String.IsNullOrEmpty(txtYazarEkle.Text))
+                {
+                    MessageBox.Show("Lütfen yazar adı giriniz.");
+                } else
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Yeni Yazar Eklendi");
+                    txtYazarEkle.Text = "";
+                }
+               
 
             }
             catch (Exception msj)
@@ -188,8 +196,16 @@ namespace kutuphane_otomasyon_sistemi
             cmd.Parameters.AddWithValue("@ad", txtKategoriEkle.Text);
             try
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Kategori Eklenedi");
+                if (String.IsNullOrEmpty(txtKategoriEkle.Text))
+                {
+                    MessageBox.Show("Lütfen kategori giriniz.");
+                }
+                else
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Yeni Kategori Eklendi");
+                    txtKategoriEkle.Text = "";
+                }
 
             }
             catch (Exception msj)
@@ -209,8 +225,16 @@ namespace kutuphane_otomasyon_sistemi
             cmd.Parameters.AddWithValue("@ad", txtYayineviEkle.Text);
             try
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Yayınevi Eklenedi");
+                if (String.IsNullOrEmpty(txtYayineviEkle.Text))
+                {
+                    MessageBox.Show("Lütfen Yayınevi giriniz.");
+                }
+                else
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Yeni Yayınevi Eklendi");
+                    txtYayineviEkle.Text = "";
+                }
 
             }
             catch (Exception msj)
@@ -218,6 +242,11 @@ namespace kutuphane_otomasyon_sistemi
 
                 MessageBox.Show("Yayınevi Ekleme Başarısız" + msj.Message);
             }
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
