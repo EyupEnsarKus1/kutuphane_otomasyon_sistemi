@@ -135,9 +135,9 @@ namespace kutuphane_otomasyon_sistemi
             this.lblKullanici.ForeColor = System.Drawing.Color.Black;
             this.lblKullanici.Location = new System.Drawing.Point(1180, 46);
             this.lblKullanici.Name = "lblKullanici";
-            this.lblKullanici.Size = new System.Drawing.Size(154, 35);
+            this.lblKullanici.Size = new System.Drawing.Size(122, 35);
             this.lblKullanici.TabIndex = 3;
-            this.lblKullanici.Text = "lblKullanici";
+            this.lblKullanici.Text = "Kullanıcı";
             // 
             // label4
             // 
@@ -146,9 +146,9 @@ namespace kutuphane_otomasyon_sistemi
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(1052, 46);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 35);
+            this.label4.Size = new System.Drawing.Size(121, 35);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Kullanıcı";
+            this.label4.Text = "Merhaba";
             // 
             // panel2
             // 
