@@ -643,6 +643,26 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap pixlr_bg_result {
+            get {
+                object obj = ResourceManager.GetObject("pixlr-bg-result", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixlr_bg_result1 {
+            get {
+                object obj = ResourceManager.GetObject("pixlr-bg-result1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap png_icon {
             get {
                 object obj = ResourceManager.GetObject("png icon", resourceCulture);
