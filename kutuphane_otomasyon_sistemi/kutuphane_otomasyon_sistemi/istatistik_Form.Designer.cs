@@ -232,6 +232,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Name = "istatistik_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "istatistik_Form";
+            this.Load += new System.EventHandler(this.istatistik_Form_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
