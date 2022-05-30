@@ -203,6 +203,16 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_borrow_book_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-borrow-book-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_borrow_book_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-borrow-book-96", resourceCulture);
@@ -353,9 +363,39 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_return_book_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-return-book-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_return_book_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-return-book-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_staff_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-staff-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_statistic_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-statistic-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

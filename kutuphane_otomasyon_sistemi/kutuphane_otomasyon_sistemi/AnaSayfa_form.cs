@@ -126,5 +126,10 @@ namespace kutuphane_otomasyon_sistemi
             Kayıp_form frm = new Kayıp_form();
             frm.Show();
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

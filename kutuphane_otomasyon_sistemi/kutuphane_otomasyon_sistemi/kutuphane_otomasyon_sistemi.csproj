@@ -373,5 +373,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-users-64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-statistic-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-borrow-book-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-book-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-book-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
