@@ -59,7 +59,7 @@ namespace kutuphane_otomasyon_sistemi
             this.login_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_Button.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.login_Button.Location = new System.Drawing.Point(173, 338);
+            this.login_Button.Location = new System.Drawing.Point(160, 339);
             this.login_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_Button.Name = "login_Button";
             this.login_Button.Size = new System.Drawing.Size(189, 43);
