@@ -24,7 +24,7 @@ namespace kutuphane_otomasyon_sistemi
         }
         public void display()
         {
-            KitapDatabase.displayAndSearch("SELECT kitap.id,kitap.ad,kitap.tur,kitap.sayfa_sayisi,kitap.barkod_no,kitap.raf,kategori.ad,yazar.ad,yayinevi.ad FROM kitap INNER JOİN  kategori ON kitap.kategori_id=kategori.id INNER JOİN yazar ON kitap.yazar_id = yazar.id INNER JOİN yayinevi ON kitap.yayinevi_id = yayinevi.id", dataGridView);
+            KitapDatabase.displayAndSearch("SELECT kitap.id,kitap.ad,kitap.tur,kitap.sayfa_sayisi,kitap.barkod_no,kitap.raf,kitap.basim_yili,kategori.ad,yazar.ad,yayinevi.ad FROM kitap INNER JOİN  kategori ON kitap.kategori_id=kategori.id INNER JOİN yazar ON kitap.yazar_id = yazar.id INNER JOİN yayinevi ON kitap.yayinevi_id = yayinevi.id", dataGridView);
         }
 
         private void Kitap_form_Load(object sender, EventArgs e)
@@ -132,7 +132,7 @@ namespace kutuphane_otomasyon_sistemi
         {
             MySqlConnection con = new MySqlConnection("SERVER=172.21.54.3;DATABASE=foursquare;UID=foursquare;password=P16052022!t");
             con.Open();
-            string sql = "INSERT INTO kitap (ad,tur,sayfa_sayisi,barkod_no,raf,kategori_id,yazar_id,yayinevi_id) VALUES (@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@kategori_id,@yazar_id,@yayinevi_id)";
+            string sql = "INSERT INTO kitap (ad,tur,sayfa_sayisi,barkod_no,raf,basim_yili,kategori_id,yazar_id,yayinevi_id) VALUES (@ad,@tur,@sayfa_sayisi,@barkod_no,@raf,@basim_yili,@kategori_id,@yazar_id,@yayinevi_id)";
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@kategori_id", comboKategori.SelectedValue.ToString());
@@ -141,6 +141,7 @@ namespace kutuphane_otomasyon_sistemi
             cmd.Parameters.AddWithValue("@ad", txtKitapAd.Text);
             cmd.Parameters.AddWithValue("@tur", txtKitapTur.Text);
             cmd.Parameters.AddWithValue("@sayfa_sayisi", txtSayfaSayisi.Text);
+            cmd.Parameters.AddWithValue("@basim_yili",txtBasimYili.Text);
             cmd.Parameters.AddWithValue("@barkod_no", txtBarkodNo.Text);
             cmd.Parameters.AddWithValue("@raf", txtRaf.Text);
             try

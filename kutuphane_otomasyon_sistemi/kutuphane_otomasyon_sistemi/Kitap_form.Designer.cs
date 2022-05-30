@@ -62,12 +62,15 @@ namespace kutuphane_otomasyon_sistemi
             this.btnYazarEkle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtBasimYili = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -105,6 +108,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column4,
             this.Column5,
             this.Column6,
+            this.Column12,
             this.Column7,
             this.Column8,
             this.Column9,
@@ -181,7 +185,7 @@ namespace kutuphane_otomasyon_sistemi
             // comboYazar
             // 
             this.comboYazar.FormattingEnabled = true;
-            this.comboYazar.Location = new System.Drawing.Point(471, 117);
+            this.comboYazar.Location = new System.Drawing.Point(468, 119);
             this.comboYazar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboYazar.Name = "comboYazar";
             this.comboYazar.Size = new System.Drawing.Size(152, 24);
@@ -202,7 +206,7 @@ namespace kutuphane_otomasyon_sistemi
             this.btnKitapEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKitapEkle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKitapEkle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnKitapEkle.Location = new System.Drawing.Point(276, 218);
+            this.btnKitapEkle.Location = new System.Drawing.Point(468, 214);
             this.btnKitapEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnKitapEkle.Name = "btnKitapEkle";
             this.btnKitapEkle.Size = new System.Drawing.Size(160, 37);
@@ -303,7 +307,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // txtBarkodNo
             // 
-            this.txtBarkodNo.Location = new System.Drawing.Point(155, 165);
+            this.txtBarkodNo.Location = new System.Drawing.Point(155, 169);
             this.txtBarkodNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtBarkodNo.Multiline = true;
             this.txtBarkodNo.Name = "txtBarkodNo";
@@ -327,16 +331,16 @@ namespace kutuphane_otomasyon_sistemi
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(367, 14);
+            this.label10.Location = new System.Drawing.Point(330, 14);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 24);
+            this.label10.Size = new System.Drawing.Size(127, 24);
             this.label10.TabIndex = 25;
-            this.label10.Text = "Raf";
+            this.label10.Text = "DemirBaş No";
             // 
             // txtRaf
             // 
-            this.txtRaf.Location = new System.Drawing.Point(468, 11);
+            this.txtRaf.Location = new System.Drawing.Point(468, 14);
             this.txtRaf.Margin = new System.Windows.Forms.Padding(4);
             this.txtRaf.Multiline = true;
             this.txtRaf.Name = "txtRaf";
@@ -445,6 +449,8 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.txtBasimYili);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.comboKategori);
@@ -467,6 +473,27 @@ namespace kutuphane_otomasyon_sistemi
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(653, 277);
             this.panel3.TabIndex = 42;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(24, 216);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(97, 24);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Basım Yılı";
+            // 
+            // txtBasimYili
+            // 
+            this.txtBasimYili.Location = new System.Drawing.Point(155, 214);
+            this.txtBasimYili.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBasimYili.Multiline = true;
+            this.txtBasimYili.Name = "txtBasimYili";
+            this.txtBasimYili.Size = new System.Drawing.Size(152, 25);
+            this.txtBasimYili.TabIndex = 42;
             // 
             // Column1
             // 
@@ -521,6 +548,15 @@ namespace kutuphane_otomasyon_sistemi
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             this.Column6.Width = 125;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "basim_yili";
+            this.Column12.HeaderText = "Basım Yılı";
+            this.Column12.MinimumWidth = 6;
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Width = 125;
             // 
             // Column7
             // 
@@ -643,12 +679,15 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Button btnKategoriEkle;
         private System.Windows.Forms.Button btnYazarEkle;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtBasimYili;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
