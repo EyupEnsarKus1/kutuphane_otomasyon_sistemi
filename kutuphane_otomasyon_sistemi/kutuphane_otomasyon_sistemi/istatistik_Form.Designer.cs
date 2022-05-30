@@ -57,9 +57,11 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox1.Controls.Add(this.lblKtp);
-            this.groupBox1.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(51, 62);
+            this.groupBox1.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(47, 49);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(269, 176);
             this.groupBox1.TabIndex = 0;
@@ -68,9 +70,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox2.Controls.Add(this.lblUye);
             this.groupBox2.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(399, 62);
+            this.groupBox2.Location = new System.Drawing.Point(356, 49);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(269, 176);
             this.groupBox2.TabIndex = 1;
@@ -79,9 +82,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox3.Controls.Add(this.lblYyn);
             this.groupBox3.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(732, 62);
+            this.groupBox3.Location = new System.Drawing.Point(673, 49);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(301, 176);
             this.groupBox3.TabIndex = 2;
@@ -90,9 +94,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox4.Controls.Add(this.lblYzr);
             this.groupBox4.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(1054, 62);
+            this.groupBox4.Location = new System.Drawing.Point(1016, 49);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(269, 176);
             this.groupBox4.TabIndex = 3;
@@ -101,9 +106,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox5.Controls.Add(this.lblKtgri);
             this.groupBox5.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(51, 292);
+            this.groupBox5.Location = new System.Drawing.Point(47, 292);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(269, 188);
             this.groupBox5.TabIndex = 4;
@@ -112,9 +118,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox6
             // 
+            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox6.Controls.Add(this.lblEmnt);
             this.groupBox6.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(399, 292);
+            this.groupBox6.Location = new System.Drawing.Point(356, 292);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(269, 188);
             this.groupBox6.TabIndex = 5;
@@ -123,9 +130,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox7
             // 
+            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox7.Controls.Add(this.lblOkuyucu);
             this.groupBox7.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(732, 292);
+            this.groupBox7.Location = new System.Drawing.Point(673, 292);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(301, 188);
             this.groupBox7.TabIndex = 6;
@@ -134,9 +142,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // groupBox8
             // 
+            this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox8.Controls.Add(this.lblKitap);
             this.groupBox8.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(1054, 292);
+            this.groupBox8.Location = new System.Drawing.Point(1019, 292);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(269, 188);
             this.groupBox8.TabIndex = 7;
@@ -219,6 +228,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1377, 781);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
