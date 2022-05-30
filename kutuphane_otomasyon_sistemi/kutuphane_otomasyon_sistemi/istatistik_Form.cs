@@ -29,8 +29,8 @@ namespace kutuphane_otomasyon_sistemi
             MySqlConnection con = Method.GetConnection();
 
             #region toplamKitap
-
-            MySqlCommand cmd1 = new MySqlCommand("SELECT COUNT() FROM kitap", con);
+           
+            MySqlCommand cmd1 = new MySqlCommand("SELECT COUNT(*) FROM kitap", con);
             MySqlDataReader dr1 = cmd1.ExecuteReader();
             while (dr1.Read())
             {
@@ -41,7 +41,7 @@ namespace kutuphane_otomasyon_sistemi
             #endregion
             #region toplamÜye
             con.Open();
-            MySqlCommand cmd2 = new MySqlCommand("SELECT COUNT() FROM uye", con);
+            MySqlCommand cmd2 = new MySqlCommand("SELECT COUNT(*) FROM uye", con);
             MySqlDataReader dr2 = cmd2.ExecuteReader();
             while (dr2.Read())
             {
@@ -53,7 +53,7 @@ namespace kutuphane_otomasyon_sistemi
             #endregion
             #region AktifEmanet
             con.Open();
-            MySqlCommand cmd3 = new MySqlCommand("SELECT COUNT() FROM odunc_alma WHERE teslim_durum='Teslim Edilmedi'", con);
+            MySqlCommand cmd3 = new MySqlCommand("SELECT COUNT(*) FROM odunc_alma WHERE teslim_durum='Teslim Edilmedi'", con);
             MySqlDataReader dr3 = cmd3.ExecuteReader();
             while (dr3.Read())
             {
@@ -63,7 +63,7 @@ namespace kutuphane_otomasyon_sistemi
             #endregion
             #region yazarSayısı
             con.Open();
-            MySqlCommand cmd4 = new MySqlCommand("SELECT COUNT() FROM yazar", con);
+            MySqlCommand cmd4 = new MySqlCommand("SELECT COUNT(*) FROM yazar", con);
             MySqlDataReader dr4 = cmd4.ExecuteReader();
             while (dr4.Read())
             {
@@ -73,7 +73,7 @@ namespace kutuphane_otomasyon_sistemi
             #endregion
             #region kategoriSayısı
             con.Open();
-            MySqlCommand cmd5 = new MySqlCommand("SELECT COUNT() FROM kategori", con);
+            MySqlCommand cmd5 = new MySqlCommand("SELECT COUNT(*) FROM kategori", con);
             MySqlDataReader dr5 = cmd5.ExecuteReader();
             while (dr5.Read())
             {
@@ -83,7 +83,7 @@ namespace kutuphane_otomasyon_sistemi
             #endregion
             #region yayıneviSayısı
             con.Open();
-            MySqlCommand cmd6 = new MySqlCommand("SELECT COUNT() FROM yayinevi", con);
+            MySqlCommand cmd6 = new MySqlCommand("SELECT COUNT(*) FROM yayinevi", con);
             MySqlDataReader dr6 = cmd6.ExecuteReader();
             while (dr6.Read())
             {
