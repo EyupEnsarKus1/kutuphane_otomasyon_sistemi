@@ -70,11 +70,11 @@ namespace kutuphane_otomasyon_sistemi
             btnKitapEkle.Text = "Güncelle";
             txtKitapAd.Text = ad;
             txtBarkodNo.Text = barkodNo;
-            txtKategori.Text = kategori;
+            //txtKategori.Text = kategori;
             txtKitapTur.Text = tur;
             txtSayfaSayisi.Text = sayfaSayisi;
-            txtYazar.Text = yazar;
-            txtYayinevi.Text = yayinevi;
+            //txtYazar.Text = yazar;
+           // txtYayinevi.Text = yayinevi;
             txtNumara.Text = raf;
 
 
@@ -86,7 +86,7 @@ namespace kutuphane_otomasyon_sistemi
         }
         public void clear()
         {
-            txtKitapAd.Text = txtBarkodNo.Text = txtKategori.Text = txtKitapTur.Text = txtYazar.Text = txtSayfaSayisi.Text = txtNumara.Text = txtYayinevi.Text = string.Empty;
+           // txtKitapAd.Text = txtBarkodNo.Text = txtKategori.Text = txtKitapTur.Text = txtYazar.Text = txtSayfaSayisi.Text = txtNumara.Text = txtYayinevi.Text = string.Empty;
         }
         private void label4_Click(object sender, EventArgs e)
         {
