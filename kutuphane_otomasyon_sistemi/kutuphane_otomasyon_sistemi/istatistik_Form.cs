@@ -71,6 +71,46 @@ namespace kutuphane_otomasyon_sistemi
             }
             con.Close();
             #endregion
+            #region kategoriSayısı
+            con.Open();
+            MySqlCommand cmd5 = new MySqlCommand("SELECT COUNT() FROM kategori", con);
+            MySqlDataReader dr5 = cmd5.ExecuteReader();
+            while (dr5.Read())
+            {
+                lblKtgri.Text = dr5[0].ToString();
+            }
+            con.Close();
+            #endregion
+            #region yayıneviSayısı
+            con.Open();
+            MySqlCommand cmd6 = new MySqlCommand("SELECT COUNT() FROM yayinevi", con);
+            MySqlDataReader dr6 = cmd6.ExecuteReader();
+            while (dr6.Read())
+            {
+                lblYyn.Text = dr6[0].ToString();
+            }
+            con.Close();
+            #endregion
+            #region enCokKitapOkuyan
+            con.Open();
+            MySqlCommand cmd8 = new MySqlCommand("SELECT CONCAT(uye.ad,' ',uye.soyad), COUNT(uye.uye_numara) FROM odunc_alma INNER JOIN uye ON odunc_alma.uye_numara = uye.uye_numara GROUP BY uye.uye_numara LIMIT 20 ", con);
+            MySqlDataReader dr8 = cmd8.ExecuteReader();
+            while (dr8.Read())
+            {
+                lblOkuyucu.Text = dr8[0].ToString();
+            }
+            con.Close();
+            #endregion
+            #region enCokOkunanKitap
+            con.Open();
+            MySqlCommand cmd7 = new MySqlCommand("SELECT kitap.ad,COUNT(kitap.ad) FROM odunc_alma INNER JOIN kitap ON odunc_alma.kitap_id = kitap.id GROUP BY odunc_alma.kitap_id ORDER BY COUNT(kitap.ad) DESC LIMIT 20", con);
+            MySqlDataReader dr7 = cmd7.ExecuteReader();
+            while (dr7.Read())
+            {
+                lblKitap.Text = dr7[0].ToString();
+            }
+            #endregion
+
         }
     }
 }
