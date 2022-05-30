@@ -77,5 +77,28 @@ namespace kutuphane_otomasyon_sistemi
             }
             con.Close();
         }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex ==0)
+            {
+                MySqlConnection con = Method.GetConnection();
+                string sorgu = "DELETE FROM `kayip` WHERE id = @id";
+                MySqlCommand command = new MySqlCommand(sorgu,con);
+                command.Parameters.AddWithValue("@id", dataGridView2.CurrentRow.Cells[0].Value);
+                try
+                {
+                    command.ExecuteNonQuery();
+                    kayipListele();
+                }
+                catch (Exception msj )
+                {
+
+                    MessageBox.Show("Kayıp Kitap Silme Başarısız");
+                }
+                con.Close();
+            }
+
+        }
     }
 }
