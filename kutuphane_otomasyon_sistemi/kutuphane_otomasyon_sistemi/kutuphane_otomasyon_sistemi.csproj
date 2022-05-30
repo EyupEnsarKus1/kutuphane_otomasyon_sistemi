@@ -385,5 +385,26 @@
   <ItemGroup>
     <None Include="Resources\icons8-return-book-100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %285%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

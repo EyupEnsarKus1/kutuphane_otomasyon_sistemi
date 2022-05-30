@@ -31,7 +31,6 @@ namespace kutuphane_otomasyon_sistemi
         {
             this.txt_kSifre = new System.Windows.Forms.TextBox();
             this.login_Button = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.combo_uyeler = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -58,8 +57,9 @@ namespace kutuphane_otomasyon_sistemi
             // login_Button
             // 
             this.login_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_Button.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.login_Button.Location = new System.Drawing.Point(155, 338);
+            this.login_Button.Location = new System.Drawing.Point(173, 338);
             this.login_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_Button.Name = "login_Button";
             this.login_Button.Size = new System.Drawing.Size(189, 43);
@@ -67,16 +67,6 @@ namespace kutuphane_otomasyon_sistemi
             this.login_Button.Text = "Giriş Yap";
             this.login_Button.UseVisualStyleBackColor = false;
             this.login_Button.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(198, 383);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 16);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Şifremi Unuttum?";
             // 
             // combo_uyeler
             // 
@@ -122,11 +112,11 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_user_groups_1001;
-            this.pictureBox1.Location = new System.Drawing.Point(155, 87);
+            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.pixlr_bg_result__4_;
+            this.pictureBox1.Location = new System.Drawing.Point(145, 94);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 125);
+            this.pictureBox1.Size = new System.Drawing.Size(217, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -139,7 +129,6 @@ namespace kutuphane_otomasyon_sistemi
             this.ClientSize = new System.Drawing.Size(537, 460);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.combo_uyeler);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.login_Button);
@@ -166,7 +155,6 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Button login_Button;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox combo_uyeler;
         private System.Windows.Forms.Label label2;
     }

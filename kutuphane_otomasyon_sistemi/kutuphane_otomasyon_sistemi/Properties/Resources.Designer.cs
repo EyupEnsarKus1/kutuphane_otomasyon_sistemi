@@ -513,6 +513,16 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap login_icon {
             get {
                 object obj = ResourceManager.GetObject("login icon", resourceCulture);
@@ -646,6 +656,46 @@ namespace kutuphane_otomasyon_sistemi.Properties {
         internal static System.Drawing.Bitmap pixlr_bg_result {
             get {
                 object obj = ResourceManager.GetObject("pixlr-bg-result", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixlr_bg_result__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pixlr-bg-result (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixlr_bg_result__2_ {
+            get {
+                object obj = ResourceManager.GetObject("pixlr-bg-result (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixlr_bg_result__4_ {
+            get {
+                object obj = ResourceManager.GetObject("pixlr-bg-result (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixlr_bg_result__5_ {
+            get {
+                object obj = ResourceManager.GetObject("pixlr-bg-result (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
