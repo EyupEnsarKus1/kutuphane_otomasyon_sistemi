@@ -149,6 +149,8 @@ namespace kutuphane_otomasyon_sistemi
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Yeni Kitap Eklendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtKitapAd.Text = txtKitapTur.Text = txtSayfaSayisi.Text = txtBasimYili.Text = txtBarkodNo.Text = txtRaf.Text = string.Empty;
+
 
             }
             catch (Exception ex)
