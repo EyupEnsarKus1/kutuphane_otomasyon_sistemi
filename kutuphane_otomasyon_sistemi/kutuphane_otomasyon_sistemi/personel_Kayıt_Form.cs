@@ -46,15 +46,15 @@ namespace kutuphane_otomasyon_sistemi
         }
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            if(txtAd.Text.Trim().Length < 3 )
+            if(txtAd.Text.Trim().Length <= 0 )
             {
-                MessageBox.Show("Personel ADI 3 TEN BÜYÜK OLMALI");
+                MessageBox.Show("Adı Boş Bırakmayınız");
                 return;
 
             }
-            if(txtSoyad.Text.Trim().Length<4)
+            if(txtSoyad.Text.Trim().Length <=0)
             {
-                MessageBox.Show("Personel soyadı 3 TEN BÜYÜK OLMALI");
+                MessageBox.Show("Boş Bırakmayınız");
                 return;
             }
             if (txtKadi.Text.Trim().Length < 5)

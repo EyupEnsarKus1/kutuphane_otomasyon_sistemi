@@ -49,6 +49,7 @@ namespace kutuphane_otomasyon_sistemi
             {
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Kayıp Kitap Olarak Belirlendi");
+                kayipListele();
             }
             catch (Exception hata)
             {
@@ -80,25 +81,29 @@ namespace kutuphane_otomasyon_sistemi
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex ==0)
+           
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = "DELETE FROM kayip WHERE id = @id";
+            MySqlConnection con = Method.GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@id", dataGridView2.CurrentRow.Cells[0].Value);
+            try
             {
-                MySqlConnection con = Method.GetConnection();
-                string sorgu = "DELETE FROM `kayip` WHERE id = @id";
-                MySqlCommand command = new MySqlCommand(sorgu,con);
-                command.Parameters.AddWithValue("@id", dataGridView2.CurrentRow.Cells[0].Value);
-                try
-                {
-                    command.ExecuteNonQuery();
-                    kayipListele();
-                }
-                catch (Exception msj )
-                {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kayıp Kitap Veri Tabanından Silindi");
+                kayipListele();
 
-                    MessageBox.Show("Kayıp Kitap Silme Başarısız");
-                }
-                con.Close();
             }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show("Hata" + ex.Message);
+            }
+            con.Close();
         }
     }
 }

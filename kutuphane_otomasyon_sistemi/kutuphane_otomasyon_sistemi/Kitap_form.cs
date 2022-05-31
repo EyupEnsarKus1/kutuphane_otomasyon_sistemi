@@ -103,23 +103,11 @@ namespace kutuphane_otomasyon_sistemi
         {
             if (e.ColumnIndex == 0)
             {
-                form.clear();
-                form.id = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
-                form.ad = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
-                form.tur = dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
-                form.sayfaSayisi = dataGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
-                form.barkodNo = dataGridView.Rows[e.RowIndex].Cells[6].Value.ToString();
-                form.raf = dataGridView.Rows[e.RowIndex].Cells[7].Value.ToString();
-                form.kategori = dataGridView.Rows[e.RowIndex].Cells[8].Value.ToString();
-                form.yazar = dataGridView.Rows[e.RowIndex].Cells[9].Value.ToString();
-                form.yayinevi = dataGridView.Rows[e.RowIndex].Cells[10].Value.ToString();
-                form.updateInfo();
-                form.ShowDialog();
-                return;
-            }
+                
+              }
             if (e.ColumnIndex == 1)
             {
-                if (MessageBox.Show("Kitabı Silmek İstediğinizden Emin miniz", "Bilgilendirme", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
+                if (MessageBox.Show("Kitabı Silmek İstediğinizden Emin Misiniz?", "Bilgilendirme", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
                 {
                     KitapDatabase.deleteBook(dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString());
                     display();
