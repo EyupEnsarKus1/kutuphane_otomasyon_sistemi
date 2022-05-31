@@ -30,16 +30,17 @@ namespace kutuphane_otomasyon_sistemi
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAra = new System.Windows.Forms.TextBox();
+            this.btnTeslimAl = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtAra = new System.Windows.Forms.TextBox();
-            this.btnTeslimAl = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,15 +59,57 @@ namespace kutuphane_otomasyon_sistemi
             this.Column7,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(245, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(85, 50);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(1031, 372);
+            this.dataGridView1.Size = new System.Drawing.Size(1191, 372);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(228, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Emanet Kitap Listesi ";
+            // 
+            // txtAra
+            // 
+            this.txtAra.Location = new System.Drawing.Point(98, 517);
+            this.txtAra.Multiline = true;
+            this.txtAra.Name = "txtAra";
+            this.txtAra.Size = new System.Drawing.Size(152, 25);
+            this.txtAra.TabIndex = 2;
+            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
+            // 
+            // btnTeslimAl
+            // 
+            this.btnTeslimAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.btnTeslimAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeslimAl.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTeslimAl.Location = new System.Drawing.Point(532, 451);
+            this.btnTeslimAl.Name = "btnTeslimAl";
+            this.btnTeslimAl.Size = new System.Drawing.Size(271, 44);
+            this.btnTeslimAl.TabIndex = 3;
+            this.btnTeslimAl.Text = "Teslim Al";
+            this.btnTeslimAl.UseVisualStyleBackColor = false;
+            this.btnTeslimAl.Click += new System.EventHandler(this.btnTeslimAl_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(53, 465);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(274, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Üye Numarasına Göre Filtrele";
             // 
             // Column1
             // 
@@ -122,51 +165,24 @@ namespace kutuphane_otomasyon_sistemi
             this.Column4.ReadOnly = true;
             this.Column4.Width = 125;
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(228, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Emanet Kitap Listesi ";
-            // 
-            // txtAra
-            // 
-            this.txtAra.Location = new System.Drawing.Point(98, 517);
-            this.txtAra.Multiline = true;
-            this.txtAra.Name = "txtAra";
-            this.txtAra.Size = new System.Drawing.Size(152, 25);
-            this.txtAra.TabIndex = 2;
-            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
-            // 
-            // btnTeslimAl
-            // 
-            this.btnTeslimAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
-            this.btnTeslimAl.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTeslimAl.Location = new System.Drawing.Point(532, 451);
-            this.btnTeslimAl.Name = "btnTeslimAl";
-            this.btnTeslimAl.Size = new System.Drawing.Size(271, 44);
-            this.btnTeslimAl.TabIndex = 3;
-            this.btnTeslimAl.Text = "Teslim Al";
-            this.btnTeslimAl.UseVisualStyleBackColor = false;
-            this.btnTeslimAl.Click += new System.EventHandler(this.btnTeslimAl_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(53, 465);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(274, 24);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Üye Numarasına Göre Filtrele";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(936, 451);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 44);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Sil";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // odunc_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 781);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnTeslimAl);
             this.Controls.Add(this.txtAra);
@@ -176,6 +192,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Name = "odunc_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "odunc_Form";
+            this.Load += new System.EventHandler(this.odunc_Form_Load);
             this.Shown += new System.EventHandler(this.odunc_Form_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -196,5 +213,6 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Button button1;
     }
 }
