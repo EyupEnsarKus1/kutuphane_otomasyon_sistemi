@@ -239,5 +239,10 @@ namespace kutuphane_otomasyon_sistemi
         {
 
         }
+
+        private void txtYazarAdiAra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
