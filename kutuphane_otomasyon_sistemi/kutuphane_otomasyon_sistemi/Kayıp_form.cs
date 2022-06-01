@@ -105,5 +105,11 @@ namespace kutuphane_otomasyon_sistemi
             }
             con.Close();
         }
+
+        private void txtKitapAra_TextChanged(object sender, EventArgs e)
+        {
+            Method.displayAndSearch("SELECT `id`, `ad`, `tur`, `sayfa_sayisi`, `barkod_no`, `raf`, `kategori_id`, `yazar_id`, `yayinevi_id` FROM `kitap` WHERE ad LIKE '%" + txtKitapAra.Text + "%'", dataGridView1);
+
+        }
     }
 }

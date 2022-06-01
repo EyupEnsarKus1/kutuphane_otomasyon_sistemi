@@ -64,7 +64,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column12,
             this.Column13,
             this.Column14});
-            this.dataGridView2.Location = new System.Drawing.Point(230, 324);
+            this.dataGridView2.Location = new System.Drawing.Point(208, 322);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
@@ -130,6 +130,7 @@ namespace kutuphane_otomasyon_sistemi
             this.txtKitapAra.Name = "txtKitapAra";
             this.txtKitapAra.Size = new System.Drawing.Size(100, 22);
             this.txtKitapAra.TabIndex = 4;
+            this.txtKitapAra.TextChanged += new System.EventHandler(this.txtKitapAra_TextChanged);
             // 
             // label1
             // 
@@ -253,7 +254,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(932, 372);
+            this.button1.Location = new System.Drawing.Point(727, 622);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(182, 41);
             this.button1.TabIndex = 7;
