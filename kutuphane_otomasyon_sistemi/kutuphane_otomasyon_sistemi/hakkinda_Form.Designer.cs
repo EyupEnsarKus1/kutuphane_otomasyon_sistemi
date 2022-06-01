@@ -64,7 +64,7 @@ namespace kutuphane_otomasyon_sistemi
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(125, 362);
+            this.label1.Location = new System.Drawing.Point(125, 373);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(582, 132);
             this.label1.TabIndex = 3;
@@ -75,10 +75,10 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.inegöl_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(284, 187);
+            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.pixlr_bg_result;
+            this.pictureBox1.Location = new System.Drawing.Point(274, 187);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 172);
+            this.pictureBox1.Size = new System.Drawing.Size(236, 183);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
