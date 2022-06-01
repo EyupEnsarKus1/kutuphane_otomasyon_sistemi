@@ -29,9 +29,11 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtYazarAdiAra = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,8 +78,6 @@ namespace kutuphane_otomasyon_sistemi
             this.label11 = new System.Windows.Forms.Label();
             this.txtBasimYili = new System.Windows.Forms.TextBox();
             this.ktpGüncelle = new System.Windows.Forms.Button();
-            this.txtYazarAdiAra = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -91,11 +91,32 @@ namespace kutuphane_otomasyon_sistemi
             this.panel2.Controls.Add(this.dataGridView);
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(16, 324);
+            this.panel2.Location = new System.Drawing.Point(13, 318);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1348, 426);
+            this.panel2.Size = new System.Drawing.Size(1361, 432);
             this.panel2.TabIndex = 1;
+            // 
+            // txtYazarAdiAra
+            // 
+            this.txtYazarAdiAra.Location = new System.Drawing.Point(809, 28);
+            this.txtYazarAdiAra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtYazarAdiAra.Name = "txtYazarAdiAra";
+            this.txtYazarAdiAra.Size = new System.Drawing.Size(152, 22);
+            this.txtYazarAdiAra.TabIndex = 5;
+            this.txtYazarAdiAra.TextChanged += new System.EventHandler(this.txtYazarAdiAra_TextChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(669, 28);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(120, 24);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "YAZAR ADI:";
             // 
             // dataGridView
             // 
@@ -117,7 +138,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column9,
             this.Column10,
             this.Column11});
-            this.dataGridView.Location = new System.Drawing.Point(4, 65);
+            this.dataGridView.Location = new System.Drawing.Point(24, 72);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
@@ -125,7 +146,7 @@ namespace kutuphane_otomasyon_sistemi
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView.ShowEditingIcon = false;
-            this.dataGridView.Size = new System.Drawing.Size(1340, 348);
+            this.dataGridView.Size = new System.Drawing.Size(1317, 342);
             this.dataGridView.TabIndex = 3;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
@@ -222,12 +243,12 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // Column10
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column10.HeaderText = "";
             this.Column10.MinimumWidth = 6;
@@ -239,12 +260,12 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // Column11
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column11.HeaderText = "";
             this.Column11.MinimumWidth = 6;
@@ -256,7 +277,7 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(380, 27);
+            this.txtSearch.Location = new System.Drawing.Point(384, 31);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(152, 22);
@@ -268,7 +289,7 @@ namespace kutuphane_otomasyon_sistemi
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(240, 28);
+            this.label2.Location = new System.Drawing.Point(253, 28);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 24);
@@ -582,7 +603,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel3.Location = new System.Drawing.Point(564, 15);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(653, 277);
+            this.panel3.Size = new System.Drawing.Size(642, 277);
             this.panel3.TabIndex = 42;
             // 
             // label11
@@ -612,34 +633,13 @@ namespace kutuphane_otomasyon_sistemi
             this.ktpGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ktpGüncelle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ktpGüncelle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ktpGüncelle.Location = new System.Drawing.Point(1225, 229);
+            this.ktpGüncelle.Location = new System.Drawing.Point(1214, 229);
             this.ktpGüncelle.Margin = new System.Windows.Forms.Padding(4);
             this.ktpGüncelle.Name = "ktpGüncelle";
-            this.ktpGüncelle.Size = new System.Drawing.Size(160, 37);
+            this.ktpGüncelle.Size = new System.Drawing.Size(160, 39);
             this.ktpGüncelle.TabIndex = 43;
             this.ktpGüncelle.Text = "Kitap Güncelle";
             this.ktpGüncelle.UseVisualStyleBackColor = false;
-            // 
-            // txtYazarAdiAra
-            // 
-            this.txtYazarAdiAra.Location = new System.Drawing.Point(712, 27);
-            this.txtYazarAdiAra.Margin = new System.Windows.Forms.Padding(4);
-            this.txtYazarAdiAra.Name = "txtYazarAdiAra";
-            this.txtYazarAdiAra.Size = new System.Drawing.Size(152, 22);
-            this.txtYazarAdiAra.TabIndex = 5;
-            this.txtYazarAdiAra.TextChanged += new System.EventHandler(this.txtYazarAdiAra_TextChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(572, 28);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 24);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "YAZAR ADI:";
             // 
             // Kitap_form
             // 

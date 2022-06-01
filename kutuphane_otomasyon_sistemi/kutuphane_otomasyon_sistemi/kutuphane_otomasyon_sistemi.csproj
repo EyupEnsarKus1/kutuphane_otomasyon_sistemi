@@ -409,5 +409,8 @@
   <ItemGroup>
     <None Include="Resources\pixlr-bg-result %286%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %286%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
