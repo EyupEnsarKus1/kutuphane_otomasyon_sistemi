@@ -52,5 +52,38 @@ namespace kutuphane_otomasyon_sistemi
             con.Close();
 
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+           
+            
+        }
+
+        private void odunc_Form_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = "DELETE FROM odunc_alma WHERE id = @id";
+            MySqlConnection con = Method.GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql,con);
+            cmd.Parameters.AddWithValue("id",dataGridView1.CurrentRow.Cells[0].Value);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Odünç Alma İşlemi Veri Tabanından Silindi");
+                emanetListele();
+
+            }
+            catch (Exception ex )
+            {
+
+                MessageBox.Show("Hata"+ex.Message);
+            }
+            con.Close();
+        }
     }
 }

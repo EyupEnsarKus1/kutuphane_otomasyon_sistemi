@@ -30,20 +30,20 @@ namespace kutuphane_otomasyon_sistemi
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.lblKtp = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblUye = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblYyn = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lblYzr = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lblKtgri = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.lblEmnt = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.lblOkuyucu = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.lblKitap = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -63,34 +63,61 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(47, 49);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(269, 176);
+            this.groupBox1.Size = new System.Drawing.Size(269, 196);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Toplam Kitap Sayısı";
+            // 
+            // lblKtp
+            // 
+            this.lblKtp.AutoSize = true;
+            this.lblKtp.Location = new System.Drawing.Point(15, 71);
+            this.lblKtp.Name = "lblKtp";
+            this.lblKtp.Size = new System.Drawing.Size(238, 35);
+            this.lblKtp.TabIndex = 8;
+            this.lblKtp.Text = "toplam kitap sayısı";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox2.Controls.Add(this.lblUye);
             this.groupBox2.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(356, 49);
+            this.groupBox2.Location = new System.Drawing.Point(702, 292);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(269, 176);
+            this.groupBox2.Size = new System.Drawing.Size(269, 188);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Toplam Üye Sayısı";
+            // 
+            // lblUye
+            // 
+            this.lblUye.AutoSize = true;
+            this.lblUye.Location = new System.Drawing.Point(32, 71);
+            this.lblUye.Name = "lblUye";
+            this.lblUye.Size = new System.Drawing.Size(217, 35);
+            this.lblUye.TabIndex = 9;
+            this.lblUye.Text = "toplam üye sayısı";
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.groupBox3.Controls.Add(this.lblYyn);
             this.groupBox3.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(673, 49);
+            this.groupBox3.Location = new System.Drawing.Point(1019, 292);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(301, 176);
+            this.groupBox3.Size = new System.Drawing.Size(301, 188);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = " YayınEvi Sayısı";
+            // 
+            // lblYyn
+            // 
+            this.lblYyn.AutoSize = true;
+            this.lblYyn.Location = new System.Drawing.Point(64, 71);
+            this.lblYyn.Name = "lblYyn";
+            this.lblYyn.Size = new System.Drawing.Size(181, 35);
+            this.lblYyn.TabIndex = 9;
+            this.lblYyn.Text = "yayınevi sayısı";
             // 
             // groupBox4
             // 
@@ -99,10 +126,19 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox4.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(1016, 49);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(269, 176);
+            this.groupBox4.Size = new System.Drawing.Size(290, 196);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Yazar Sayısı";
+            // 
+            // lblYzr
+            // 
+            this.lblYzr.AutoSize = true;
+            this.lblYzr.Location = new System.Drawing.Point(56, 71);
+            this.lblYzr.Name = "lblYzr";
+            this.lblYzr.Size = new System.Drawing.Size(146, 35);
+            this.lblYzr.TabIndex = 9;
+            this.lblYzr.Text = "yazar sayısı";
             // 
             // groupBox5
             // 
@@ -116,78 +152,6 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Kategori Sayısı";
             // 
-            // groupBox6
-            // 
-            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
-            this.groupBox6.Controls.Add(this.lblEmnt);
-            this.groupBox6.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(356, 292);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(269, 188);
-            this.groupBox6.TabIndex = 5;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Aktif Emanet Sayısı";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
-            this.groupBox7.Controls.Add(this.lblOkuyucu);
-            this.groupBox7.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(673, 292);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(301, 188);
-            this.groupBox7.TabIndex = 6;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "En Fazla Kitap Okuyan";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
-            this.groupBox8.Controls.Add(this.lblKitap);
-            this.groupBox8.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(1019, 292);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(269, 188);
-            this.groupBox8.TabIndex = 7;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "En Fazla Okunan Kitap";
-            // 
-            // lblKtp
-            // 
-            this.lblKtp.AutoSize = true;
-            this.lblKtp.Location = new System.Drawing.Point(15, 71);
-            this.lblKtp.Name = "lblKtp";
-            this.lblKtp.Size = new System.Drawing.Size(238, 35);
-            this.lblKtp.TabIndex = 8;
-            this.lblKtp.Text = "toplam kitap sayısı";
-            // 
-            // lblUye
-            // 
-            this.lblUye.AutoSize = true;
-            this.lblUye.Location = new System.Drawing.Point(32, 71);
-            this.lblUye.Name = "lblUye";
-            this.lblUye.Size = new System.Drawing.Size(217, 35);
-            this.lblUye.TabIndex = 9;
-            this.lblUye.Text = "toplam üye sayısı";
-            // 
-            // lblYyn
-            // 
-            this.lblYyn.AutoSize = true;
-            this.lblYyn.Location = new System.Drawing.Point(64, 71);
-            this.lblYyn.Name = "lblYyn";
-            this.lblYyn.Size = new System.Drawing.Size(181, 35);
-            this.lblYyn.TabIndex = 9;
-            this.lblYyn.Text = "yayınevi sayısı";
-            // 
-            // lblYzr
-            // 
-            this.lblYzr.AutoSize = true;
-            this.lblYzr.Location = new System.Drawing.Point(56, 71);
-            this.lblYzr.Name = "lblYzr";
-            this.lblYzr.Size = new System.Drawing.Size(146, 35);
-            this.lblYzr.TabIndex = 9;
-            this.lblYzr.Text = "yazar sayısı";
-            // 
             // lblKtgri
             // 
             this.lblKtgri.AutoSize = true;
@@ -196,6 +160,18 @@ namespace kutuphane_otomasyon_sistemi
             this.lblKtgri.Size = new System.Drawing.Size(182, 35);
             this.lblKtgri.TabIndex = 9;
             this.lblKtgri.Text = "kategori sayısı";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox6.Controls.Add(this.lblEmnt);
+            this.groupBox6.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(356, 292);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(301, 188);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Aktif Emanet Sayısı";
             // 
             // lblEmnt
             // 
@@ -206,19 +182,43 @@ namespace kutuphane_otomasyon_sistemi
             this.lblEmnt.TabIndex = 9;
             this.lblEmnt.Text = "aktif emanet sayısı";
             // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox7.Controls.Add(this.lblOkuyucu);
+            this.groupBox7.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(356, 49);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(309, 196);
+            this.groupBox7.TabIndex = 6;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "En Fazla Kitap Okuyan";
+            // 
             // lblOkuyucu
             // 
             this.lblOkuyucu.AutoSize = true;
-            this.lblOkuyucu.Location = new System.Drawing.Point(21, 87);
+            this.lblOkuyucu.Location = new System.Drawing.Point(15, 87);
             this.lblOkuyucu.Name = "lblOkuyucu";
             this.lblOkuyucu.Size = new System.Drawing.Size(268, 35);
             this.lblOkuyucu.TabIndex = 9;
             this.lblOkuyucu.Text = "en fazla kitap okuyan";
             // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox8.Controls.Add(this.lblKitap);
+            this.groupBox8.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Location = new System.Drawing.Point(690, 49);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(308, 196);
+            this.groupBox8.TabIndex = 7;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "En Fazla Okunan Kitap";
+            // 
             // lblKitap
             // 
             this.lblKitap.AutoSize = true;
-            this.lblKitap.Location = new System.Drawing.Point(-6, 87);
+            this.lblKitap.Location = new System.Drawing.Point(6, 87);
             this.lblKitap.Name = "lblKitap";
             this.lblKitap.Size = new System.Drawing.Size(272, 35);
             this.lblKitap.TabIndex = 9;

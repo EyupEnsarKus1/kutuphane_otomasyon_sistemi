@@ -29,8 +29,10 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnKayipEkle = new System.Windows.Forms.Button();
             this.btnDurumDuzelt = new System.Windows.Forms.Button();
             this.txtKitapAra = new System.Windows.Forms.TextBox();
@@ -45,10 +47,7 @@ namespace kutuphane_otomasyon_sistemi
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -59,12 +58,12 @@ namespace kutuphane_otomasyon_sistemi
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column12,
             this.Column13,
-            this.Column14,
-            this.Column1});
+            this.Column14});
             this.dataGridView2.Location = new System.Drawing.Point(230, 324);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
@@ -76,29 +75,58 @@ namespace kutuphane_otomasyon_sistemi
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "id";
+            this.Column12.HeaderText = "#";
+            this.Column12.MinimumWidth = 6;
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Width = 125;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "ad";
+            this.Column13.HeaderText = "Kitap Adı";
+            this.Column13.MinimumWidth = 6;
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            this.Column13.Width = 125;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "kayipdurum";
+            this.Column14.HeaderText = "Kayıp Durumu";
+            this.Column14.MinimumWidth = 6;
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            this.Column14.Width = 125;
+            // 
             // btnKayipEkle
             // 
+            this.btnKayipEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.btnKayipEkle.Location = new System.Drawing.Point(230, 622);
             this.btnKayipEkle.Name = "btnKayipEkle";
             this.btnKayipEkle.Size = new System.Drawing.Size(202, 71);
             this.btnKayipEkle.TabIndex = 2;
             this.btnKayipEkle.Text = "Kayıp Olarak İşaretle";
-            this.btnKayipEkle.UseVisualStyleBackColor = true;
+            this.btnKayipEkle.UseVisualStyleBackColor = false;
             this.btnKayipEkle.Click += new System.EventHandler(this.btnKayipEkle_Click);
             // 
             // btnDurumDuzelt
             // 
+            this.btnDurumDuzelt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
             this.btnDurumDuzelt.Location = new System.Drawing.Point(495, 622);
             this.btnDurumDuzelt.Name = "btnDurumDuzelt";
             this.btnDurumDuzelt.Size = new System.Drawing.Size(202, 71);
             this.btnDurumDuzelt.TabIndex = 3;
             this.btnDurumDuzelt.Text = "Kitap Durumu Düzelt";
-            this.btnDurumDuzelt.UseVisualStyleBackColor = true;
+            this.btnDurumDuzelt.UseVisualStyleBackColor = false;
             this.btnDurumDuzelt.Click += new System.EventHandler(this.btnDurumDuzelt_Click);
             // 
             // txtKitapAra
             // 
-            this.txtKitapAra.Location = new System.Drawing.Point(68, 170);
+            this.txtKitapAra.Location = new System.Drawing.Point(50, 169);
             this.txtKitapAra.Name = "txtKitapAra";
             this.txtKitapAra.Size = new System.Drawing.Size(100, 22);
             this.txtKitapAra.TabIndex = 4;
@@ -106,9 +134,10 @@ namespace kutuphane_otomasyon_sistemi
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 119);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(46, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 17);
+            this.label1.Size = new System.Drawing.Size(85, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Kitap Ara";
             // 
@@ -118,6 +147,7 @@ namespace kutuphane_otomasyon_sistemi
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column7,
@@ -219,55 +249,25 @@ namespace kutuphane_otomasyon_sistemi
             this.Column15.ReadOnly = true;
             this.Column15.Width = 125;
             // 
-            // Column12
+            // button1
             // 
-            this.Column12.DataPropertyName = "id";
-            this.Column12.HeaderText = "#";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Width = 125;
-            // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "ad";
-            this.Column13.HeaderText = "Kitap Adı";
-            this.Column13.MinimumWidth = 6;
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            this.Column13.Width = 125;
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "kayipdurum";
-            this.Column14.HeaderText = "Kayıp Durumu";
-            this.Column14.MinimumWidth = 6;
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
-            this.Column14.Width = 125;
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column1.HeaderText = "";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Text = "Sil";
-            this.Column1.UseColumnTextForButtonValue = true;
-            this.Column1.Width = 125;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(932, 372);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(182, 41);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Kayıp Kitap Sil";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Kayıp_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1377, 781);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtKitapAra);
@@ -304,9 +304,9 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewButtonColumn Column1;
     }
 }
