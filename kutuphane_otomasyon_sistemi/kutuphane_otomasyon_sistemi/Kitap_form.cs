@@ -131,13 +131,22 @@ namespace kutuphane_otomasyon_sistemi
             cmd.Parameters.AddWithValue("@sayfa_sayisi", txtSayfaSayisi.Text);
             cmd.Parameters.AddWithValue("@basim_yili",txtBasimYili.Text);
             cmd.Parameters.AddWithValue("@barkod_no", txtBarkodNo.Text);
-            cmd.Parameters.AddWithValue("@raf", txtRaf.Text);
+            cmd.Parameters.AddWithValue("@raf", txtDemirBasNo.Text);
             try
             {
+                if(String.IsNullOrEmpty(txtKitapAd.Text) || String.IsNullOrEmpty(txtKitapTur.Text) || String.IsNullOrEmpty(txtSayfaSayisi.Text) || String.IsNullOrEmpty(txtBasimYili.Text) || String.IsNullOrEmpty(txtBarkodNo.Text) || String.IsNullOrEmpty(txtDemirBasNo.Text))
+                {
+                    MessageBox.Show("Lütfen Bütün Alanları Doldurduğunuzdan Emin Olun", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+                }
+                else
+                {
 
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Yeni Kitap Eklendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtKitapAd.Text = txtKitapTur.Text = txtSayfaSayisi.Text = txtBasimYili.Text = txtBarkodNo.Text = txtRaf.Text = string.Empty;
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Yeni Kitap Eklendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtKitapAd.Text = txtKitapTur.Text = txtSayfaSayisi.Text = txtBasimYili.Text = txtBarkodNo.Text = txtDemirBasNo.Text = string.Empty;
+                }
+
 
 
             }
@@ -242,7 +251,7 @@ namespace kutuphane_otomasyon_sistemi
 
         private void txtYazarAdiAra_TextChanged(object sender, EventArgs e)
         {
-
+            Method.displayAndSearch("SELECT kitap.id,kitap.ad,kitap.tur,kitap.sayfa_sayisi,kitap.barkod_no,kitap.raf,kitap.basim_yili,kategori.ad,yazar.ad,yayinevi.ad FROM kitap INNER JOİN  kategori ON kitap.kategori_id=kategori.id INNER JOİN yazar ON kitap.yazar_id = yazar.id INNER JOİN yayinevi ON kitap.yayinevi_id = yayinevi.id WHERE yazar.ad LIKE '%" + txtYazarAdiAra.Text + "%'", dataGridView);
         }
     }
 }

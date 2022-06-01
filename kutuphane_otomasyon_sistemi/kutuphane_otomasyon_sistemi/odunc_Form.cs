@@ -22,9 +22,15 @@ namespace kutuphane_otomasyon_sistemi
             Method.displayAndSearch("SELECT odunc_alma.id,odunc_alma.odunc_tarih,odunc_alma.teslim_tarih,kitap.ad,odunc_alma.uye_numara,odunc_alma.teslim_durum FROM odunc_alma INNER JOİN kitap ON odunc_alma.kitap_id=kitap.id",dataGridView1);
         }
 
+        private void gecmisEmanetListele()
+        {
+            Method.displayAndSearch("SELECT odunc_alma.id,odunc_alma.odunc_tarih,odunc_alma.teslim_tarih,kitap.ad,odunc_alma.uye_numara,odunc_alma.teslim_durum FROM odunc_alma INNER JOİN kitap ON odunc_alma.kitap_id=kitap.id WHERE teslim_durum = 'Teslim Edildi'", dataGridView2);
+        }
+
         private void odunc_Form_Shown(object sender, EventArgs e)
         {
             emanetListele();
+            gecmisEmanetListele();
         }
 
         private void txtAra_TextChanged(object sender, EventArgs e)
@@ -70,12 +76,13 @@ namespace kutuphane_otomasyon_sistemi
             string sql = "DELETE FROM odunc_alma WHERE id = @id";
             MySqlConnection con = Method.GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql,con);
-            cmd.Parameters.AddWithValue("id",dataGridView1.CurrentRow.Cells[0].Value);
+            cmd.Parameters.AddWithValue("id",dataGridView2.CurrentRow.Cells[0].Value);
             try
             {
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Odünç Alma İşlemi Veri Tabanından Silindi");
                 emanetListele();
+                gecmisEmanetListele();
 
             }
             catch (Exception ex )
@@ -84,6 +91,11 @@ namespace kutuphane_otomasyon_sistemi
                 MessageBox.Show("Hata"+ex.Message);
             }
             con.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

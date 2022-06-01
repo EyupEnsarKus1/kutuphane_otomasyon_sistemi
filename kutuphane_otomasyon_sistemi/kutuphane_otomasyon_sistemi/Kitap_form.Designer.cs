@@ -29,8 +29,8 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtYazarAdiAra = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@ namespace kutuphane_otomasyon_sistemi
             this.txtBarkodNo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtRaf = new System.Windows.Forms.TextBox();
+            this.txtDemirBasNo = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtYayineviEkle = new System.Windows.Forms.TextBox();
             this.txtKategoriEkle = new System.Windows.Forms.TextBox();
@@ -243,12 +243,12 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // Column10
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column10.HeaderText = "";
             this.Column10.MinimumWidth = 6;
@@ -260,12 +260,12 @@ namespace kutuphane_otomasyon_sistemi
             // 
             // Column11
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column11.HeaderText = "";
             this.Column11.MinimumWidth = 6;
@@ -470,14 +470,14 @@ namespace kutuphane_otomasyon_sistemi
             this.label10.TabIndex = 25;
             this.label10.Text = "DemirBaş No";
             // 
-            // txtRaf
+            // txtDemirBasNo
             // 
-            this.txtRaf.Location = new System.Drawing.Point(468, 14);
-            this.txtRaf.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRaf.Multiline = true;
-            this.txtRaf.Name = "txtRaf";
-            this.txtRaf.Size = new System.Drawing.Size(152, 25);
-            this.txtRaf.TabIndex = 33;
+            this.txtDemirBasNo.Location = new System.Drawing.Point(468, 14);
+            this.txtDemirBasNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDemirBasNo.Multiline = true;
+            this.txtDemirBasNo.Name = "txtDemirBasNo";
+            this.txtDemirBasNo.Size = new System.Drawing.Size(152, 25);
+            this.txtDemirBasNo.TabIndex = 33;
             // 
             // panel1
             // 
@@ -598,7 +598,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.txtKitapAd);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.txtRaf);
+            this.panel3.Controls.Add(this.txtDemirBasNo);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Location = new System.Drawing.Point(564, 15);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
@@ -633,7 +633,7 @@ namespace kutuphane_otomasyon_sistemi
             this.ktpGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ktpGüncelle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ktpGüncelle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ktpGüncelle.Location = new System.Drawing.Point(1214, 229);
+            this.ktpGüncelle.Location = new System.Drawing.Point(1032, 271);
             this.ktpGüncelle.Margin = new System.Windows.Forms.Padding(4);
             this.ktpGüncelle.Name = "ktpGüncelle";
             this.ktpGüncelle.Size = new System.Drawing.Size(160, 39);
@@ -691,7 +691,7 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.TextBox txtBarkodNo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtRaf;
+        private System.Windows.Forms.TextBox txtDemirBasNo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtYayineviEkle;
