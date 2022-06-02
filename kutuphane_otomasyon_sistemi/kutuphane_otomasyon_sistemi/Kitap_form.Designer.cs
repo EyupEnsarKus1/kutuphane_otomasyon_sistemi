@@ -29,24 +29,12 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtYazarAdiAra = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboKategori = new System.Windows.Forms.ComboBox();
@@ -78,6 +66,18 @@ namespace kutuphane_otomasyon_sistemi
             this.label11 = new System.Windows.Forms.Label();
             this.txtBasimYili = new System.Windows.Forms.TextBox();
             this.ktpGüncelle = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -151,130 +151,6 @@ namespace kutuphane_otomasyon_sistemi
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "id";
-            this.Column1.HeaderText = "#";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "ad";
-            this.Column2.HeaderText = "Ad";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "tur";
-            this.Column3.HeaderText = "Tür";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "sayfa_sayisi";
-            this.Column4.HeaderText = "Sayfa Sayısı";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "barkod_no";
-            this.Column5.HeaderText = "Barkod No";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "raf";
-            this.Column6.HeaderText = "Raf";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 125;
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "basim_yili";
-            this.Column12.HeaderText = "Basım Yılı";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "ad1";
-            this.Column7.HeaderText = "Kategori Ad";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "ad2";
-            this.Column8.HeaderText = "Yazar Ad";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "ad3";
-            this.Column9.HeaderText = "Yayınevi Ad";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 125;
-            // 
-            // Column10
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column10.HeaderText = "";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Text = "Düzenle";
-            this.Column10.UseColumnTextForButtonValue = true;
-            this.Column10.Width = 125;
-            // 
-            // Column11
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column11.HeaderText = "";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Text = "Sil";
-            this.Column11.UseColumnTextForButtonValue = true;
-            this.Column11.Width = 125;
-            // 
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(384, 31);
@@ -302,7 +178,7 @@ namespace kutuphane_otomasyon_sistemi
             this.comboKategori.Location = new System.Drawing.Point(468, 68);
             this.comboKategori.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboKategori.Name = "comboKategori";
-            this.comboKategori.Size = new System.Drawing.Size(152, 24);
+            this.comboKategori.Size = new System.Drawing.Size(211, 24);
             this.comboKategori.TabIndex = 40;
             // 
             // comboYayinevi
@@ -311,7 +187,7 @@ namespace kutuphane_otomasyon_sistemi
             this.comboYayinevi.Location = new System.Drawing.Point(471, 169);
             this.comboYayinevi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboYayinevi.Name = "comboYayinevi";
-            this.comboYayinevi.Size = new System.Drawing.Size(152, 24);
+            this.comboYayinevi.Size = new System.Drawing.Size(200, 24);
             this.comboYayinevi.TabIndex = 39;
             // 
             // comboYazar
@@ -320,7 +196,7 @@ namespace kutuphane_otomasyon_sistemi
             this.comboYazar.Location = new System.Drawing.Point(468, 119);
             this.comboYazar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboYazar.Name = "comboYazar";
-            this.comboYazar.Size = new System.Drawing.Size(152, 24);
+            this.comboYazar.Size = new System.Drawing.Size(203, 24);
             this.comboYazar.TabIndex = 38;
             // 
             // txtKitapTur
@@ -476,7 +352,7 @@ namespace kutuphane_otomasyon_sistemi
             this.txtDemirBasNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtDemirBasNo.Multiline = true;
             this.txtDemirBasNo.Name = "txtDemirBasNo";
-            this.txtDemirBasNo.Size = new System.Drawing.Size(152, 25);
+            this.txtDemirBasNo.Size = new System.Drawing.Size(160, 25);
             this.txtDemirBasNo.TabIndex = 33;
             // 
             // panel1
@@ -603,7 +479,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel3.Location = new System.Drawing.Point(564, 15);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(642, 277);
+            this.panel3.Size = new System.Drawing.Size(706, 277);
             this.panel3.TabIndex = 42;
             // 
             // label11
@@ -638,8 +514,132 @@ namespace kutuphane_otomasyon_sistemi
             this.ktpGüncelle.Name = "ktpGüncelle";
             this.ktpGüncelle.Size = new System.Drawing.Size(160, 39);
             this.ktpGüncelle.TabIndex = 43;
-            this.ktpGüncelle.Text = "Kitap Güncelle";
+            this.ktpGüncelle.Text = "Güncelle";
             this.ktpGüncelle.UseVisualStyleBackColor = false;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id";
+            this.Column1.HeaderText = "#";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "ad";
+            this.Column2.HeaderText = "Ad";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "tur";
+            this.Column3.HeaderText = "Tür";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "sayfa_sayisi";
+            this.Column4.HeaderText = "Sayfa Sayısı";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "barkod_no";
+            this.Column5.HeaderText = "Barkod No";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "raf";
+            this.Column6.HeaderText = "DemirbaşNo";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "basim_yili";
+            this.Column12.HeaderText = "Basım Yılı";
+            this.Column12.MinimumWidth = 6;
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "ad1";
+            this.Column7.HeaderText = "Kategori Ad";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "ad2";
+            this.Column8.HeaderText = "Yazar Ad";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 125;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "ad3";
+            this.Column9.HeaderText = "Yayınevi Ad";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 125;
+            // 
+            // Column10
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column10.HeaderText = "";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Text = "Düzenle";
+            this.Column10.UseColumnTextForButtonValue = true;
+            this.Column10.Width = 125;
+            // 
+            // Column11
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column11.HeaderText = "";
+            this.Column11.MinimumWidth = 6;
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Text = "Sil";
+            this.Column11.UseColumnTextForButtonValue = true;
+            this.Column11.Width = 125;
             // 
             // Kitap_form
             // 
@@ -703,6 +703,9 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtBasimYili;
+        private System.Windows.Forms.Button ktpGüncelle;
+        private System.Windows.Forms.TextBox txtYazarAdiAra;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -715,8 +718,5 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewButtonColumn Column10;
         private System.Windows.Forms.DataGridViewButtonColumn Column11;
-        private System.Windows.Forms.Button ktpGüncelle;
-        private System.Windows.Forms.TextBox txtYazarAdiAra;
-        private System.Windows.Forms.Label label12;
     }
 }
