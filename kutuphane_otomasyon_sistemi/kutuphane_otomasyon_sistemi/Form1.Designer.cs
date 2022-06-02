@@ -77,16 +77,17 @@ namespace kutuphane_otomasyon_sistemi
             this.combo_uyeler.Name = "combo_uyeler";
             this.combo_uyeler.Size = new System.Drawing.Size(238, 24);
             this.combo_uyeler.TabIndex = 7;
+            this.combo_uyeler.SelectedIndexChanged += new System.EventHandler(this.combo_uyeler_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(23, 38);
+            this.label2.Location = new System.Drawing.Point(168, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(474, 32);
+            this.label2.Size = new System.Drawing.Size(163, 32);
             this.label2.TabIndex = 8;
-            this.label2.Text = "KÜTÜPHANEMİZE HOŞGELDİNİZ";
+            this.label2.Text = "GİRİŞ YAP";
             // 
             // pictureBox3
             // 

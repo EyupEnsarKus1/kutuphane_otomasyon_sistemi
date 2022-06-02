@@ -45,6 +45,14 @@ namespace kutuphane_otomasyon_sistemi
             this.lblOkuyucu = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.lblKitap = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -53,11 +61,20 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.lblKtp);
             this.groupBox1.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
@@ -80,6 +97,7 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox2.Controls.Add(this.pictureBox7);
             this.groupBox2.Controls.Add(this.lblUye);
             this.groupBox2.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(702, 292);
@@ -101,6 +119,7 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox3.Controls.Add(this.pictureBox8);
             this.groupBox3.Controls.Add(this.lblYyn);
             this.groupBox3.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(1019, 292);
@@ -122,6 +141,7 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox4.Controls.Add(this.pictureBox4);
             this.groupBox4.Controls.Add(this.lblYzr);
             this.groupBox4.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(1016, 49);
@@ -143,6 +163,7 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox5.Controls.Add(this.pictureBox5);
             this.groupBox5.Controls.Add(this.lblKtgri);
             this.groupBox5.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(47, 292);
@@ -164,6 +185,7 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox6.Controls.Add(this.pictureBox6);
             this.groupBox6.Controls.Add(this.lblEmnt);
             this.groupBox6.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(356, 292);
@@ -185,6 +207,7 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox7.Controls.Add(this.pictureBox2);
             this.groupBox7.Controls.Add(this.lblOkuyucu);
             this.groupBox7.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(356, 49);
@@ -206,6 +229,7 @@ namespace kutuphane_otomasyon_sistemi
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.groupBox8.Controls.Add(this.pictureBox3);
             this.groupBox8.Controls.Add(this.lblKitap);
             this.groupBox8.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(690, 49);
@@ -223,6 +247,86 @@ namespace kutuphane_otomasyon_sistemi
             this.lblKitap.Size = new System.Drawing.Size(272, 35);
             this.lblKitap.TabIndex = 9;
             this.lblKitap.Text = "en fazla okunan kitap";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox1.Location = new System.Drawing.Point(202, 132);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox2.Location = new System.Drawing.Point(242, 132);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox3.Location = new System.Drawing.Point(241, 132);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox4.Location = new System.Drawing.Point(217, 132);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox5.Location = new System.Drawing.Point(202, 125);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox6.Location = new System.Drawing.Point(234, 124);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox7.Location = new System.Drawing.Point(199, 124);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::kutuphane_otomasyon_sistemi.Properties.Resources.icons8_chart_64;
+            this.pictureBox8.Location = new System.Drawing.Point(234, 125);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(67, 64);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 10;
+            this.pictureBox8.TabStop = false;
             // 
             // istatistik_Form
             // 
@@ -259,6 +363,14 @@ namespace kutuphane_otomasyon_sistemi
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,5 +393,13 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Label lblEmnt;
         private System.Windows.Forms.Label lblOkuyucu;
         private System.Windows.Forms.Label lblKitap;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

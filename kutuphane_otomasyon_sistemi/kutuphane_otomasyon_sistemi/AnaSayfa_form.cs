@@ -99,7 +99,7 @@ namespace kutuphane_otomasyon_sistemi
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Personel_form frm = new Personel_form();
+            personel_Login frm = new personel_Login();
             frm.Show();
         }
 

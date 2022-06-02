@@ -74,5 +74,10 @@ namespace kutuphane_otomasyon_sistemi
             }
             #endregion
         }
+
+        private void combo_uyeler_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
