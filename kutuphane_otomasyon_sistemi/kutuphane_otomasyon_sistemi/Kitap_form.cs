@@ -101,18 +101,18 @@ namespace kutuphane_otomasyon_sistemi
 
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 0)
+            if (e.RowIndex >= 0)
             {
-                
-              }
-            if (e.ColumnIndex == 1)
-            {
-                if (MessageBox.Show("Kitabı Silmek İstediğinizden Emin Misiniz?", "Bilgilendirme", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
-                {
-                    KitapDatabase.deleteBook(dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString());
-                    display();
-                }
-                return;
+                DataGridViewRow dgvRow = dataGridView.Rows[e.RowIndex];
+                txtKitapAd.Text = dgvRow.Cells[1].Value.ToString();
+                txtSayfaSayisi.Text = dgvRow.Cells[3].Value.ToString();
+                txtKitapTur.Text = dgvRow.Cells[2].Value.ToString();
+                txtDemirBasNo.Text = dgvRow.Cells[5].Value.ToString();
+                comboYayinevi.Text = dgvRow.Cells[9].Value.ToString();
+                comboYazar.Text = dgvRow.Cells[8].Value.ToString();
+                comboKategori.Text = dgvRow.Cells[7].Value.ToString();
+                txtBarkodNo.Text = dgvRow.Cells[4].Value.ToString();
+                txtBasimYili.Text = dgvRow.Cells[6].Value.ToString();
             }
         }
 
@@ -252,6 +252,62 @@ namespace kutuphane_otomasyon_sistemi
         private void txtYazarAdiAra_TextChanged(object sender, EventArgs e)
         {
             Method.displayAndSearch("SELECT kitap.id,kitap.ad,kitap.tur,kitap.sayfa_sayisi,kitap.barkod_no,kitap.raf,kitap.basim_yili,kategori.ad,yazar.ad,yayinevi.ad FROM kitap INNER JOİN  kategori ON kitap.kategori_id=kategori.id INNER JOİN yazar ON kitap.yazar_id = yazar.id INNER JOİN yayinevi ON kitap.yayinevi_id = yayinevi.id WHERE yazar.ad LIKE '%" + txtYazarAdiAra.Text + "%'", dataGridView);
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            string sql = "DELETE FROM kitap WHERE id =@id";
+            MySqlConnection con = Method.GetConnection();
+           
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", dataGridView.CurrentRow.Cells[0].Value);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Kitap Silindi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                display();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Kitap Silinirken Hata" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+        private void btnGüncelle_Click(object sender, EventArgs e)
+        {
+            string sql = "UPDATE kitap SET tur=@tur,sayfa_sayisi=@sayfa_sayisi,basim_yili=@basim_yili,barkod_no=@barkod_no,raf=@raf,kategori_id=@kategori_id,yazar_id=@yazar_id,yayinevi_id=@yayinevi_id WHERE ad=@ad";
+            MySqlConnection con = Method.GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ad", txtKitapAd.Text);
+            cmd.Parameters.AddWithValue("@sayfa_sayisi", txtSayfaSayisi.Text);
+            cmd.Parameters.AddWithValue("@tur", txtKitapTur.Text);
+            cmd.Parameters.AddWithValue("@basim_yili", txtBasimYili.Text);
+            cmd.Parameters.AddWithValue("@yayinevi_id", comboYayinevi.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@yazar_id", comboYazar.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@kategori_id", comboKategori.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@raf", txtDemirBasNo.Text);
+            cmd.Parameters.AddWithValue("@barkod_no", txtBarkodNo.Text);
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kitap Bilgileri Güncellendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                display();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Kitap Güncelleme Başarısız" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
         }
     }
 }

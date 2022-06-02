@@ -29,8 +29,6 @@ namespace kutuphane_otomasyon_sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtYazarAdiAra = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -65,7 +63,7 @@ namespace kutuphane_otomasyon_sistemi
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.txtBasimYili = new System.Windows.Forms.TextBox();
-            this.ktpGüncelle = new System.Windows.Forms.Button();
+            this.btnGüncelle = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,8 +74,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnSil = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -135,9 +132,7 @@ namespace kutuphane_otomasyon_sistemi
             this.Column12,
             this.Column7,
             this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11});
+            this.Column9});
             this.dataGridView.Location = new System.Drawing.Point(24, 72);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView.Name = "dataGridView";
@@ -503,19 +498,20 @@ namespace kutuphane_otomasyon_sistemi
             this.txtBasimYili.Size = new System.Drawing.Size(152, 25);
             this.txtBasimYili.TabIndex = 42;
             // 
-            // ktpGüncelle
+            // btnGüncelle
             // 
-            this.ktpGüncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
-            this.ktpGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ktpGüncelle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ktpGüncelle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ktpGüncelle.Location = new System.Drawing.Point(1032, 271);
-            this.ktpGüncelle.Margin = new System.Windows.Forms.Padding(4);
-            this.ktpGüncelle.Name = "ktpGüncelle";
-            this.ktpGüncelle.Size = new System.Drawing.Size(160, 39);
-            this.ktpGüncelle.TabIndex = 43;
-            this.ktpGüncelle.Text = "Güncelle";
-            this.ktpGüncelle.UseVisualStyleBackColor = false;
+            this.btnGüncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.btnGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGüncelle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGüncelle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGüncelle.Location = new System.Drawing.Point(1032, 271);
+            this.btnGüncelle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGüncelle.Name = "btnGüncelle";
+            this.btnGüncelle.Size = new System.Drawing.Size(160, 39);
+            this.btnGüncelle.TabIndex = 43;
+            this.btnGüncelle.Text = "Güncelle";
+            this.btnGüncelle.UseVisualStyleBackColor = false;
+            this.btnGüncelle.Click += new System.EventHandler(this.btnGüncelle_Click);
             // 
             // Column1
             // 
@@ -607,39 +603,20 @@ namespace kutuphane_otomasyon_sistemi
             this.Column9.ReadOnly = true;
             this.Column9.Width = 125;
             // 
-            // Column10
+            // btnSil
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column10.HeaderText = "";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Text = "Düzenle";
-            this.Column10.UseColumnTextForButtonValue = true;
-            this.Column10.Width = 125;
-            // 
-            // Column11
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column11.HeaderText = "";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Text = "Sil";
-            this.Column11.UseColumnTextForButtonValue = true;
-            this.Column11.Width = 125;
+            this.btnSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(61)))));
+            this.btnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSil.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSil.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSil.Location = new System.Drawing.Point(1200, 271);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(160, 39);
+            this.btnSil.TabIndex = 44;
+            this.btnSil.Text = "Sil";
+            this.btnSil.UseVisualStyleBackColor = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // Kitap_form
             // 
@@ -647,7 +624,8 @@ namespace kutuphane_otomasyon_sistemi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1377, 781);
-            this.Controls.Add(this.ktpGüncelle);
+            this.Controls.Add(this.btnSil);
+            this.Controls.Add(this.btnGüncelle);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -703,7 +681,7 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtBasimYili;
-        private System.Windows.Forms.Button ktpGüncelle;
+        private System.Windows.Forms.Button btnGüncelle;
         private System.Windows.Forms.TextBox txtYazarAdiAra;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -716,7 +694,6 @@ namespace kutuphane_otomasyon_sistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewButtonColumn Column10;
-        private System.Windows.Forms.DataGridViewButtonColumn Column11;
+        private System.Windows.Forms.Button btnSil;
     }
 }
