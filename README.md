@@ -10,6 +10,12 @@
 ## OLASI SENARYOLAR
 [foursquare_senaryo.docx](https://github.com/EyupEnsarKus1/kutuphane_otomasyon_sistemi/files/8823407/foursquare_senaryo.docx)
 
+## EMEĞİ GEÇENLER
+### Eyüp Ensar Kuş
+### İrem Özköse
+### Busenur Çuhadaroğlu
+### Zeynep Kuş
+### Sudenaz Koçak
 
 
 
