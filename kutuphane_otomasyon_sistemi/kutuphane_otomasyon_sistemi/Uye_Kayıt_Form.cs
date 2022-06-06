@@ -88,7 +88,7 @@ namespace kutuphane_otomasyon_sistemi
             if (btnEkle.Text == "Ekle")
             {
                 Uye uye = new Uye(txtUyeNumara.Text.Trim(), txtAd.Text.Trim(), txtSoyad.Text.Trim(), comboCinsiyet.Text.Trim(), txtTelefon.Text.Trim(), txtEMail.Text.Trim());
-                UyeDatabase.addMember(uye);
+                UyeDatabase.addMember(uye,txtUyeNumara);
                 clear();
             }
             if(btnEkle.Text == "Güncelle")

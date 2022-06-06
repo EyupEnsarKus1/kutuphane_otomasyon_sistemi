@@ -26,30 +26,41 @@ namespace kutuphane_otomasyon_sistemi
             }
             return con;
         }
-        public static void addMember(Uye uye)
+        public static void addMember(Uye uye,TextBox txtBox)
         {
             string sql = "INSERT INTO uye VALUES (@uye_numara,@ad,@soyad,@cinsiyet,@telefon,@email)";
             MySqlConnection con = GetConnection();
-            MySqlCommand cmd = new MySqlCommand(sql, con);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@uye_numara", MySqlDbType.VarChar).Value = uye.uye_numara;
-            cmd.Parameters.Add("@ad", MySqlDbType.VarChar).Value = uye.ad;
-            cmd.Parameters.Add("@soyad", MySqlDbType.VarChar).Value = uye.soyad;
-            cmd.Parameters.Add("@cinsiyet", MySqlDbType.VarChar).Value = uye.cinsiyet;
-            cmd.Parameters.Add("@telefon", MySqlDbType.VarChar).Value = uye.telefon;
-            cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = uye.email;
-            try
+            MySqlCommand chk = new MySqlCommand("select uye_numara from uye where uye_numara='" + txtBox.Text + "'", con);
+            string ktg = (string)chk.ExecuteScalar();
+            if (ktg == txtBox.Text)
             {
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Yeni Üye Eklendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MessageBox.Show("Üye Zaten Var.");
             }
-            catch (Exception ex)
+            else
             {
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add("@uye_numara", MySqlDbType.VarChar).Value = uye.uye_numara;
+                cmd.Parameters.Add("@ad", MySqlDbType.VarChar).Value = uye.ad;
+                cmd.Parameters.Add("@soyad", MySqlDbType.VarChar).Value = uye.soyad;
+                cmd.Parameters.Add("@cinsiyet", MySqlDbType.VarChar).Value = uye.cinsiyet;
+                cmd.Parameters.Add("@telefon", MySqlDbType.VarChar).Value = uye.telefon;
+                cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = uye.email;
+                try
+                {
 
-                MessageBox.Show("Üye Ekleme Başarısız" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Yeni Üye Eklendi", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Üye Ekleme Başarısız" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+           
+            
             con.Close();
         }
         public static void updateMember(Uye uye, string id)

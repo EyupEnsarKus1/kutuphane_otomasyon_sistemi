@@ -372,9 +372,9 @@ namespace kutuphane_otomasyon_sistemi
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(117, 85);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(140, 17);
+            this.label22.Size = new System.Drawing.Size(104, 17);
             this.label22.TabIndex = 11;
-            this.label22.Text = "Kütüphane Hakkında";
+            this.label22.Text = "Mezun Durumu";
             // 
             // label18
             // 
@@ -382,9 +382,9 @@ namespace kutuphane_otomasyon_sistemi
             this.label18.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label18.Location = new System.Drawing.Point(38, 24);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(133, 35);
+            this.label18.Size = new System.Drawing.Size(181, 35);
             this.label18.TabIndex = 2;
-            this.label18.Text = "Hakkında";
+            this.label18.Text = "Öğrenci İşleri";
             // 
             // panel8
             // 
